@@ -154,37 +154,6 @@
     },
     "updated_at": "2026-09-24T13:20:21.936256"
   },
-  "NSE:LTIM-EQ": {
-    "symbol": "NSE:LTIM-EQ",
-    "ticker": "LTIM",
-    "avg_volume": 650000,
-    "avg_volumes": {
-      "1W": 624000,
-      "1M": 637000,
-      "45D": 650000,
-      "3M": 669500,
-      "6M": 689000
-    },
-    "price_changes": {
-      "1W": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "1M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "3M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "6M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      }
-    },
-    "updated_at": "2026-09-24T13:20:21.936256"
-  },
   "NSE:PERSISTENT-EQ": {
     "symbol": "NSE:PERSISTENT-EQ",
     "ticker": "PERSISTENT",
@@ -1979,37 +1948,6 @@
       "6M": {
         "change": -10.58,
         "change_percent": -6.75
-      }
-    },
-    "updated_at": "2026-09-24T13:20:21.936256"
-  },
-  "NSE:TATAMOTORS-EQ": {
-    "symbol": "NSE:TATAMOTORS-EQ",
-    "ticker": "TATAMOTORS",
-    "avg_volume": 13000000,
-    "avg_volumes": {
-      "1W": 12480000,
-      "1M": 12740000,
-      "45D": 13000000,
-      "3M": 13390000,
-      "6M": 13780000
-    },
-    "price_changes": {
-      "1W": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "1M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "3M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "6M": {
-        "change": 0.0,
-        "change_percent": 0.0
       }
     },
     "updated_at": "2026-09-24T13:20:21.936256"
@@ -4835,37 +4773,6 @@
     },
     "updated_at": "2026-09-24T13:20:21.936256"
   },
-  "NSE:HFCL-EQ": {
-    "symbol": "NSE:HFCL-EQ",
-    "ticker": "HFCL",
-    "avg_volume": 12000000,
-    "avg_volumes": {
-      "1W": 11520000,
-      "1M": 11760000,
-      "45D": 12000000,
-      "3M": 12360000,
-      "6M": 12720000
-    },
-    "price_changes": {
-      "1W": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "1M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "3M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "6M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      }
-    },
-    "updated_at": "2026-09-24T13:20:21.936256"
-  },
   "NSE:RAILTEL-EQ": {
     "symbol": "NSE:RAILTEL-EQ",
     "ticker": "RAILTEL",
@@ -4955,37 +4862,6 @@
       "6M": {
         "change": -1.01,
         "change_percent": -1.2
-      }
-    },
-    "updated_at": "2026-09-24T13:20:21.936256"
-  },
-  "NSE:GMRINFRA-EQ": {
-    "symbol": "NSE:GMRINFRA-EQ",
-    "ticker": "GMRINFRA",
-    "avg_volume": 14000000,
-    "avg_volumes": {
-      "1W": 13440000,
-      "1M": 13720000,
-      "45D": 14000000,
-      "3M": 14420000,
-      "6M": 14840000
-    },
-    "price_changes": {
-      "1W": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "1M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "3M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "6M": {
-        "change": 0.0,
-        "change_percent": 0.0
       }
     },
     "updated_at": "2026-09-24T13:20:21.936256"
@@ -5889,37 +5765,6 @@
     },
     "updated_at": "2026-09-24T13:20:21.936256"
   },
-  "NSE:ZOMATO-EQ": {
-    "symbol": "NSE:ZOMATO-EQ",
-    "ticker": "ZOMATO",
-    "avg_volume": 42000000,
-    "avg_volumes": {
-      "1W": 40320000,
-      "1M": 41160000,
-      "45D": 42000000,
-      "3M": 43260000,
-      "6M": 44520000
-    },
-    "price_changes": {
-      "1W": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "1M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "3M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      },
-      "6M": {
-        "change": 0.0,
-        "change_percent": 0.0
-      }
-    },
-    "updated_at": "2026-09-24T13:20:21.936256"
-  },
   "NSE:NYKAA-EQ": {
     "symbol": "NSE:NYKAA-EQ",
     "ticker": "NYKAA",
@@ -6198,5 +6043,160 @@
       }
     },
     "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GMRAIRPORT-EQ": {
+    "symbol": "NSE:GMRAIRPORT-EQ",
+    "ticker": "GMRAIRPORT",
+    "avg_volume": 13184926,
+    "avg_volumes": {
+      "1W": 16244224,
+      "1M": 14136584,
+      "45D": 13184926,
+      "3M": 15454036,
+      "6M": 17622145
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.89,
+        "change_percent": 3.04
+      },
+      "1M": {
+        "change": -1.92,
+        "change_percent": -1.92
+      },
+      "3M": {
+        "change": -10.51,
+        "change_percent": -9.69
+      },
+      "6M": {
+        "change": 7.37,
+        "change_percent": 8.14
+      }
+    },
+    "updated_at": "2026-09-24T13:37:54.899480"
+  },
+  "NSE:SUZLON-EQ": {
+    "symbol": "NSE:SUZLON-EQ",
+    "ticker": "SUZLON",
+    "avg_volume": 43379504,
+    "avg_volumes": {
+      "1W": 52305869,
+      "1M": 44444198,
+      "45D": 43379504,
+      "3M": 56462159,
+      "6M": 81393337
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.65,
+        "change_percent": -3.88
+      },
+      "1M": {
+        "change": -5.86,
+        "change_percent": -12.53
+      },
+      "3M": {
+        "change": -16.25,
+        "change_percent": -28.44
+      },
+      "6M": {
+        "change": -1.06,
+        "change_percent": -2.53
+      }
+    },
+    "updated_at": "2026-09-24T13:37:54.899480"
+  },
+  "NSE:YESBANK-EQ": {
+    "symbol": "NSE:YESBANK-EQ",
+    "ticker": "YESBANK",
+    "avg_volume": 62526440,
+    "avg_volumes": {
+      "1W": 55828937,
+      "1M": 71205328,
+      "45D": 62526440,
+      "3M": 66768971,
+      "6M": 99651497
+    },
+    "price_changes": {
+      "1W": {
+        "change": -0.65,
+        "change_percent": -2.81
+      },
+      "1M": {
+        "change": -0.02,
+        "change_percent": -0.09
+      },
+      "3M": {
+        "change": -2.39,
+        "change_percent": -9.61
+      },
+      "6M": {
+        "change": 3.9,
+        "change_percent": 20.99
+      }
+    },
+    "updated_at": "2026-09-24T13:37:54.899480"
+  },
+  "NSE:IRCTC-EQ": {
+    "symbol": "NSE:IRCTC-EQ",
+    "ticker": "IRCTC",
+    "avg_volume": 747114,
+    "avg_volumes": {
+      "1W": 792836,
+      "1M": 690004,
+      "45D": 747114,
+      "3M": 834855,
+      "6M": 1040933
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.8,
+        "change_percent": 1.05
+      },
+      "1M": {
+        "change": -20.75,
+        "change_percent": -4.3
+      },
+      "3M": {
+        "change": -52.3,
+        "change_percent": -10.17
+      },
+      "6M": {
+        "change": -61.05,
+        "change_percent": -11.68
+      }
+    },
+    "updated_at": "2026-09-24T13:37:54.899480"
+  },
+  "NSE:CGPOWER-EQ": {
+    "symbol": "NSE:CGPOWER-EQ",
+    "ticker": "CGPOWER",
+    "avg_volume": 2352096,
+    "avg_volumes": {
+      "1W": 2417186,
+      "1M": 2604282,
+      "45D": 2352096,
+      "3M": 3722503,
+      "6M": 3757810
+    },
+    "price_changes": {
+      "1W": {
+        "change": 9.9,
+        "change_percent": 1.12
+      },
+      "1M": {
+        "change": 11.4,
+        "change_percent": 1.3
+      },
+      "3M": {
+        "change": -52.2,
+        "change_percent": -5.54
+      },
+      "6M": {
+        "change": 208.3,
+        "change_percent": 30.56
+      }
+    },
+    "updated_at": "2026-09-24T13:37:54.899480"
   }
 }

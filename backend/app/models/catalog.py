@@ -28,7 +28,7 @@ INSTRUMENTS_DATA = [
     {"symbol": "NSE:HCLTECH-EQ", "ticker": "HCLTECH", "name": "HCL Technologies", "sector": "IT", "default_avg_volume": 2154149, "base_price": 1780.25},
     {"symbol": "NSE:WIPRO-EQ", "ticker": "WIPRO", "name": "Wipro Ltd", "sector": "IT", "default_avg_volume": 9407361, "base_price": 530.1},
     {"symbol": "NSE:TECHM-EQ", "ticker": "TECHM", "name": "Tech Mahindra", "sector": "IT", "default_avg_volume": 2004274, "base_price": 1620.4},
-    {"symbol": "NSE:LTIM-EQ", "ticker": "LTIM", "name": "LTIMindtree Ltd", "sector": "IT", "default_avg_volume": 650000, "base_price": 5950.0},
+    {"symbol": "NSE:YESBANK-EQ", "ticker": "YESBANK", "name": "Yes Bank Ltd", "sector": "Banking", "default_avg_volume": 62526440, "base_price": 22.5},
     {"symbol": "NSE:PERSISTENT-EQ", "ticker": "PERSISTENT", "name": "Persistent Systems", "sector": "IT", "default_avg_volume": 459812, "base_price": 5240.0},
     {"symbol": "NSE:COFORGE-EQ", "ticker": "COFORGE", "name": "Coforge Ltd", "sector": "IT", "default_avg_volume": 2391632, "base_price": 7680.0},
     {"symbol": "NSE:MPHASIS-EQ", "ticker": "MPHASIS", "name": "Mphasis Ltd", "sector": "IT", "default_avg_volume": 416207, "base_price": 2980.0},
@@ -87,7 +87,7 @@ INSTRUMENTS_DATA = [
     {"symbol": "NSE:TORNTPOWER-EQ", "ticker": "TORNTPOWER", "name": "Torrent Power Ltd", "sector": "Energy", "default_avg_volume": 377076, "base_price": 1480.0},
     {"symbol": "NSE:OIL-EQ", "ticker": "OIL", "name": "Oil India Ltd", "sector": "Energy", "default_avg_volume": 2590309, "base_price": 580.0},
     {"symbol": "NSE:IGL-EQ", "ticker": "IGL", "name": "Indraprastha Gas Ltd", "sector": "Energy", "default_avg_volume": 2194828, "base_price": 410.0},
-    {"symbol": "NSE:TATAMOTORS-EQ", "ticker": "TATAMOTORS", "name": "Tata Motors Ltd", "sector": "Automobile", "default_avg_volume": 13000000, "base_price": 985.0},
+    {"symbol": "NSE:CGPOWER-EQ", "ticker": "CGPOWER", "name": "CG Power & Industrial Solutions", "sector": "Industrials", "default_avg_volume": 2352096, "base_price": 890.0},
     {"symbol": "NSE:MARUTI-EQ", "ticker": "MARUTI", "name": "Maruti Suzuki India", "sector": "Automobile", "default_avg_volume": 342157, "base_price": 12450.0},
     {"symbol": "NSE:M&M-EQ", "ticker": "M&M", "name": "Mahindra & Mahindra", "sector": "Automobile", "default_avg_volume": 1812230, "base_price": 2840.0},
     {"symbol": "NSE:BAJAJ-AUTO-EQ", "ticker": "BAJAJ-AUTO", "name": "Bajaj Auto Ltd", "sector": "Automobile", "default_avg_volume": 216262, "base_price": 11200.0},
@@ -179,11 +179,11 @@ INSTRUMENTS_DATA = [
     {"symbol": "NSE:RECLTD-EQ", "ticker": "RECLTD", "name": "REC Ltd", "sector": "Infra", "default_avg_volume": 5434190, "base_price": 510.0},
     {"symbol": "NSE:IRCON-EQ", "ticker": "IRCON", "name": "IRCON International Ltd", "sector": "Infra", "default_avg_volume": 1475418, "base_price": 285.0},
     {"symbol": "NSE:NLCINDIA-EQ", "ticker": "NLCINDIA", "name": "NLC India Ltd", "sector": "Infra", "default_avg_volume": 1581443, "base_price": 242.0},
-    {"symbol": "NSE:HFCL-EQ", "ticker": "HFCL", "name": "HFCL Ltd", "sector": "Infra", "default_avg_volume": 12000000, "base_price": 88.0},
+    {"symbol": "NSE:SUZLON-EQ", "ticker": "SUZLON", "name": "Suzlon Energy Ltd", "sector": "Energy", "default_avg_volume": 43379504, "base_price": 40.8},
     {"symbol": "NSE:RAILTEL-EQ", "ticker": "RAILTEL", "name": "RailTel Corp of India", "sector": "Infra", "default_avg_volume": 929466, "base_price": 480.0},
     {"symbol": "NSE:RITES-EQ", "ticker": "RITES", "name": "RITES Ltd", "sector": "Infra", "default_avg_volume": 324543, "base_price": 360.0},
     {"symbol": "NSE:NBCC-EQ", "ticker": "NBCC", "name": "NBCC India Ltd", "sector": "Infra", "default_avg_volume": 5290068, "base_price": 115.0},
-    {"symbol": "NSE:GMRINFRA-EQ", "ticker": "GMRINFRA", "name": "GMR Airports Infra", "sector": "Infra", "default_avg_volume": 14000000, "base_price": 94.0},
+    {"symbol": "NSE:GMRAIRPORT-EQ", "ticker": "GMRAIRPORT", "name": "GMR Airports Infrastructure", "sector": "Infra", "default_avg_volume": 13184926, "base_price": 97.9},
     {"symbol": "NSE:CONCOR-EQ", "ticker": "CONCOR", "name": "Container Corp of India", "sector": "Infra", "default_avg_volume": 1378498, "base_price": 890.0},
     {"symbol": "NSE:PIDILITIND-EQ", "ticker": "PIDILITIND", "name": "Pidilite Industries", "sector": "Chemicals", "default_avg_volume": 694606, "base_price": 3080.0},
     {"symbol": "NSE:DEEPAKNTR-EQ", "ticker": "DEEPAKNTR", "name": "Deepak Nitrite Ltd", "sector": "Chemicals", "default_avg_volume": 322122, "base_price": 2480.0},
@@ -213,7 +213,7 @@ INSTRUMENTS_DATA = [
     {"symbol": "NSE:ASIANPAINT-EQ", "ticker": "ASIANPAINT", "name": "Asian Paints Ltd", "sector": "Consumer", "default_avg_volume": 573231, "base_price": 3210.0},
     {"symbol": "NSE:BERGEPAINT-EQ", "ticker": "BERGEPAINT", "name": "Berger Paints", "sector": "Consumer", "default_avg_volume": 410258, "base_price": 585.0},
     {"symbol": "NSE:DMART-EQ", "ticker": "DMART", "name": "Avenue Supermarts", "sector": "Consumer", "default_avg_volume": 451016, "base_price": 4920.0},
-    {"symbol": "NSE:ZOMATO-EQ", "ticker": "ZOMATO", "name": "Zomato Ltd", "sector": "Consumer", "default_avg_volume": 42000000, "base_price": 265.0},
+    {"symbol": "NSE:IRCTC-EQ", "ticker": "IRCTC", "name": "Indian Railway Catering", "sector": "Consumer", "default_avg_volume": 747114, "base_price": 461.5},
     {"symbol": "NSE:NYKAA-EQ", "ticker": "NYKAA", "name": "FSN E-Commerce (Nykaa)", "sector": "Consumer", "default_avg_volume": 4251400, "base_price": 215.0},
     {"symbol": "NSE:NAUKRI-EQ", "ticker": "NAUKRI", "name": "Info Edge (Naukri.com)", "sector": "Consumer", "default_avg_volume": 1575915, "base_price": 8900.0},
     {"symbol": "NSE:POLICYBZR-EQ", "ticker": "POLICYBZR", "name": "PB Fintech (PolicyBazaar)", "sector": "Consumer", "default_avg_volume": 1366459, "base_price": 1680.0},
@@ -342,8 +342,7 @@ NIFTY_NEXT_50_SYMBOLS = [
     "NSE:IRFC-EQ"
 ]
 
-INVALID_FYERS_SYMBOLS = {"NSE:LTIM-EQ", "NSE:TATAMOTORS-EQ", "NSE:HFCL-EQ", "NSE:GMRINFRA-EQ", "NSE:ZOMATO-EQ"}
-ALL_SYMBOLS = [item["symbol"] for item in INSTRUMENTS_DATA if item["symbol"] not in INVALID_FYERS_SYMBOLS]
+ALL_SYMBOLS = [item["symbol"] for item in INSTRUMENTS_DATA]
 
 UNIVERSES: Dict[str, UniverseDefinition] = {
     "nifty_500": UniverseDefinition(
