@@ -48,6 +48,22 @@ class FyersMarketDataService:
 
         token = self.auth_manager.get_access_token()
         client_id = settings.FYERS_CLIENT_ID
+        if token and not client_id:
+            try:
+                import json
+                import base64
+                parts = token.split(".")
+                if len(parts) >= 2:
+                    padding = "=" * (4 - (len(parts[1]) % 4))
+                    payload = json.loads(base64.urlsafe_b64decode(parts[1] + padding))
+                    fy_id = payload.get("fy_id")
+                    app_type = payload.get("appType", 200)
+                    if fy_id:
+                        client_id = f"{fy_id}-{app_type}"
+                        logger.info(f"Auto-resolved FYERS Client ID from token: {client_id}")
+            except Exception as e:
+                logger.warning(f"Could not auto-derive client_id from token: {e}")
+
         if not token or not client_id:
             logger.warning("Cannot start FYERS market data: Access token or Client ID missing.")
             self._connection_state = "DISCONNECTED"
@@ -77,9 +93,24 @@ class FyersMarketDataService:
             logger.warning(f"FYERS Data WebSocket closed: {message}")
 
         def _on_error(message):
+            logger.error(f"FYERS Data WebSocket error: {message}")
+            if isinstance(message, dict) and message.get("type") == "sub" and "invalid_symbols" in message:
+                bad_syms = set(message.get("invalid_symbols", []))
+                cleaned = [s for s in self._subscribed_symbols if s not in bad_syms]
+                if cleaned and len(cleaned) < len(self._subscribed_symbols):
+                    logger.info(f"Retrying FYERS subscription with {len(cleaned)} valid symbols (stripped {len(bad_syms)} invalid: {bad_syms})...")
+                    self._subscribed_symbols = cleaned
+                    self._connected = True
+                    self._connection_state = "CONNECTED"
+                    try:
+                        if self.fyers_socket:
+                            self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
+                    except Exception as err:
+                        logger.error(f"Retry subscribe error: {err}")
+                    return
+
             self._connected = False
             self._connection_state = "RECONNECTING"
-            logger.error(f"FYERS Data WebSocket error: {message}")
 
         def _on_message(message):
             self._last_tick_time = time.time()

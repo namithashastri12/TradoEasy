@@ -14,7 +14,7 @@ start "TradoEasy Frontend (Vite)" cmd /k "cd /d "%~dp0frontend" && npm run dev"
 
 timeout /t 2 /nobreak >nul
 
-where ngrok >nul 2>nul && (start "TradoEasy Live Cloud Tunnel (For External Sharing)" cmd /k "ngrok http 8000")
+where ngrok >nul 2>nul && (start "TradoEasy Live Cloud Tunnel (For External Sharing)" cmd /k "ngrok http 8000 --url=unstopped-anthem-bullfrog.ngrok-free.dev")
 
 echo.
 echo ===================================================

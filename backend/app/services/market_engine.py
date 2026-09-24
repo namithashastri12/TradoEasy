@@ -90,7 +90,11 @@ class MarketEngine:
                 if symbol not in self._state:
                     meta = INSTRUMENTS_MAP.get(symbol)
                     if meta:
-                        avg_vol = self.historical_data.get_average_volume(symbol)
+                        metrics = self.historical_data.get_symbol_metrics(symbol)
+                        avg_vol = metrics.get("avg_volume", self.historical_data.get_average_volume(symbol))
+                        avg_vols = metrics.get("avg_volumes")
+                        price_changes = metrics.get("price_changes")
+
                         # Seed base price from catalog data
                         base_p = 1000.0
                         for it in INSTRUMENTS_DATA:
@@ -113,7 +117,9 @@ class MarketEngine:
                             high_price=base_p,
                             low_price=base_p,
                             timestamp=int(time.time()),
-                            is_volume_spike=False
+                            is_volume_spike=False,
+                            avg_volumes=avg_vols,
+                            price_changes=price_changes
                         )
 
     def start(self) -> None:
@@ -177,7 +183,10 @@ class MarketEngine:
             ticker = meta.ticker if meta else symbol.split(":")[1].replace("-EQ", "")
             company_name = meta.name if meta else ticker
             sector = meta.sector if meta else "Other"
-            avg_vol = self.historical_data.get_average_volume(symbol)
+            metrics = self.historical_data.get_symbol_metrics(symbol)
+            avg_vol = metrics.get("avg_volume", self.historical_data.get_average_volume(symbol))
+            avg_vols = metrics.get("avg_volumes")
+            price_changes = metrics.get("price_changes")
 
             # Extract fields with safe fallbacks
             prev_close = float(raw.get("prev_close_price", 0.0))
@@ -223,7 +232,9 @@ class MarketEngine:
                 high_price=high_p,
                 low_price=low_p,
                 timestamp=ts,
-                is_volume_spike=is_spike
+                is_volume_spike=is_spike,
+                avg_volumes=avg_vols,
+                price_changes=price_changes
             )
 
             self._state[symbol] = normalized

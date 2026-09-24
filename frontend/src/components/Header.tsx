@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Refresh snapshot button */}
           <button
             onClick={onRefresh}
-            title="Force refresh market snapshot (auto-refreshes every 1 min)"
+            title="Force refresh market snapshot (auto-refreshes every 20s)"
             className="p-1.5 rounded bg-[#161C2D] hover:bg-[#1E263C] border border-[#232C42] hover:border-slate-600 text-slate-300 hover:text-white transition-colors"
           >
             <RotateCcw className="w-4 h-4" />

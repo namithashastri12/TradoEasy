@@ -325,12 +325,12 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
     return () => clearInterval(timer);
   }, []);
 
-  // 1-minute auto-refresh cycle (preserves filters, refreshes sync state)
+  // 20-second auto-refresh cycle (preserves filters, refreshes sync state)
   useEffect(() => {
     const interval = setInterval(() => {
       requestSnapshot();
       setLastAutoRefreshTime(Date.now());
-    }, 60000); // 60 seconds
+    }, 20000); // 20 seconds
 
     return () => clearInterval(interval);
   }, [requestSnapshot]);

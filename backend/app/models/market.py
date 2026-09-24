@@ -19,6 +19,8 @@ class NormalizedTick(BaseModel):
     low_price: float = Field(0.0, description="Day low price")
     timestamp: int = Field(..., description="Epoch timestamp of the update in seconds")
     is_volume_spike: bool = Field(False, description="True if RVOL >= configured threshold")
+    avg_volumes: Optional[Dict[str, int]] = Field(None, description="Average volumes by period: 1W, 1M, 45D, 3M, 6M")
+    price_changes: Optional[Dict[str, Dict[str, float]]] = Field(None, description="Price change and % change by period: 1W, 1M, 3M, 6M")
 
 
 class MarketSummary(BaseModel):

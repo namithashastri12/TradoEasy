@@ -29,6 +29,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   };
 
   const hasActiveFilters =
+    filter.avgVolumePeriod !== '45D' ||
+    filter.priceChangePeriod !== '1D' ||
     filter.volume !== 'ALL' ||
     filter.priceChange !== 'ALL' ||
     filter.sector !== 'ALL' ||
@@ -49,6 +51,38 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           <span className="text-slate-400">Index:</span>
           <span className="text-blue-300 font-semibold">{activeUniverseName}</span>
         </button>
+
+        {/* Days for Avg Volume Filter */}
+        <div className="flex items-center gap-1.5">
+          <span className="text-[11px] font-mono text-cyan-400 font-medium">Avg Vol Days:</span>
+          <select
+            value={filter.avgVolumePeriod}
+            onChange={(e) => updateField('avgVolumePeriod', e.target.value as any)}
+            className="bg-[#161C2D] border border-cyan-800/60 hover:border-cyan-500 focus:border-cyan-400 rounded px-2 py-1 text-xs font-mono text-cyan-200 focus:outline-none transition-colors"
+          >
+            <option value="45D">45 days- default</option>
+            <option value="1W">1 week</option>
+            <option value="1M">1 month</option>
+            <option value="3M">3 month</option>
+            <option value="6M">6 month</option>
+          </select>
+        </div>
+
+        {/* Days for % Change Filter */}
+        <div className="flex items-center gap-1.5">
+          <span className="text-[11px] font-mono text-emerald-400 font-medium">% Change Days:</span>
+          <select
+            value={filter.priceChangePeriod}
+            onChange={(e) => updateField('priceChangePeriod', e.target.value as any)}
+            className="bg-[#161C2D] border border-emerald-800/60 hover:border-emerald-500 focus:border-emerald-400 rounded px-2 py-1 text-xs font-mono text-emerald-200 focus:outline-none transition-colors"
+          >
+            <option value="1D">1 day -default</option>
+            <option value="1W">1 week</option>
+            <option value="1M">1 month</option>
+            <option value="3M">3 month</option>
+            <option value="6M">6 month</option>
+          </select>
+        </div>
 
         <div className="h-5 w-[1px] bg-[#232C42] hidden sm:block" />
 

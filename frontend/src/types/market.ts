@@ -1,3 +1,6 @@
+export type AvgVolumePeriod = '1W' | '1M' | '45D' | '3M' | '6M';
+export type PriceChangePeriod = '1D' | '1W' | '1M' | '3M' | '6M';
+
 export interface MarketTick {
   symbol: string;
   ticker: string;
@@ -15,6 +18,8 @@ export interface MarketTick {
   low_price: number;
   timestamp: number;
   is_volume_spike: boolean;
+  avg_volumes?: Partial<Record<AvgVolumePeriod, number>>;
+  price_changes?: Partial<Record<PriceChangePeriod, { change: number; change_percent: number }>>;
 }
 
 export interface MarketSummary {
@@ -46,6 +51,8 @@ export interface Universe {
 
 export interface FilterState {
   universeId: string;
+  avgVolumePeriod: AvgVolumePeriod; // '1W' | '1M' | '45D' (default) | '3M' | '6M'
+  priceChangePeriod: PriceChangePeriod; // '1D' (default) | '1W' | '1M' | '3M' | '6M'
   volume: string;       // "ALL" | "ABOVE_AVERAGE" | "BELOW_AVERAGE" | "HIGH_VOLUME"
   priceChange: string;  // "ALL" | "POSITIVE" | "NEGATIVE" | "1%" | "2%" | "<-1%" | "<-2%"
   sector: string;       // "ALL" | specific sector

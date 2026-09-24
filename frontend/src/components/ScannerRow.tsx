@@ -1,16 +1,19 @@
 import React, { memo, useRef, useEffect, useState } from 'react';
-import { MarketTick, SRObservation } from '../types/market';
+import { MarketTick, SRObservation, AvgVolumePeriod, PriceChangePeriod } from '../types/market';
 import { formatPrice, formatVolume, formatRVOL } from '../utils/formatters';
+import { getEffectiveAvgVolume, getEffectiveRVOL, getEffectivePriceChange } from '../utils/periodMetrics';
 
 interface ScannerRowProps {
   index: number;
   tick: MarketTick;
   srNote?: SRObservation;
   onUpdateSR: (symbol: string, field: 'support' | 'resistance', value: string) => void;
+  avgVolumePeriod?: AvgVolumePeriod;
+  priceChangePeriod?: PriceChangePeriod;
 }
 
 export const ScannerRow: React.FC<ScannerRowProps> = memo(
-  ({ index, tick, srNote, onUpdateSR }) => {
+  ({ index, tick, srNote, onUpdateSR, avgVolumePeriod = '45D', priceChangePeriod = '1D' }) => {
     const prevLtpRef = useRef<number>(tick.ltp);
     const [flashClass, setFlashClass] = useState<string>('');
 
@@ -29,8 +32,12 @@ export const ScannerRow: React.FC<ScannerRowProps> = memo(
       prevLtpRef.current = tick.ltp;
     }, [tick.ltp]);
 
-    const isGainer = tick.change > 0;
-    const isLoser = tick.change < 0;
+    const effAvgVol = getEffectiveAvgVolume(tick, avgVolumePeriod);
+    const effRvol = getEffectiveRVOL(tick, avgVolumePeriod);
+    const effChange = getEffectivePriceChange(tick, priceChangePeriod);
+
+    const isGainer = effChange.change_percent > 0;
+    const isLoser = effChange.change_percent < 0;
     const changeSign = isGainer ? '+' : '';
 
     return (
@@ -54,7 +61,7 @@ export const ScannerRow: React.FC<ScannerRowProps> = memo(
 
         {/* 3. Avg Volume */}
         <td className="py-2.5 px-3 text-right text-slate-400 whitespace-nowrap">
-          {formatVolume(tick.avg_volume)}
+          {formatVolume(effAvgVol)}
         </td>
 
         {/* 4. Today's Volume */}
@@ -64,17 +71,17 @@ export const ScannerRow: React.FC<ScannerRowProps> = memo(
 
         {/* 5. Rel. Vol. (RVOL) with visual emphasis */}
         <td className="py-2.5 px-3 text-right whitespace-nowrap">
-          {tick.relative_volume >= 2.0 ? (
+          {effRvol >= 2.0 ? (
             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-amber-950/80 border border-amber-500 text-amber-300 shadow-[0_0_8px_rgba(245,158,11,0.3)] animate-pulse">
-              ⚡ {formatRVOL(tick.relative_volume)}
+              ⚡ {formatRVOL(effRvol)}
             </span>
-          ) : tick.relative_volume >= 1.5 ? (
+          ) : effRvol >= 1.5 ? (
             <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[11px] font-semibold bg-amber-950/40 text-amber-400 border border-amber-700/50">
-              {formatRVOL(tick.relative_volume)}
+              {formatRVOL(effRvol)}
             </span>
           ) : (
             <span className="text-slate-400">
-              {formatRVOL(tick.relative_volume)}
+              {formatRVOL(effRvol)}
             </span>
           )}
         </td>
@@ -88,10 +95,10 @@ export const ScannerRow: React.FC<ScannerRowProps> = memo(
         <td className="py-2.5 px-3 text-right whitespace-nowrap font-medium">
           <div className="flex flex-col items-end">
             <span className={isGainer ? 'text-emerald-400' : isLoser ? 'text-red-400' : 'text-slate-400'}>
-              {changeSign}₹{Math.abs(tick.change).toFixed(2)}
+              {changeSign}₹{Math.abs(effChange.change).toFixed(2)}
             </span>
             <span className={`text-[11px] ${isGainer ? 'text-emerald-400 font-bold' : isLoser ? 'text-red-400 font-bold' : 'text-slate-400'}`}>
-              {changeSign}{tick.change_percent.toFixed(2)}%
+              {changeSign}{effChange.change_percent.toFixed(2)}%
             </span>
           </div>
         </td>
@@ -130,6 +137,8 @@ export const ScannerRow: React.FC<ScannerRowProps> = memo(
   (prev, next) => {
     return (
       prev.index === next.index &&
+      prev.avgVolumePeriod === next.avgVolumePeriod &&
+      prev.priceChangePeriod === next.priceChangePeriod &&
       prev.tick.ltp === next.tick.ltp &&
       prev.tick.change === next.tick.change &&
       prev.tick.today_volume === next.tick.today_volume &&

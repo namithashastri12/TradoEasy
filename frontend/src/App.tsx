@@ -13,9 +13,12 @@ import { useMarketWebSocket } from './hooks/useMarketWebSocket';
 import { useSRObservations, useFilterPersistence } from './hooks/useLocalStorage';
 import { Universe, FilterState } from './types/market';
 import { FALLBACK_UNIVERSES, FALLBACK_SECTORS } from './utils/demoDataFallback';
+import { getEffectiveAvgVolume, getEffectiveRVOL, getEffectivePriceChange } from './utils/periodMetrics';
 
 const DEFAULT_FILTER: FilterState = {
   universeId: 'nifty_500',
+  avgVolumePeriod: '45D',
+  priceChangePeriod: '1D',
   volume: 'ALL',
   priceChange: 'ALL',
   sector: 'ALL',
@@ -92,6 +95,10 @@ export function App() {
     const search = filters.searchQuery.trim().toLowerCase();
 
     return ticksList.filter((tick) => {
+      const effAvgVol = getEffectiveAvgVolume(tick, filters.avgVolumePeriod || '45D');
+      const effRvol = getEffectiveRVOL(tick, filters.avgVolumePeriod || '45D');
+      const effPriceChange = getEffectivePriceChange(tick, filters.priceChangePeriod || '1D');
+
       // 1. Search filter (matches ticker, symbol, or company name)
       if (search) {
         const matchTicker = tick.ticker.toLowerCase().includes(search);
@@ -105,29 +112,29 @@ export function App() {
         if (tick.sector.toLowerCase() !== filters.sector.toLowerCase()) return false;
       }
 
-      // 3. Relative Volume filter
+      // 3. Relative Volume filter (uses selected avg volume period)
       if (filters.relativeVolume !== 'ALL') {
-        if (filters.relativeVolume === '1X' && tick.relative_volume < 1.0) return false;
-        if (filters.relativeVolume === '1.5X' && tick.relative_volume < 1.5) return false;
-        if (filters.relativeVolume === '2X' && tick.relative_volume < 2.0) return false;
-        if (filters.relativeVolume === '3X' && tick.relative_volume < 3.0) return false;
+        if (filters.relativeVolume === '1X' && effRvol < 1.0) return false;
+        if (filters.relativeVolume === '1.5X' && effRvol < 1.5) return false;
+        if (filters.relativeVolume === '2X' && effRvol < 2.0) return false;
+        if (filters.relativeVolume === '3X' && effRvol < 3.0) return false;
       }
 
-      // 4. Volume filter
+      // 4. Volume filter (uses selected avg volume period)
       if (filters.volume !== 'ALL') {
-        if (filters.volume === 'ABOVE_AVERAGE' && tick.today_volume <= tick.avg_volume) return false;
-        if (filters.volume === 'BELOW_AVERAGE' && tick.today_volume >= tick.avg_volume) return false;
-        if (filters.volume === 'HIGH_VOLUME' && tick.today_volume < (tick.avg_volume * 1.5)) return false;
+        if (filters.volume === 'ABOVE_AVERAGE' && tick.today_volume <= effAvgVol) return false;
+        if (filters.volume === 'BELOW_AVERAGE' && tick.today_volume >= effAvgVol) return false;
+        if (filters.volume === 'HIGH_VOLUME' && tick.today_volume < (effAvgVol * 1.5)) return false;
       }
 
-      // 5. Price change filter
+      // 5. Price change filter (uses selected % change period)
       if (filters.priceChange !== 'ALL') {
-        if (filters.priceChange === 'POSITIVE' && tick.change <= 0) return false;
-        if (filters.priceChange === 'NEGATIVE' && tick.change >= 0) return false;
-        if (filters.priceChange === '1%' && tick.change_percent < 1.0) return false;
-        if (filters.priceChange === '2%' && tick.change_percent < 2.0) return false;
-        if (filters.priceChange === '<-1%' && tick.change_percent > -1.0) return false;
-        if (filters.priceChange === '<-2%' && tick.change_percent > -2.0) return false;
+        if (filters.priceChange === 'POSITIVE' && effPriceChange.change <= 0) return false;
+        if (filters.priceChange === 'NEGATIVE' && effPriceChange.change >= 0) return false;
+        if (filters.priceChange === '1%' && effPriceChange.change_percent < 1.0) return false;
+        if (filters.priceChange === '2%' && effPriceChange.change_percent < 2.0) return false;
+        if (filters.priceChange === '<-1%' && effPriceChange.change_percent > -1.0) return false;
+        if (filters.priceChange === '<-2%' && effPriceChange.change_percent > -2.0) return false;
       }
 
       return true;
@@ -181,13 +188,17 @@ export function App() {
           ticks={filteredTicks}
           observations={observations}
           onUpdateSR={updateSR}
+          avgVolumePeriod={filters.avgVolumePeriod || '45D'}
+          priceChangePeriod={filters.priceChangePeriod || '1D'}
+          onAvgVolumePeriodChange={(p) => setFilters((prev) => ({ ...prev, avgVolumePeriod: p }))}
+          onPriceChangePeriodChange={(p) => setFilters((prev) => ({ ...prev, priceChangePeriod: p }))}
         />
 
       </main>
 
       {/* Footer Info */}
       <footer className="border-t border-[#1E263C] bg-[#0E131F] py-2.5 px-4 text-center text-slate-500 text-[11px] font-mono">
-        tradoeasy · Real-Time Market Intelligence Terminal · Indian Equities (NSE 200) · Auto-refreshes state every 1 min without resetting filters.
+        tradoeasy · Real-Time Market Intelligence Terminal · Indian Equities (NSE 200) · Auto-refreshes state every 20s without resetting filters.
       </footer>
 
       {/* Modals & Toasts */}

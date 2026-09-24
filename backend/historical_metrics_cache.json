@@ -1,0 +1,6202 @@
+{
+  "NSE:INFY-EQ": {
+    "symbol": "NSE:INFY-EQ",
+    "ticker": "INFY",
+    "avg_volume": 8433014,
+    "avg_volumes": {
+      "1W": 9623803,
+      "1M": 8826552,
+      "45D": 8433014,
+      "3M": 11373298,
+      "6M": 13117872
+    },
+    "price_changes": {
+      "1W": {
+        "change": -45.3,
+        "change_percent": -4.28
+      },
+      "1M": {
+        "change": -130.7,
+        "change_percent": -11.42
+      },
+      "3M": {
+        "change": -27.9,
+        "change_percent": -2.68
+      },
+      "6M": {
+        "change": -242.6,
+        "change_percent": -19.32
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TCS-EQ": {
+    "symbol": "NSE:TCS-EQ",
+    "ticker": "TCS",
+    "avg_volume": 2854080,
+    "avg_volumes": {
+      "1W": 3674436,
+      "1M": 2977256,
+      "45D": 2854080,
+      "3M": 3760238,
+      "6M": 4341779
+    },
+    "price_changes": {
+      "1W": {
+        "change": -101.0,
+        "change_percent": -4.61
+      },
+      "1M": {
+        "change": -207.2,
+        "change_percent": -9.02
+      },
+      "3M": {
+        "change": -5.7,
+        "change_percent": -0.27
+      },
+      "6M": {
+        "change": -301.6,
+        "change_percent": -12.62
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HCLTECH-EQ": {
+    "symbol": "NSE:HCLTECH-EQ",
+    "ticker": "HCLTECH",
+    "avg_volume": 2154149,
+    "avg_volumes": {
+      "1W": 2486004,
+      "1M": 2471955,
+      "45D": 2154149,
+      "3M": 3206602,
+      "6M": 3876004
+    },
+    "price_changes": {
+      "1W": {
+        "change": -4.3,
+        "change_percent": -0.34
+      },
+      "1M": {
+        "change": -61.8,
+        "change_percent": -4.7
+      },
+      "3M": {
+        "change": 153.3,
+        "change_percent": 13.93
+      },
+      "6M": {
+        "change": -79.7,
+        "change_percent": -5.98
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:WIPRO-EQ": {
+    "symbol": "NSE:WIPRO-EQ",
+    "ticker": "WIPRO",
+    "avg_volume": 9407361,
+    "avg_volumes": {
+      "1W": 13520380,
+      "1M": 10671542,
+      "45D": 9407361,
+      "3M": 13766522,
+      "6M": 20664350
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.68,
+        "change_percent": -1.01
+      },
+      "1M": {
+        "change": -15.37,
+        "change_percent": -8.53
+      },
+      "3M": {
+        "change": -10.28,
+        "change_percent": -5.87
+      },
+      "6M": {
+        "change": -26.18,
+        "change_percent": -13.71
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TECHM-EQ": {
+    "symbol": "NSE:TECHM-EQ",
+    "ticker": "TECHM",
+    "avg_volume": 2004274,
+    "avg_volumes": {
+      "1W": 1735910,
+      "1M": 1867173,
+      "45D": 2004274,
+      "3M": 2466629,
+      "6M": 2557403
+    },
+    "price_changes": {
+      "1W": {
+        "change": -6.7,
+        "change_percent": -0.43
+      },
+      "1M": {
+        "change": -45.6,
+        "change_percent": -2.85
+      },
+      "3M": {
+        "change": 117.2,
+        "change_percent": 8.16
+      },
+      "6M": {
+        "change": 169.5,
+        "change_percent": 12.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:LTIM-EQ": {
+    "symbol": "NSE:LTIM-EQ",
+    "ticker": "LTIM",
+    "avg_volume": 650000,
+    "avg_volumes": {
+      "1W": 624000,
+      "1M": 637000,
+      "45D": 650000,
+      "3M": 669500,
+      "6M": 689000
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "1M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "3M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "6M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PERSISTENT-EQ": {
+    "symbol": "NSE:PERSISTENT-EQ",
+    "ticker": "PERSISTENT",
+    "avg_volume": 459812,
+    "avg_volumes": {
+      "1W": 364008,
+      "1M": 478315,
+      "45D": 459812,
+      "3M": 708320,
+      "6M": 706902
+    },
+    "price_changes": {
+      "1W": {
+        "change": -131.0,
+        "change_percent": -2.39
+      },
+      "1M": {
+        "change": -313.0,
+        "change_percent": -5.53
+      },
+      "3M": {
+        "change": 500.5,
+        "change_percent": 10.34
+      },
+      "6M": {
+        "change": 625.3,
+        "change_percent": 13.26
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:COFORGE-EQ": {
+    "symbol": "NSE:COFORGE-EQ",
+    "ticker": "COFORGE",
+    "avg_volume": 2391632,
+    "avg_volumes": {
+      "1W": 1684298,
+      "1M": 2603571,
+      "45D": 2391632,
+      "3M": 2983855,
+      "6M": 3421860
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.5,
+        "change_percent": -0.08
+      },
+      "1M": {
+        "change": -101.3,
+        "change_percent": -5.35
+      },
+      "3M": {
+        "change": 298.6,
+        "change_percent": 20.0
+      },
+      "6M": {
+        "change": 702.2,
+        "change_percent": 64.46
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MPHASIS-EQ": {
+    "symbol": "NSE:MPHASIS-EQ",
+    "ticker": "MPHASIS",
+    "avg_volume": 416207,
+    "avg_volumes": {
+      "1W": 368703,
+      "1M": 435359,
+      "45D": 416207,
+      "3M": 539214,
+      "6M": 576478
+    },
+    "price_changes": {
+      "1W": {
+        "change": -49.7,
+        "change_percent": -2.14
+      },
+      "1M": {
+        "change": -161.6,
+        "change_percent": -6.65
+      },
+      "3M": {
+        "change": 6.9,
+        "change_percent": 0.3
+      },
+      "6M": {
+        "change": 179.2,
+        "change_percent": 8.57
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:KPITTECH-EQ": {
+    "symbol": "NSE:KPITTECH-EQ",
+    "ticker": "KPITTECH",
+    "avg_volume": 1498729,
+    "avg_volumes": {
+      "1W": 1901193,
+      "1M": 1688032,
+      "45D": 1498729,
+      "3M": 3580473,
+      "6M": 2778336
+    },
+    "price_changes": {
+      "1W": {
+        "change": -37.9,
+        "change_percent": -6.78
+      },
+      "1M": {
+        "change": -70.6,
+        "change_percent": -11.93
+      },
+      "3M": {
+        "change": -221.2,
+        "change_percent": -29.79
+      },
+      "6M": {
+        "change": -139.55,
+        "change_percent": -21.11
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATAELXSI-EQ": {
+    "symbol": "NSE:TATAELXSI-EQ",
+    "ticker": "TATAELXSI",
+    "avg_volume": 194507,
+    "avg_volumes": {
+      "1W": 288228,
+      "1M": 207125,
+      "45D": 194507,
+      "3M": 348578,
+      "6M": 330056
+    },
+    "price_changes": {
+      "1W": {
+        "change": -175.5,
+        "change_percent": -5.19
+      },
+      "1M": {
+        "change": -459.6,
+        "change_percent": -12.54
+      },
+      "3M": {
+        "change": -822.0,
+        "change_percent": -20.41
+      },
+      "6M": {
+        "change": -1031.4,
+        "change_percent": -24.34
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:OFSS-EQ": {
+    "symbol": "NSE:OFSS-EQ",
+    "ticker": "OFSS",
+    "avg_volume": 219626,
+    "avg_volumes": {
+      "1W": 253438,
+      "1M": 239118,
+      "45D": 219626,
+      "3M": 318953,
+      "6M": 318978
+    },
+    "price_changes": {
+      "1W": {
+        "change": -666.0,
+        "change_percent": -5.73
+      },
+      "1M": {
+        "change": -775.0,
+        "change_percent": -6.61
+      },
+      "3M": {
+        "change": -20.5,
+        "change_percent": -0.19
+      },
+      "6M": {
+        "change": 4374.0,
+        "change_percent": 66.47
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CYIENT-EQ": {
+    "symbol": "NSE:CYIENT-EQ",
+    "ticker": "CYIENT",
+    "avg_volume": 1271980,
+    "avg_volumes": {
+      "1W": 410951,
+      "1M": 1510448,
+      "45D": 1271980,
+      "3M": 858599,
+      "6M": 676994
+    },
+    "price_changes": {
+      "1W": {
+        "change": -0.4,
+        "change_percent": -0.04
+      },
+      "1M": {
+        "change": 84.55,
+        "change_percent": 8.64
+      },
+      "3M": {
+        "change": 177.35,
+        "change_percent": 20.01
+      },
+      "6M": {
+        "change": 238.25,
+        "change_percent": 28.87
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ROUTE-EQ": {
+    "symbol": "NSE:ROUTE-EQ",
+    "ticker": "ROUTE",
+    "avg_volume": 236182,
+    "avg_volumes": {
+      "1W": 541555,
+      "1M": 273664,
+      "45D": 236182,
+      "3M": 834659,
+      "6M": 538554
+    },
+    "price_changes": {
+      "1W": {
+        "change": -25.45,
+        "change_percent": -5.17
+      },
+      "1M": {
+        "change": -40.45,
+        "change_percent": -7.97
+      },
+      "3M": {
+        "change": -57.85,
+        "change_percent": -11.02
+      },
+      "6M": {
+        "change": -0.85,
+        "change_percent": -0.18
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MASTEK-EQ": {
+    "symbol": "NSE:MASTEK-EQ",
+    "ticker": "MASTEK",
+    "avg_volume": 319635,
+    "avg_volumes": {
+      "1W": 79056,
+      "1M": 436111,
+      "45D": 319635,
+      "3M": 209949,
+      "6M": 141266
+    },
+    "price_changes": {
+      "1W": {
+        "change": -73.1,
+        "change_percent": -4.48
+      },
+      "1M": {
+        "change": -109.5,
+        "change_percent": -6.57
+      },
+      "3M": {
+        "change": -18.2,
+        "change_percent": -1.16
+      },
+      "6M": {
+        "change": 107.5,
+        "change_percent": 7.42
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BSOFT-EQ": {
+    "symbol": "NSE:BSOFT-EQ",
+    "ticker": "BSOFT",
+    "avg_volume": 1387413,
+    "avg_volumes": {
+      "1W": 837185,
+      "1M": 1610375,
+      "45D": 1387413,
+      "3M": 1954845,
+      "6M": 1629932
+    },
+    "price_changes": {
+      "1W": {
+        "change": -5.8,
+        "change_percent": -2.04
+      },
+      "1M": {
+        "change": -13.0,
+        "change_percent": -4.47
+      },
+      "3M": {
+        "change": -22.7,
+        "change_percent": -7.55
+      },
+      "6M": {
+        "change": -80.05,
+        "change_percent": -22.36
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SONATSOFTW-EQ": {
+    "symbol": "NSE:SONATSOFTW-EQ",
+    "ticker": "SONATSOFTW",
+    "avg_volume": 1160766,
+    "avg_volumes": {
+      "1W": 697034,
+      "1M": 1312324,
+      "45D": 1160766,
+      "3M": 2432153,
+      "6M": 2515040
+    },
+    "price_changes": {
+      "1W": {
+        "change": -4.45,
+        "change_percent": -1.58
+      },
+      "1M": {
+        "change": -21.25,
+        "change_percent": -7.12
+      },
+      "3M": {
+        "change": -7.05,
+        "change_percent": -2.48
+      },
+      "6M": {
+        "change": 40.45,
+        "change_percent": 17.09
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ZENSARTECH-EQ": {
+    "symbol": "NSE:ZENSARTECH-EQ",
+    "ticker": "ZENSARTECH",
+    "avg_volume": 2423371,
+    "avg_volumes": {
+      "1W": 1211869,
+      "1M": 3329689,
+      "45D": 2423371,
+      "3M": 5373693,
+      "6M": 2993646
+    },
+    "price_changes": {
+      "1W": {
+        "change": -18.3,
+        "change_percent": -4.14
+      },
+      "1M": {
+        "change": -48.55,
+        "change_percent": -10.28
+      },
+      "3M": {
+        "change": -21.85,
+        "change_percent": -4.91
+      },
+      "6M": {
+        "change": -141.35,
+        "change_percent": -25.02
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HDFCBANK-EQ": {
+    "symbol": "NSE:HDFCBANK-EQ",
+    "ticker": "HDFCBANK",
+    "avg_volume": 28192170,
+    "avg_volumes": {
+      "1W": 31021519,
+      "1M": 31723374,
+      "45D": 28192170,
+      "3M": 30872457,
+      "6M": 37159337
+    },
+    "price_changes": {
+      "1W": {
+        "change": 18.05,
+        "change_percent": 2.53
+      },
+      "1M": {
+        "change": 3.55,
+        "change_percent": 0.49
+      },
+      "3M": {
+        "change": -65.25,
+        "change_percent": -8.19
+      },
+      "6M": {
+        "change": -49.4,
+        "change_percent": -6.33
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ICICIBANK-EQ": {
+    "symbol": "NSE:ICICIBANK-EQ",
+    "ticker": "ICICIBANK",
+    "avg_volume": 8606334,
+    "avg_volumes": {
+      "1W": 6454818,
+      "1M": 8955435,
+      "45D": 8606334,
+      "3M": 10834568,
+      "6M": 14600256
+    },
+    "price_changes": {
+      "1W": {
+        "change": -9.7,
+        "change_percent": -0.72
+      },
+      "1M": {
+        "change": -84.8,
+        "change_percent": -5.96
+      },
+      "3M": {
+        "change": -49.6,
+        "change_percent": -3.57
+      },
+      "6M": {
+        "change": 92.5,
+        "change_percent": 7.43
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SBIN-EQ": {
+    "symbol": "NSE:SBIN-EQ",
+    "ticker": "SBIN",
+    "avg_volume": 7584694,
+    "avg_volumes": {
+      "1W": 5712478,
+      "1M": 7196689,
+      "45D": 7584694,
+      "3M": 9499221,
+      "6M": 13387652
+    },
+    "price_changes": {
+      "1W": {
+        "change": -6.2,
+        "change_percent": -0.63
+      },
+      "1M": {
+        "change": -65.5,
+        "change_percent": -6.25
+      },
+      "3M": {
+        "change": -62.9,
+        "change_percent": -6.02
+      },
+      "6M": {
+        "change": -75.5,
+        "change_percent": -7.14
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:KOTAKBANK-EQ": {
+    "symbol": "NSE:KOTAKBANK-EQ",
+    "ticker": "KOTAKBANK",
+    "avg_volume": 11352383,
+    "avg_volumes": {
+      "1W": 9566087,
+      "1M": 12417430,
+      "45D": 11352383,
+      "3M": 13994705,
+      "6M": 16332046
+    },
+    "price_changes": {
+      "1W": {
+        "change": -8.15,
+        "change_percent": -1.96
+      },
+      "1M": {
+        "change": 6.75,
+        "change_percent": 1.68
+      },
+      "3M": {
+        "change": -0.65,
+        "change_percent": -0.16
+      },
+      "6M": {
+        "change": 41.6,
+        "change_percent": 11.34
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:AXISBANK-EQ": {
+    "symbol": "NSE:AXISBANK-EQ",
+    "ticker": "AXISBANK",
+    "avg_volume": 4612753,
+    "avg_volumes": {
+      "1W": 3752782,
+      "1M": 4441115,
+      "45D": 4612753,
+      "3M": 5955836,
+      "6M": 6729110
+    },
+    "price_changes": {
+      "1W": {
+        "change": -55.7,
+        "change_percent": -4.49
+      },
+      "1M": {
+        "change": -50.7,
+        "change_percent": -4.11
+      },
+      "3M": {
+        "change": -192.9,
+        "change_percent": -14.01
+      },
+      "6M": {
+        "change": -19.6,
+        "change_percent": -1.63
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:INDUSINDBK-EQ": {
+    "symbol": "NSE:INDUSINDBK-EQ",
+    "ticker": "INDUSINDBK",
+    "avg_volume": 1531161,
+    "avg_volumes": {
+      "1W": 2882144,
+      "1M": 1833861,
+      "45D": 1531161,
+      "3M": 1949077,
+      "6M": 2346574
+    },
+    "price_changes": {
+      "1W": {
+        "change": -35.7,
+        "change_percent": -3.73
+      },
+      "1M": {
+        "change": -92.5,
+        "change_percent": -9.11
+      },
+      "3M": {
+        "change": 3.55,
+        "change_percent": 0.39
+      },
+      "6M": {
+        "change": 103.9,
+        "change_percent": 12.69
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BANKBARODA-EQ": {
+    "symbol": "NSE:BANKBARODA-EQ",
+    "ticker": "BANKBARODA",
+    "avg_volume": 7503783,
+    "avg_volumes": {
+      "1W": 5105917,
+      "1M": 7320410,
+      "45D": 7503783,
+      "3M": 9648014,
+      "6M": 11147460
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.22,
+        "change_percent": 1.39
+      },
+      "1M": {
+        "change": -5.48,
+        "change_percent": -2.27
+      },
+      "3M": {
+        "change": -43.63,
+        "change_percent": -15.63
+      },
+      "6M": {
+        "change": -44.43,
+        "change_percent": -15.87
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PNB-EQ": {
+    "symbol": "NSE:PNB-EQ",
+    "ticker": "PNB",
+    "avg_volume": 13539987,
+    "avg_volumes": {
+      "1W": 12483797,
+      "1M": 12909283,
+      "45D": 13539987,
+      "3M": 15813295,
+      "6M": 18636329
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.24,
+        "change_percent": 1.06
+      },
+      "1M": {
+        "change": 1.78,
+        "change_percent": 1.54
+      },
+      "3M": {
+        "change": 9.84,
+        "change_percent": 9.12
+      },
+      "6M": {
+        "change": 6.18,
+        "change_percent": 5.54
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CANBK-EQ": {
+    "symbol": "NSE:CANBK-EQ",
+    "ticker": "CANBK",
+    "avg_volume": 12044884,
+    "avg_volumes": {
+      "1W": 10084525,
+      "1M": 12239469,
+      "45D": 12044884,
+      "3M": 20139385,
+      "6M": 23345551
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.96,
+        "change_percent": 0.77
+      },
+      "1M": {
+        "change": -3.95,
+        "change_percent": -3.07
+      },
+      "3M": {
+        "change": -4.09,
+        "change_percent": -3.17
+      },
+      "6M": {
+        "change": -11.58,
+        "change_percent": -8.49
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:FEDERALBNK-EQ": {
+    "symbol": "NSE:FEDERALBNK-EQ",
+    "ticker": "FEDERALBNK",
+    "avg_volume": 5000328,
+    "avg_volumes": {
+      "1W": 6955336,
+      "1M": 5693583,
+      "45D": 5000328,
+      "3M": 6060038,
+      "6M": 9226519
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.55,
+        "change_percent": -0.47
+      },
+      "1M": {
+        "change": -15.75,
+        "change_percent": -4.54
+      },
+      "3M": {
+        "change": 7.15,
+        "change_percent": 2.21
+      },
+      "6M": {
+        "change": 64.1,
+        "change_percent": 24.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IDFCFIRSTB-EQ": {
+    "symbol": "NSE:IDFCFIRSTB-EQ",
+    "ticker": "IDFCFIRSTB",
+    "avg_volume": 16560324,
+    "avg_volumes": {
+      "1W": 27258969,
+      "1M": 19315707,
+      "45D": 16560324,
+      "3M": 20090672,
+      "6M": 23781656
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.84,
+        "change_percent": -2.13
+      },
+      "1M": {
+        "change": -0.51,
+        "change_percent": -0.6
+      },
+      "3M": {
+        "change": 5.27,
+        "change_percent": 6.65
+      },
+      "6M": {
+        "change": 21.54,
+        "change_percent": 34.22
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RBLBANK-EQ": {
+    "symbol": "NSE:RBLBANK-EQ",
+    "ticker": "RBLBANK",
+    "avg_volume": 3192749,
+    "avg_volumes": {
+      "1W": 3855933,
+      "1M": 3833670,
+      "45D": 3192749,
+      "3M": 4673274,
+      "6M": 5218164
+    },
+    "price_changes": {
+      "1W": {
+        "change": 10.2,
+        "change_percent": 2.52
+      },
+      "1M": {
+        "change": 30.35,
+        "change_percent": 7.9
+      },
+      "3M": {
+        "change": 43.3,
+        "change_percent": 11.67
+      },
+      "6M": {
+        "change": 117.1,
+        "change_percent": 39.39
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BANKINDIA-EQ": {
+    "symbol": "NSE:BANKINDIA-EQ",
+    "ticker": "BANKINDIA",
+    "avg_volume": 5292009,
+    "avg_volumes": {
+      "1W": 4687705,
+      "1M": 5271335,
+      "45D": 5292009,
+      "3M": 7355990,
+      "6M": 9272574
+    },
+    "price_changes": {
+      "1W": {
+        "change": -0.78,
+        "change_percent": -0.56
+      },
+      "1M": {
+        "change": -6.6,
+        "change_percent": -4.58
+      },
+      "3M": {
+        "change": -7.33,
+        "change_percent": -5.06
+      },
+      "6M": {
+        "change": -13.1,
+        "change_percent": -8.7
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:UNIONBANK-EQ": {
+    "symbol": "NSE:UNIONBANK-EQ",
+    "ticker": "UNIONBANK",
+    "avg_volume": 8919461,
+    "avg_volumes": {
+      "1W": 5353954,
+      "1M": 7862819,
+      "45D": 8919461,
+      "3M": 13088777,
+      "6M": 14946453
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.51,
+        "change_percent": 0.29
+      },
+      "1M": {
+        "change": -8.38,
+        "change_percent": -4.48
+      },
+      "3M": {
+        "change": 3.89,
+        "change_percent": 2.23
+      },
+      "6M": {
+        "change": 0.97,
+        "change_percent": 0.55
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:AUBANK-EQ": {
+    "symbol": "NSE:AUBANK-EQ",
+    "ticker": "AUBANK",
+    "avg_volume": 1319748,
+    "avg_volumes": {
+      "1W": 959761,
+      "1M": 1190654,
+      "45D": 1319748,
+      "3M": 1662220,
+      "6M": 1966023
+    },
+    "price_changes": {
+      "1W": {
+        "change": -27.6,
+        "change_percent": -2.66
+      },
+      "1M": {
+        "change": -116.9,
+        "change_percent": -10.36
+      },
+      "3M": {
+        "change": -22.15,
+        "change_percent": -2.14
+      },
+      "6M": {
+        "change": 110.2,
+        "change_percent": 12.22
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BANDHANBNK-EQ": {
+    "symbol": "NSE:BANDHANBNK-EQ",
+    "ticker": "BANDHANBNK",
+    "avg_volume": 9658766,
+    "avg_volumes": {
+      "1W": 20781129,
+      "1M": 11473685,
+      "45D": 9658766,
+      "3M": 13660133,
+      "6M": 12971760
+    },
+    "price_changes": {
+      "1W": {
+        "change": 14.37,
+        "change_percent": 8.38
+      },
+      "1M": {
+        "change": 12.37,
+        "change_percent": 7.13
+      },
+      "3M": {
+        "change": -15.89,
+        "change_percent": -7.88
+      },
+      "6M": {
+        "change": 27.43,
+        "change_percent": 17.31
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BAJFINANCE-EQ": {
+    "symbol": "NSE:BAJFINANCE-EQ",
+    "ticker": "BAJFINANCE",
+    "avg_volume": 5013468,
+    "avg_volumes": {
+      "1W": 6077806,
+      "1M": 5358767,
+      "45D": 5013468,
+      "3M": 7642547,
+      "6M": 8837572
+    },
+    "price_changes": {
+      "1W": {
+        "change": -24.1,
+        "change_percent": -2.37
+      },
+      "1M": {
+        "change": -96.5,
+        "change_percent": -8.87
+      },
+      "3M": {
+        "change": 10.5,
+        "change_percent": 1.07
+      },
+      "6M": {
+        "change": 160.35,
+        "change_percent": 19.31
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BAJAJFINSV-EQ": {
+    "symbol": "NSE:BAJAJFINSV-EQ",
+    "ticker": "BAJAJFINSV",
+    "avg_volume": 631827,
+    "avg_volumes": {
+      "1W": 520360,
+      "1M": 573292,
+      "45D": 631827,
+      "3M": 1080792,
+      "6M": 1164332
+    },
+    "price_changes": {
+      "1W": {
+        "change": -83.6,
+        "change_percent": -4.5
+      },
+      "1M": {
+        "change": -228.4,
+        "change_percent": -11.4
+      },
+      "3M": {
+        "change": 11.0,
+        "change_percent": 0.62
+      },
+      "6M": {
+        "change": 65.3,
+        "change_percent": 3.82
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HDFCLIFE-EQ": {
+    "symbol": "NSE:HDFCLIFE-EQ",
+    "ticker": "HDFCLIFE",
+    "avg_volume": 3249593,
+    "avg_volumes": {
+      "1W": 4322432,
+      "1M": 3710276,
+      "45D": 3249593,
+      "3M": 3629727,
+      "6M": 4145924
+    },
+    "price_changes": {
+      "1W": {
+        "change": -24.0,
+        "change_percent": -4.31
+      },
+      "1M": {
+        "change": -13.7,
+        "change_percent": -2.51
+      },
+      "3M": {
+        "change": -52.45,
+        "change_percent": -8.96
+      },
+      "6M": {
+        "change": -90.65,
+        "change_percent": -14.54
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SBILIFE-EQ": {
+    "symbol": "NSE:SBILIFE-EQ",
+    "ticker": "SBILIFE",
+    "avg_volume": 879620,
+    "avg_volumes": {
+      "1W": 848054,
+      "1M": 914731,
+      "45D": 879620,
+      "3M": 937806,
+      "6M": 1121724
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.6,
+        "change_percent": 0.03
+      },
+      "1M": {
+        "change": 12.5,
+        "change_percent": 0.71
+      },
+      "3M": {
+        "change": 22.6,
+        "change_percent": 1.3
+      },
+      "6M": {
+        "change": -129.4,
+        "change_percent": -6.82
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CHOLAFIN-EQ": {
+    "symbol": "NSE:CHOLAFIN-EQ",
+    "ticker": "CHOLAFIN",
+    "avg_volume": 1074840,
+    "avg_volumes": {
+      "1W": 1273828,
+      "1M": 1218492,
+      "45D": 1074840,
+      "3M": 1413682,
+      "6M": 1710143
+    },
+    "price_changes": {
+      "1W": {
+        "change": -73.5,
+        "change_percent": -4.17
+      },
+      "1M": {
+        "change": -182.0,
+        "change_percent": -9.72
+      },
+      "3M": {
+        "change": -108.2,
+        "change_percent": -6.01
+      },
+      "6M": {
+        "change": 250.5,
+        "change_percent": 17.39
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MUTHOOTFIN-EQ": {
+    "symbol": "NSE:MUTHOOTFIN-EQ",
+    "ticker": "MUTHOOTFIN",
+    "avg_volume": 850920,
+    "avg_volumes": {
+      "1W": 622748,
+      "1M": 674939,
+      "45D": 850920,
+      "3M": 1076214,
+      "6M": 981530
+    },
+    "price_changes": {
+      "1W": {
+        "change": 68.2,
+        "change_percent": 2.46
+      },
+      "1M": {
+        "change": -362.6,
+        "change_percent": -11.33
+      },
+      "3M": {
+        "change": -187.2,
+        "change_percent": -6.19
+      },
+      "6M": {
+        "change": -477.5,
+        "change_percent": -14.4
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SHRIRAMFIN-EQ": {
+    "symbol": "NSE:SHRIRAMFIN-EQ",
+    "ticker": "SHRIRAMFIN",
+    "avg_volume": 3727843,
+    "avg_volumes": {
+      "1W": 3607116,
+      "1M": 4111455,
+      "45D": 3727843,
+      "3M": 4845325,
+      "6M": 6079359
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.2,
+        "change_percent": 0.22
+      },
+      "1M": {
+        "change": -141.3,
+        "change_percent": -12.41
+      },
+      "3M": {
+        "change": -34.6,
+        "change_percent": -3.35
+      },
+      "6M": {
+        "change": 58.6,
+        "change_percent": 6.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ICICIGI-EQ": {
+    "symbol": "NSE:ICICIGI-EQ",
+    "ticker": "ICICIGI",
+    "avg_volume": 845378,
+    "avg_volumes": {
+      "1W": 896235,
+      "1M": 981543,
+      "45D": 845378,
+      "3M": 1092657,
+      "6M": 925030
+    },
+    "price_changes": {
+      "1W": {
+        "change": 94.3,
+        "change_percent": 6.34
+      },
+      "1M": {
+        "change": -35.0,
+        "change_percent": -2.17
+      },
+      "3M": {
+        "change": -232.6,
+        "change_percent": -12.83
+      },
+      "6M": {
+        "change": -196.2,
+        "change_percent": -11.04
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SBICARD-EQ": {
+    "symbol": "NSE:SBICARD-EQ",
+    "ticker": "SBICARD",
+    "avg_volume": 2783912,
+    "avg_volumes": {
+      "1W": 1428420,
+      "1M": 3048167,
+      "45D": 2783912,
+      "3M": 2180709,
+      "6M": 1796930
+    },
+    "price_changes": {
+      "1W": {
+        "change": -11.75,
+        "change_percent": -1.84
+      },
+      "1M": {
+        "change": -25.8,
+        "change_percent": -3.96
+      },
+      "3M": {
+        "change": 0.35,
+        "change_percent": 0.06
+      },
+      "6M": {
+        "change": -63.55,
+        "change_percent": -9.23
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:LICHSGFIN-EQ": {
+    "symbol": "NSE:LICHSGFIN-EQ",
+    "ticker": "LICHSGFIN",
+    "avg_volume": 3515374,
+    "avg_volumes": {
+      "1W": 3028646,
+      "1M": 4171442,
+      "45D": 3515374,
+      "3M": 2495721,
+      "6M": 2121623
+    },
+    "price_changes": {
+      "1W": {
+        "change": 21.75,
+        "change_percent": 3.98
+      },
+      "1M": {
+        "change": 61.65,
+        "change_percent": 12.18
+      },
+      "3M": {
+        "change": 17.8,
+        "change_percent": 3.24
+      },
+      "6M": {
+        "change": 81.5,
+        "change_percent": 16.76
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PNBHOUSING-EQ": {
+    "symbol": "NSE:PNBHOUSING-EQ",
+    "ticker": "PNBHOUSING",
+    "avg_volume": 883970,
+    "avg_volumes": {
+      "1W": 1516579,
+      "1M": 939776,
+      "45D": 883970,
+      "3M": 1002504,
+      "6M": 1195443
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.8,
+        "change_percent": 0.43
+      },
+      "1M": {
+        "change": -73.7,
+        "change_percent": -6.24
+      },
+      "3M": {
+        "change": 63.5,
+        "change_percent": 6.08
+      },
+      "6M": {
+        "change": 316.4,
+        "change_percent": 39.95
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MANAPPURAM-EQ": {
+    "symbol": "NSE:MANAPPURAM-EQ",
+    "ticker": "MANAPPURAM",
+    "avg_volume": 5651521,
+    "avg_volumes": {
+      "1W": 2945208,
+      "1M": 4225776,
+      "45D": 5651521,
+      "3M": 5373107,
+      "6M": 4698083
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.05,
+        "change_percent": 0.97
+      },
+      "1M": {
+        "change": -48.35,
+        "change_percent": -13.16
+      },
+      "3M": {
+        "change": 0.6,
+        "change_percent": 0.19
+      },
+      "6M": {
+        "change": 59.85,
+        "change_percent": 23.09
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:POONAWALLA-EQ": {
+    "symbol": "NSE:POONAWALLA-EQ",
+    "ticker": "POONAWALLA",
+    "avg_volume": 1190883,
+    "avg_volumes": {
+      "1W": 2407923,
+      "1M": 1178724,
+      "45D": 1190883,
+      "3M": 1415002,
+      "6M": 1793263
+    },
+    "price_changes": {
+      "1W": {
+        "change": 33.75,
+        "change_percent": 7.8
+      },
+      "1M": {
+        "change": -9.4,
+        "change_percent": -1.97
+      },
+      "3M": {
+        "change": 26.25,
+        "change_percent": 5.96
+      },
+      "6M": {
+        "change": 72.95,
+        "change_percent": 18.53
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CREDITACC-EQ": {
+    "symbol": "NSE:CREDITACC-EQ",
+    "ticker": "CREDITACC",
+    "avg_volume": 224839,
+    "avg_volumes": {
+      "1W": 139891,
+      "1M": 233530,
+      "45D": 224839,
+      "3M": 327110,
+      "6M": 454835
+    },
+    "price_changes": {
+      "1W": {
+        "change": -47.4,
+        "change_percent": -3.46
+      },
+      "1M": {
+        "change": -92.1,
+        "change_percent": -6.51
+      },
+      "3M": {
+        "change": -138.9,
+        "change_percent": -9.5
+      },
+      "6M": {
+        "change": 166.5,
+        "change_percent": 14.39
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:M&MFIN-EQ": {
+    "symbol": "NSE:M&MFIN-EQ",
+    "ticker": "M&MFIN",
+    "avg_volume": 1896096,
+    "avg_volumes": {
+      "1W": 1654695,
+      "1M": 1806156,
+      "45D": 1896096,
+      "3M": 4221977,
+      "6M": 3730540
+    },
+    "price_changes": {
+      "1W": {
+        "change": -4.95,
+        "change_percent": -1.43
+      },
+      "1M": {
+        "change": -40.7,
+        "change_percent": -10.67
+      },
+      "3M": {
+        "change": 12.2,
+        "change_percent": 3.71
+      },
+      "6M": {
+        "change": 32.4,
+        "change_percent": 10.51
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RELIANCE-EQ": {
+    "symbol": "NSE:RELIANCE-EQ",
+    "ticker": "RELIANCE",
+    "avg_volume": 10570845,
+    "avg_volumes": {
+      "1W": 10383850,
+      "1M": 11458826,
+      "45D": 10570845,
+      "3M": 11468092,
+      "6M": 15372407
+    },
+    "price_changes": {
+      "1W": {
+        "change": -14.8,
+        "change_percent": -1.19
+      },
+      "1M": {
+        "change": -87.9,
+        "change_percent": -6.67
+      },
+      "3M": {
+        "change": -89.0,
+        "change_percent": -6.75
+      },
+      "6M": {
+        "change": -185.3,
+        "change_percent": -13.1
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NTPC-EQ": {
+    "symbol": "NSE:NTPC-EQ",
+    "ticker": "NTPC",
+    "avg_volume": 8104784,
+    "avg_volumes": {
+      "1W": 7376292,
+      "1M": 8212530,
+      "45D": 8104784,
+      "3M": 9589862,
+      "6M": 10867227
+    },
+    "price_changes": {
+      "1W": {
+        "change": -3.6,
+        "change_percent": -1.09
+      },
+      "1M": {
+        "change": -13.85,
+        "change_percent": -4.08
+      },
+      "3M": {
+        "change": -26.05,
+        "change_percent": -7.4
+      },
+      "6M": {
+        "change": -54.95,
+        "change_percent": -14.42
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:POWERGRID-EQ": {
+    "symbol": "NSE:POWERGRID-EQ",
+    "ticker": "POWERGRID",
+    "avg_volume": 8664923,
+    "avg_volumes": {
+      "1W": 8958824,
+      "1M": 8670629,
+      "45D": 8664923,
+      "3M": 8943909,
+      "6M": 11160306
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.05,
+        "change_percent": 1.16
+      },
+      "1M": {
+        "change": -4.2,
+        "change_percent": -1.55
+      },
+      "3M": {
+        "change": -17.1,
+        "change_percent": -6.02
+      },
+      "6M": {
+        "change": -30.8,
+        "change_percent": -10.35
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ONGC-EQ": {
+    "symbol": "NSE:ONGC-EQ",
+    "ticker": "ONGC",
+    "avg_volume": 11466660,
+    "avg_volumes": {
+      "1W": 9066649,
+      "1M": 10450333,
+      "45D": 11466660,
+      "3M": 12973809,
+      "6M": 15991058
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.61,
+        "change_percent": 1.55
+      },
+      "1M": {
+        "change": 2.04,
+        "change_percent": 0.87
+      },
+      "3M": {
+        "change": 2.94,
+        "change_percent": 1.26
+      },
+      "6M": {
+        "change": -29.36,
+        "change_percent": -11.06
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BPCL-EQ": {
+    "symbol": "NSE:BPCL-EQ",
+    "ticker": "BPCL",
+    "avg_volume": 5001736,
+    "avg_volumes": {
+      "1W": 5724754,
+      "1M": 4932823,
+      "45D": 5001736,
+      "3M": 5846463,
+      "6M": 9070428
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.25,
+        "change_percent": 1.38
+      },
+      "1M": {
+        "change": -6.85,
+        "change_percent": -2.15
+      },
+      "3M": {
+        "change": 1.5,
+        "change_percent": 0.48
+      },
+      "6M": {
+        "change": 23.45,
+        "change_percent": 8.15
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IOC-EQ": {
+    "symbol": "NSE:IOC-EQ",
+    "ticker": "IOC",
+    "avg_volume": 8035637,
+    "avg_volumes": {
+      "1W": 8704196,
+      "1M": 7712415,
+      "45D": 8035637,
+      "3M": 10274169,
+      "6M": 13639736
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.33,
+        "change_percent": 1.74
+      },
+      "1M": {
+        "change": -2.4,
+        "change_percent": -1.73
+      },
+      "3M": {
+        "change": -7.29,
+        "change_percent": -5.07
+      },
+      "6M": {
+        "change": -8.0,
+        "change_percent": -5.53
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:COALINDIA-EQ": {
+    "symbol": "NSE:COALINDIA-EQ",
+    "ticker": "COALINDIA",
+    "avg_volume": 9629879,
+    "avg_volumes": {
+      "1W": 7821122,
+      "1M": 11077287,
+      "45D": 9629879,
+      "3M": 8052243,
+      "6M": 11658038
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.6,
+        "change_percent": 0.38
+      },
+      "1M": {
+        "change": 15.6,
+        "change_percent": 3.86
+      },
+      "3M": {
+        "change": -15.8,
+        "change_percent": -3.63
+      },
+      "6M": {
+        "change": -48.55,
+        "change_percent": -10.37
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ADANIGREEN-EQ": {
+    "symbol": "NSE:ADANIGREEN-EQ",
+    "ticker": "ADANIGREEN",
+    "avg_volume": 1435478,
+    "avg_volumes": {
+      "1W": 1007210,
+      "1M": 1449361,
+      "45D": 1435478,
+      "3M": 2018795,
+      "6M": 3331043
+    },
+    "price_changes": {
+      "1W": {
+        "change": 28.1,
+        "change_percent": 2.21
+      },
+      "1M": {
+        "change": -27.7,
+        "change_percent": -2.08
+      },
+      "3M": {
+        "change": -223.8,
+        "change_percent": -14.66
+      },
+      "6M": {
+        "change": 439.2,
+        "change_percent": 50.89
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATAPOWER-EQ": {
+    "symbol": "NSE:TATAPOWER-EQ",
+    "ticker": "TATAPOWER",
+    "avg_volume": 4737108,
+    "avg_volumes": {
+      "1W": 2955563,
+      "1M": 5064117,
+      "45D": 4737108,
+      "3M": 4383000,
+      "6M": 6087201
+    },
+    "price_changes": {
+      "1W": {
+        "change": -3.2,
+        "change_percent": -0.87
+      },
+      "1M": {
+        "change": -4.8,
+        "change_percent": -1.3
+      },
+      "3M": {
+        "change": -23.15,
+        "change_percent": -5.95
+      },
+      "6M": {
+        "change": -36.6,
+        "change_percent": -9.1
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GAIL-EQ": {
+    "symbol": "NSE:GAIL-EQ",
+    "ticker": "GAIL",
+    "avg_volume": 6527941,
+    "avg_volumes": {
+      "1W": 5336894,
+      "1M": 6217390,
+      "45D": 6527941,
+      "3M": 8223031,
+      "6M": 10106280
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.11,
+        "change_percent": 0.65
+      },
+      "1M": {
+        "change": -2.39,
+        "change_percent": -1.36
+      },
+      "3M": {
+        "change": 0.26,
+        "change_percent": 0.15
+      },
+      "6M": {
+        "change": 30.24,
+        "change_percent": 21.17
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NHPC-EQ": {
+    "symbol": "NSE:NHPC-EQ",
+    "ticker": "NHPC",
+    "avg_volume": 9307310,
+    "avg_volumes": {
+      "1W": 11433469,
+      "1M": 10780822,
+      "45D": 9307310,
+      "3M": 12746746,
+      "6M": 19522433
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.28,
+        "change_percent": 1.7
+      },
+      "1M": {
+        "change": -0.14,
+        "change_percent": -0.18
+      },
+      "3M": {
+        "change": -2.92,
+        "change_percent": -3.68
+      },
+      "6M": {
+        "change": -0.32,
+        "change_percent": -0.42
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SJVN-EQ": {
+    "symbol": "NSE:SJVN-EQ",
+    "ticker": "SJVN",
+    "avg_volume": 1868297,
+    "avg_volumes": {
+      "1W": 2482924,
+      "1M": 2112200,
+      "45D": 1868297,
+      "3M": 1971803,
+      "6M": 3405058
+    },
+    "price_changes": {
+      "1W": {
+        "change": -2.49,
+        "change_percent": -3.85
+      },
+      "1M": {
+        "change": -3.6,
+        "change_percent": -5.47
+      },
+      "3M": {
+        "change": -9.83,
+        "change_percent": -13.64
+      },
+      "6M": {
+        "change": -7.82,
+        "change_percent": -11.16
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TORNTPOWER-EQ": {
+    "symbol": "NSE:TORNTPOWER-EQ",
+    "ticker": "TORNTPOWER",
+    "avg_volume": 377076,
+    "avg_volumes": {
+      "1W": 204365,
+      "1M": 445119,
+      "45D": 377076,
+      "3M": 365955,
+      "6M": 484433
+    },
+    "price_changes": {
+      "1W": {
+        "change": -24.2,
+        "change_percent": -1.9
+      },
+      "1M": {
+        "change": 8.3,
+        "change_percent": 0.67
+      },
+      "3M": {
+        "change": -161.5,
+        "change_percent": -11.42
+      },
+      "6M": {
+        "change": -198.5,
+        "change_percent": -13.68
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:OIL-EQ": {
+    "symbol": "NSE:OIL-EQ",
+    "ticker": "OIL",
+    "avg_volume": 2590309,
+    "avg_volumes": {
+      "1W": 1920330,
+      "1M": 2365117,
+      "45D": 2590309,
+      "3M": 3115158,
+      "6M": 4344065
+    },
+    "price_changes": {
+      "1W": {
+        "change": -4.05,
+        "change_percent": -0.85
+      },
+      "1M": {
+        "change": 5.85,
+        "change_percent": 1.25
+      },
+      "3M": {
+        "change": 66.55,
+        "change_percent": 16.36
+      },
+      "6M": {
+        "change": -2.15,
+        "change_percent": -0.45
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IGL-EQ": {
+    "symbol": "NSE:IGL-EQ",
+    "ticker": "IGL",
+    "avg_volume": 2194828,
+    "avg_volumes": {
+      "1W": 1980658,
+      "1M": 1788464,
+      "45D": 2194828,
+      "3M": 2082976,
+      "6M": 3119992
+    },
+    "price_changes": {
+      "1W": {
+        "change": -2.62,
+        "change_percent": -1.76
+      },
+      "1M": {
+        "change": -2.63,
+        "change_percent": -1.77
+      },
+      "3M": {
+        "change": -24.33,
+        "change_percent": -14.28
+      },
+      "6M": {
+        "change": -10.58,
+        "change_percent": -6.75
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATAMOTORS-EQ": {
+    "symbol": "NSE:TATAMOTORS-EQ",
+    "ticker": "TATAMOTORS",
+    "avg_volume": 13000000,
+    "avg_volumes": {
+      "1W": 12480000,
+      "1M": 12740000,
+      "45D": 13000000,
+      "3M": 13390000,
+      "6M": 13780000
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "1M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "3M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "6M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MARUTI-EQ": {
+    "symbol": "NSE:MARUTI-EQ",
+    "ticker": "MARUTI",
+    "avg_volume": 342157,
+    "avg_volumes": {
+      "1W": 343043,
+      "1M": 391371,
+      "45D": 342157,
+      "3M": 440065,
+      "6M": 461088
+    },
+    "price_changes": {
+      "1W": {
+        "change": -221.0,
+        "change_percent": -1.79
+      },
+      "1M": {
+        "change": -1561.0,
+        "change_percent": -11.41
+      },
+      "3M": {
+        "change": -1628.0,
+        "change_percent": -11.84
+      },
+      "6M": {
+        "change": -484.0,
+        "change_percent": -3.84
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:M&M-EQ": {
+    "symbol": "NSE:M&M-EQ",
+    "ticker": "M&M",
+    "avg_volume": 1812230,
+    "avg_volumes": {
+      "1W": 2042743,
+      "1M": 1897428,
+      "45D": 1812230,
+      "3M": 2270977,
+      "6M": 2746579
+    },
+    "price_changes": {
+      "1W": {
+        "change": -67.5,
+        "change_percent": -2.19
+      },
+      "1M": {
+        "change": -434.0,
+        "change_percent": -12.61
+      },
+      "3M": {
+        "change": -173.2,
+        "change_percent": -5.44
+      },
+      "6M": {
+        "change": -57.1,
+        "change_percent": -1.86
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BAJAJ-AUTO-EQ": {
+    "symbol": "NSE:BAJAJ-AUTO-EQ",
+    "ticker": "BAJAJ-AUTO",
+    "avg_volume": 216262,
+    "avg_volumes": {
+      "1W": 166520,
+      "1M": 218203,
+      "45D": 216262,
+      "3M": 324040,
+      "6M": 367110
+    },
+    "price_changes": {
+      "1W": {
+        "change": -238.0,
+        "change_percent": -2.07
+      },
+      "1M": {
+        "change": -665.0,
+        "change_percent": -5.58
+      },
+      "3M": {
+        "change": 1419.0,
+        "change_percent": 14.42
+      },
+      "6M": {
+        "change": 2211.0,
+        "change_percent": 24.43
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:EICHERMOT-EQ": {
+    "symbol": "NSE:EICHERMOT-EQ",
+    "ticker": "EICHERMOT",
+    "avg_volume": 391393,
+    "avg_volumes": {
+      "1W": 295729,
+      "1M": 420388,
+      "45D": 391393,
+      "3M": 540113,
+      "6M": 554174
+    },
+    "price_changes": {
+      "1W": {
+        "change": -98.5,
+        "change_percent": -1.31
+      },
+      "1M": {
+        "change": -660.0,
+        "change_percent": -8.19
+      },
+      "3M": {
+        "change": -203.0,
+        "change_percent": -2.67
+      },
+      "6M": {
+        "change": 486.0,
+        "change_percent": 7.03
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HEROMOTOCO-EQ": {
+    "symbol": "NSE:HEROMOTOCO-EQ",
+    "ticker": "HEROMOTOCO",
+    "avg_volume": 553616,
+    "avg_volumes": {
+      "1W": 485417,
+      "1M": 574833,
+      "45D": 553616,
+      "3M": 714266,
+      "6M": 662380
+    },
+    "price_changes": {
+      "1W": {
+        "change": 27.0,
+        "change_percent": 0.51
+      },
+      "1M": {
+        "change": -272.5,
+        "change_percent": -4.84
+      },
+      "3M": {
+        "change": 455.9,
+        "change_percent": 9.31
+      },
+      "6M": {
+        "change": 76.5,
+        "change_percent": 1.45
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TVSMOTOR-EQ": {
+    "symbol": "NSE:TVSMOTOR-EQ",
+    "ticker": "TVSMOTOR",
+    "avg_volume": 808817,
+    "avg_volumes": {
+      "1W": 784297,
+      "1M": 890965,
+      "45D": 808817,
+      "3M": 1106061,
+      "6M": 1077058
+    },
+    "price_changes": {
+      "1W": {
+        "change": -6.1,
+        "change_percent": -0.15
+      },
+      "1M": {
+        "change": -324.4,
+        "change_percent": -7.34
+      },
+      "3M": {
+        "change": 525.9,
+        "change_percent": 14.73
+      },
+      "6M": {
+        "change": 633.4,
+        "change_percent": 18.29
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ASHOKLEY-EQ": {
+    "symbol": "NSE:ASHOKLEY-EQ",
+    "ticker": "ASHOKLEY",
+    "avg_volume": 14065336,
+    "avg_volumes": {
+      "1W": 9425234,
+      "1M": 12330925,
+      "45D": 14065336,
+      "3M": 17744128,
+      "6M": 22927382
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.77,
+        "change_percent": 0.49
+      },
+      "1M": {
+        "change": -15.3,
+        "change_percent": -8.76
+      },
+      "3M": {
+        "change": -1.29,
+        "change_percent": -0.8
+      },
+      "6M": {
+        "change": -9.5,
+        "change_percent": -5.62
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BHARATFORG-EQ": {
+    "symbol": "NSE:BHARATFORG-EQ",
+    "ticker": "BHARATFORG",
+    "avg_volume": 1057941,
+    "avg_volumes": {
+      "1W": 910383,
+      "1M": 925856,
+      "45D": 1057941,
+      "3M": 1119730,
+      "6M": 1223002
+    },
+    "price_changes": {
+      "1W": {
+        "change": 93.1,
+        "change_percent": 4.85
+      },
+      "1M": {
+        "change": -40.7,
+        "change_percent": -1.98
+      },
+      "3M": {
+        "change": -133.5,
+        "change_percent": -6.22
+      },
+      "6M": {
+        "change": 300.3,
+        "change_percent": 17.55
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MOTHERSON-EQ": {
+    "symbol": "NSE:MOTHERSON-EQ",
+    "ticker": "MOTHERSON",
+    "avg_volume": 11154726,
+    "avg_volumes": {
+      "1W": 9735617,
+      "1M": 10983277,
+      "45D": 11154726,
+      "3M": 17974386,
+      "6M": 20875696
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.8,
+        "change_percent": 1.73
+      },
+      "1M": {
+        "change": -1.78,
+        "change_percent": -1.07
+      },
+      "3M": {
+        "change": 12.96,
+        "change_percent": 8.54
+      },
+      "6M": {
+        "change": 53.08,
+        "change_percent": 47.57
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BALKRISIND-EQ": {
+    "symbol": "NSE:BALKRISIND-EQ",
+    "ticker": "BALKRISIND",
+    "avg_volume": 574136,
+    "avg_volumes": {
+      "1W": 241987,
+      "1M": 774099,
+      "45D": 574136,
+      "3M": 488791,
+      "6M": 340129
+    },
+    "price_changes": {
+      "1W": {
+        "change": 13.2,
+        "change_percent": 0.61
+      },
+      "1M": {
+        "change": -182.3,
+        "change_percent": -7.7
+      },
+      "3M": {
+        "change": -49.6,
+        "change_percent": -2.22
+      },
+      "6M": {
+        "change": 78.9,
+        "change_percent": 3.75
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:EXIDEIND-EQ": {
+    "symbol": "NSE:EXIDEIND-EQ",
+    "ticker": "EXIDEIND",
+    "avg_volume": 2336434,
+    "avg_volumes": {
+      "1W": 2280742,
+      "1M": 2241171,
+      "45D": 2336434,
+      "3M": 4341565,
+      "6M": 3936551
+    },
+    "price_changes": {
+      "1W": {
+        "change": 8.15,
+        "change_percent": 1.95
+      },
+      "1M": {
+        "change": -22.0,
+        "change_percent": -4.9
+      },
+      "3M": {
+        "change": 36.95,
+        "change_percent": 9.48
+      },
+      "6M": {
+        "change": 124.1,
+        "change_percent": 41.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:APOLLOTYRE-EQ": {
+    "symbol": "NSE:APOLLOTYRE-EQ",
+    "ticker": "APOLLOTYRE",
+    "avg_volume": 845848,
+    "avg_volumes": {
+      "1W": 1010617,
+      "1M": 685302,
+      "45D": 845848,
+      "3M": 885981,
+      "6M": 1108594
+    },
+    "price_changes": {
+      "1W": {
+        "change": -11.5,
+        "change_percent": -2.79
+      },
+      "1M": {
+        "change": -40.75,
+        "change_percent": -9.23
+      },
+      "3M": {
+        "change": -30.0,
+        "change_percent": -6.97
+      },
+      "6M": {
+        "change": -20.2,
+        "change_percent": -4.8
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BOSCHLTD-EQ": {
+    "symbol": "NSE:BOSCHLTD-EQ",
+    "ticker": "BOSCHLTD",
+    "avg_volume": 40260,
+    "avg_volumes": {
+      "1W": 17917,
+      "1M": 30297,
+      "45D": 40260,
+      "3M": 38283,
+      "6M": 41935
+    },
+    "price_changes": {
+      "1W": {
+        "change": 265.0,
+        "change_percent": 0.56
+      },
+      "1M": {
+        "change": -680.0,
+        "change_percent": -1.4
+      },
+      "3M": {
+        "change": 7560.0,
+        "change_percent": 18.69
+      },
+      "6M": {
+        "change": 17610.0,
+        "change_percent": 57.95
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SONACOMS-EQ": {
+    "symbol": "NSE:SONACOMS-EQ",
+    "ticker": "SONACOMS",
+    "avg_volume": 1852006,
+    "avg_volumes": {
+      "1W": 2832096,
+      "1M": 1814589,
+      "45D": 1852006,
+      "3M": 2458271,
+      "6M": 2400637
+    },
+    "price_changes": {
+      "1W": {
+        "change": 50.7,
+        "change_percent": 6.52
+      },
+      "1M": {
+        "change": 19.8,
+        "change_percent": 2.45
+      },
+      "3M": {
+        "change": 209.35,
+        "change_percent": 33.81
+      },
+      "6M": {
+        "change": 322.35,
+        "change_percent": 63.67
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SUNPHARMA-EQ": {
+    "symbol": "NSE:SUNPHARMA-EQ",
+    "ticker": "SUNPHARMA",
+    "avg_volume": 1538216,
+    "avg_volumes": {
+      "1W": 1754695,
+      "1M": 1521068,
+      "45D": 1538216,
+      "3M": 1949563,
+      "6M": 2874927
+    },
+    "price_changes": {
+      "1W": {
+        "change": -10.5,
+        "change_percent": -0.56
+      },
+      "1M": {
+        "change": -65.2,
+        "change_percent": -3.39
+      },
+      "3M": {
+        "change": -6.0,
+        "change_percent": -0.32
+      },
+      "6M": {
+        "change": 79.7,
+        "change_percent": 4.48
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DRREDDY-EQ": {
+    "symbol": "NSE:DRREDDY-EQ",
+    "ticker": "DRREDDY",
+    "avg_volume": 1550971,
+    "avg_volumes": {
+      "1W": 2275169,
+      "1M": 1389235,
+      "45D": 1550971,
+      "3M": 2068750,
+      "6M": 2254824
+    },
+    "price_changes": {
+      "1W": {
+        "change": 31.8,
+        "change_percent": 2.71
+      },
+      "1M": {
+        "change": 13.3,
+        "change_percent": 1.11
+      },
+      "3M": {
+        "change": -143.7,
+        "change_percent": -10.64
+      },
+      "6M": {
+        "change": -92.1,
+        "change_percent": -7.09
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CIPLA-EQ": {
+    "symbol": "NSE:CIPLA-EQ",
+    "ticker": "CIPLA",
+    "avg_volume": 807387,
+    "avg_volumes": {
+      "1W": 886145,
+      "1M": 865103,
+      "45D": 807387,
+      "3M": 1100192,
+      "6M": 1542526
+    },
+    "price_changes": {
+      "1W": {
+        "change": 33.8,
+        "change_percent": 2.46
+      },
+      "1M": {
+        "change": -11.9,
+        "change_percent": -0.84
+      },
+      "3M": {
+        "change": -30.0,
+        "change_percent": -2.08
+      },
+      "6M": {
+        "change": 153.7,
+        "change_percent": 12.23
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DIVISLAB-EQ": {
+    "symbol": "NSE:DIVISLAB-EQ",
+    "ticker": "DIVISLAB",
+    "avg_volume": 464262,
+    "avg_volumes": {
+      "1W": 469822,
+      "1M": 527591,
+      "45D": 464262,
+      "3M": 490362,
+      "6M": 415558
+    },
+    "price_changes": {
+      "1W": {
+        "change": 327.0,
+        "change_percent": 3.51
+      },
+      "1M": {
+        "change": 905.5,
+        "change_percent": 10.36
+      },
+      "3M": {
+        "change": 2936.5,
+        "change_percent": 43.74
+      },
+      "6M": {
+        "change": 3550.0,
+        "change_percent": 58.2
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:LUPIN-EQ": {
+    "symbol": "NSE:LUPIN-EQ",
+    "ticker": "LUPIN",
+    "avg_volume": 739806,
+    "avg_volumes": {
+      "1W": 679143,
+      "1M": 743354,
+      "45D": 739806,
+      "3M": 892661,
+      "6M": 1035980
+    },
+    "price_changes": {
+      "1W": {
+        "change": 7.3,
+        "change_percent": 0.35
+      },
+      "1M": {
+        "change": -70.1,
+        "change_percent": -3.22
+      },
+      "3M": {
+        "change": -238.1,
+        "change_percent": -10.16
+      },
+      "6M": {
+        "change": -217.1,
+        "change_percent": -9.35
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:AUROPHARMA-EQ": {
+    "symbol": "NSE:AUROPHARMA-EQ",
+    "ticker": "AUROPHARMA",
+    "avg_volume": 800025,
+    "avg_volumes": {
+      "1W": 938340,
+      "1M": 806975,
+      "45D": 800025,
+      "3M": 1014223,
+      "6M": 1248189
+    },
+    "price_changes": {
+      "1W": {
+        "change": 35.5,
+        "change_percent": 2.1
+      },
+      "1M": {
+        "change": 107.7,
+        "change_percent": 6.66
+      },
+      "3M": {
+        "change": 170.3,
+        "change_percent": 10.95
+      },
+      "6M": {
+        "change": 434.1,
+        "change_percent": 33.61
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TORNTPHARM-EQ": {
+    "symbol": "NSE:TORNTPHARM-EQ",
+    "ticker": "TORNTPHARM",
+    "avg_volume": 318636,
+    "avg_volumes": {
+      "1W": 362661,
+      "1M": 321935,
+      "45D": 318636,
+      "3M": 555559,
+      "6M": 498945
+    },
+    "price_changes": {
+      "1W": {
+        "change": 73.5,
+        "change_percent": 1.51
+      },
+      "1M": {
+        "change": 16.5,
+        "change_percent": 0.33
+      },
+      "3M": {
+        "change": 432.3,
+        "change_percent": 9.57
+      },
+      "6M": {
+        "change": 678.3,
+        "change_percent": 15.88
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ALKEM-EQ": {
+    "symbol": "NSE:ALKEM-EQ",
+    "ticker": "ALKEM",
+    "avg_volume": 152071,
+    "avg_volumes": {
+      "1W": 176505,
+      "1M": 148456,
+      "45D": 152071,
+      "3M": 149318,
+      "6M": 144612
+    },
+    "price_changes": {
+      "1W": {
+        "change": -8.0,
+        "change_percent": -0.15
+      },
+      "1M": {
+        "change": -27.5,
+        "change_percent": -0.51
+      },
+      "3M": {
+        "change": -84.5,
+        "change_percent": -1.56
+      },
+      "6M": {
+        "change": 83.0,
+        "change_percent": 1.58
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MANKIND-EQ": {
+    "symbol": "NSE:MANKIND-EQ",
+    "ticker": "MANKIND",
+    "avg_volume": 397672,
+    "avg_volumes": {
+      "1W": 667004,
+      "1M": 401005,
+      "45D": 397672,
+      "3M": 408506,
+      "6M": 528130
+    },
+    "price_changes": {
+      "1W": {
+        "change": 198.3,
+        "change_percent": 8.62
+      },
+      "1M": {
+        "change": 133.3,
+        "change_percent": 5.64
+      },
+      "3M": {
+        "change": 36.0,
+        "change_percent": 1.46
+      },
+      "6M": {
+        "change": 498.3,
+        "change_percent": 24.92
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NATCOPHARM-EQ": {
+    "symbol": "NSE:NATCOPHARM-EQ",
+    "ticker": "NATCOPHARM",
+    "avg_volume": 499428,
+    "avg_volumes": {
+      "1W": 510278,
+      "1M": 414803,
+      "45D": 499428,
+      "3M": 486884,
+      "6M": 675045
+    },
+    "price_changes": {
+      "1W": {
+        "change": 28.95,
+        "change_percent": 3.54
+      },
+      "1M": {
+        "change": -19.05,
+        "change_percent": -2.2
+      },
+      "3M": {
+        "change": -56.5,
+        "change_percent": -6.25
+      },
+      "6M": {
+        "change": -112.0,
+        "change_percent": -11.68
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GLENMARK-EQ": {
+    "symbol": "NSE:GLENMARK-EQ",
+    "ticker": "GLENMARK",
+    "avg_volume": 486395,
+    "avg_volumes": {
+      "1W": 435621,
+      "1M": 488992,
+      "45D": 486395,
+      "3M": 531405,
+      "6M": 623211
+    },
+    "price_changes": {
+      "1W": {
+        "change": 23.1,
+        "change_percent": 0.96
+      },
+      "1M": {
+        "change": 39.1,
+        "change_percent": 1.63
+      },
+      "3M": {
+        "change": 284.7,
+        "change_percent": 13.21
+      },
+      "6M": {
+        "change": 259.0,
+        "change_percent": 11.88
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BIOCON-EQ": {
+    "symbol": "NSE:BIOCON-EQ",
+    "ticker": "BIOCON",
+    "avg_volume": 3114622,
+    "avg_volumes": {
+      "1W": 3892793,
+      "1M": 3268909,
+      "45D": 3114622,
+      "3M": 4529609,
+      "6M": 4397062
+    },
+    "price_changes": {
+      "1W": {
+        "change": 10.1,
+        "change_percent": 2.66
+      },
+      "1M": {
+        "change": -27.1,
+        "change_percent": -6.5
+      },
+      "3M": {
+        "change": -26.05,
+        "change_percent": -6.26
+      },
+      "6M": {
+        "change": 9.15,
+        "change_percent": 2.4
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ZYDUSLIFE-EQ": {
+    "symbol": "NSE:ZYDUSLIFE-EQ",
+    "ticker": "ZYDUSLIFE",
+    "avg_volume": 1613234,
+    "avg_volumes": {
+      "1W": 1414361,
+      "1M": 1333347,
+      "45D": 1613234,
+      "3M": 1392299,
+      "6M": 1410456
+    },
+    "price_changes": {
+      "1W": {
+        "change": 42.2,
+        "change_percent": 3.72
+      },
+      "1M": {
+        "change": 52.8,
+        "change_percent": 4.7
+      },
+      "3M": {
+        "change": 75.9,
+        "change_percent": 6.89
+      },
+      "6M": {
+        "change": 286.8,
+        "change_percent": 32.21
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:APOLLOHOSP-EQ": {
+    "symbol": "NSE:APOLLOHOSP-EQ",
+    "ticker": "APOLLOHOSP",
+    "avg_volume": 360727,
+    "avg_volumes": {
+      "1W": 303006,
+      "1M": 275361,
+      "45D": 360727,
+      "3M": 321147,
+      "6M": 379092
+    },
+    "price_changes": {
+      "1W": {
+        "change": 202.5,
+        "change_percent": 2.31
+      },
+      "1M": {
+        "change": 82.0,
+        "change_percent": 0.92
+      },
+      "3M": {
+        "change": 379.0,
+        "change_percent": 4.41
+      },
+      "6M": {
+        "change": 1606.5,
+        "change_percent": 21.81
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MAXHEALTH-EQ": {
+    "symbol": "NSE:MAXHEALTH-EQ",
+    "ticker": "MAXHEALTH",
+    "avg_volume": 1991988,
+    "avg_volumes": {
+      "1W": 1287266,
+      "1M": 1828577,
+      "45D": 1991988,
+      "3M": 1908066,
+      "6M": 2364842
+    },
+    "price_changes": {
+      "1W": {
+        "change": 9.2,
+        "change_percent": 0.89
+      },
+      "1M": {
+        "change": 30.2,
+        "change_percent": 2.97
+      },
+      "3M": {
+        "change": -77.15,
+        "change_percent": -6.87
+      },
+      "6M": {
+        "change": 81.4,
+        "change_percent": 8.44
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:FORTIS-EQ": {
+    "symbol": "NSE:FORTIS-EQ",
+    "ticker": "FORTIS",
+    "avg_volume": 1189140,
+    "avg_volumes": {
+      "1W": 1163476,
+      "1M": 1028223,
+      "45D": 1189140,
+      "3M": 1331081,
+      "6M": 1411178
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.75,
+        "change_percent": 0.42
+      },
+      "1M": {
+        "change": -34.1,
+        "change_percent": -3.69
+      },
+      "3M": {
+        "change": -64.95,
+        "change_percent": -6.8
+      },
+      "6M": {
+        "change": 67.8,
+        "change_percent": 8.25
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ITC-EQ": {
+    "symbol": "NSE:ITC-EQ",
+    "ticker": "ITC",
+    "avg_volume": 13209452,
+    "avg_volumes": {
+      "1W": 11349413,
+      "1M": 13278671,
+      "45D": 13209452,
+      "3M": 14187134,
+      "6M": 16901036
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.1,
+        "change_percent": 0.79
+      },
+      "1M": {
+        "change": -3.1,
+        "change_percent": -1.14
+      },
+      "3M": {
+        "change": -21.7,
+        "change_percent": -7.48
+      },
+      "6M": {
+        "change": -31.65,
+        "change_percent": -10.55
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HINDUNILVR-EQ": {
+    "symbol": "NSE:HINDUNILVR-EQ",
+    "ticker": "HINDUNILVR",
+    "avg_volume": 1205415,
+    "avg_volumes": {
+      "1W": 1184790,
+      "1M": 1248700,
+      "45D": 1205415,
+      "3M": 1608698,
+      "6M": 1855974
+    },
+    "price_changes": {
+      "1W": {
+        "change": -8.2,
+        "change_percent": -0.42
+      },
+      "1M": {
+        "change": -90.2,
+        "change_percent": -4.46
+      },
+      "3M": {
+        "change": -240.2,
+        "change_percent": -11.05
+      },
+      "6M": {
+        "change": -148.7,
+        "change_percent": -7.14
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NESTLEIND-EQ": {
+    "symbol": "NSE:NESTLEIND-EQ",
+    "ticker": "NESTLEIND",
+    "avg_volume": 1424439,
+    "avg_volumes": {
+      "1W": 1294332,
+      "1M": 1208991,
+      "45D": 1424439,
+      "3M": 1892373,
+      "6M": 2005526
+    },
+    "price_changes": {
+      "1W": {
+        "change": -6.8,
+        "change_percent": -0.5
+      },
+      "1M": {
+        "change": -115.2,
+        "change_percent": -7.79
+      },
+      "3M": {
+        "change": -38.8,
+        "change_percent": -2.77
+      },
+      "6M": {
+        "change": 170.2,
+        "change_percent": 14.26
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BRITANNIA-EQ": {
+    "symbol": "NSE:BRITANNIA-EQ",
+    "ticker": "BRITANNIA",
+    "avg_volume": 263981,
+    "avg_volumes": {
+      "1W": 241464,
+      "1M": 249724,
+      "45D": 263981,
+      "3M": 281479,
+      "6M": 362043
+    },
+    "price_changes": {
+      "1W": {
+        "change": -48.0,
+        "change_percent": -0.96
+      },
+      "1M": {
+        "change": -448.5,
+        "change_percent": -8.33
+      },
+      "3M": {
+        "change": -303.0,
+        "change_percent": -5.79
+      },
+      "6M": {
+        "change": -684.5,
+        "change_percent": -12.18
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATACONSUM-EQ": {
+    "symbol": "NSE:TATACONSUM-EQ",
+    "ticker": "TATACONSUM",
+    "avg_volume": 1203700,
+    "avg_volumes": {
+      "1W": 1252984,
+      "1M": 1135385,
+      "45D": 1203700,
+      "3M": 1422283,
+      "6M": 1761680
+    },
+    "price_changes": {
+      "1W": {
+        "change": -24.7,
+        "change_percent": -2.44
+      },
+      "1M": {
+        "change": -71.5,
+        "change_percent": -6.74
+      },
+      "3M": {
+        "change": -142.3,
+        "change_percent": -12.58
+      },
+      "6M": {
+        "change": -61.2,
+        "change_percent": -5.83
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DABUR-EQ": {
+    "symbol": "NSE:DABUR-EQ",
+    "ticker": "DABUR",
+    "avg_volume": 1938500,
+    "avg_volumes": {
+      "1W": 1782922,
+      "1M": 2312216,
+      "45D": 1938500,
+      "3M": 2134104,
+      "6M": 2203823
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.05,
+        "change_percent": 0.27
+      },
+      "1M": {
+        "change": -9.45,
+        "change_percent": -2.39
+      },
+      "3M": {
+        "change": -38.3,
+        "change_percent": -9.04
+      },
+      "6M": {
+        "change": -45.1,
+        "change_percent": -10.47
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MARICO-EQ": {
+    "symbol": "NSE:MARICO-EQ",
+    "ticker": "MARICO",
+    "avg_volume": 1620234,
+    "avg_volumes": {
+      "1W": 1641961,
+      "1M": 1881932,
+      "45D": 1620234,
+      "3M": 1909005,
+      "6M": 1944504
+    },
+    "price_changes": {
+      "1W": {
+        "change": 10.8,
+        "change_percent": 1.32
+      },
+      "1M": {
+        "change": -19.7,
+        "change_percent": -2.32
+      },
+      "3M": {
+        "change": 2.0,
+        "change_percent": 0.24
+      },
+      "6M": {
+        "change": 83.5,
+        "change_percent": 11.22
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:COLPAL-EQ": {
+    "symbol": "NSE:COLPAL-EQ",
+    "ticker": "COLPAL",
+    "avg_volume": 417602,
+    "avg_volumes": {
+      "1W": 442102,
+      "1M": 451850,
+      "45D": 417602,
+      "3M": 395148,
+      "6M": 435509
+    },
+    "price_changes": {
+      "1W": {
+        "change": 25.9,
+        "change_percent": 1.41
+      },
+      "1M": {
+        "change": -10.6,
+        "change_percent": -0.56
+      },
+      "3M": {
+        "change": -126.8,
+        "change_percent": -6.36
+      },
+      "6M": {
+        "change": -29.9,
+        "change_percent": -1.58
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GODREJCP-EQ": {
+    "symbol": "NSE:GODREJCP-EQ",
+    "ticker": "GODREJCP",
+    "avg_volume": 2277058,
+    "avg_volumes": {
+      "1W": 853985,
+      "1M": 1382973,
+      "45D": 2277058,
+      "3M": 1537472,
+      "6M": 1617518
+    },
+    "price_changes": {
+      "1W": {
+        "change": 6.25,
+        "change_percent": 0.72
+      },
+      "1M": {
+        "change": -49.95,
+        "change_percent": -5.38
+      },
+      "3M": {
+        "change": -155.35,
+        "change_percent": -15.02
+      },
+      "6M": {
+        "change": -138.35,
+        "change_percent": -13.6
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PGHH-EQ": {
+    "symbol": "NSE:PGHH-EQ",
+    "ticker": "PGHH",
+    "avg_volume": 15462,
+    "avg_volumes": {
+      "1W": 35297,
+      "1M": 18072,
+      "45D": 15462,
+      "3M": 17517,
+      "6M": 17296
+    },
+    "price_changes": {
+      "1W": {
+        "change": -498.0,
+        "change_percent": -6.54
+      },
+      "1M": {
+        "change": -974.0,
+        "change_percent": -12.04
+      },
+      "3M": {
+        "change": -1905.5,
+        "change_percent": -21.12
+      },
+      "6M": {
+        "change": -2592.0,
+        "change_percent": -26.7
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:EMAMILTD-EQ": {
+    "symbol": "NSE:EMAMILTD-EQ",
+    "ticker": "EMAMILTD",
+    "avg_volume": 1887528,
+    "avg_volumes": {
+      "1W": 4221660,
+      "1M": 2511260,
+      "45D": 1887528,
+      "3M": 1281227,
+      "6M": 930001
+    },
+    "price_changes": {
+      "1W": {
+        "change": 14.4,
+        "change_percent": 3.83
+      },
+      "1M": {
+        "change": -12.2,
+        "change_percent": -3.03
+      },
+      "3M": {
+        "change": -6.45,
+        "change_percent": -1.62
+      },
+      "6M": {
+        "change": -12.25,
+        "change_percent": -3.04
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:VBL-EQ": {
+    "symbol": "NSE:VBL-EQ",
+    "ticker": "VBL",
+    "avg_volume": 6043003,
+    "avg_volumes": {
+      "1W": 5067789,
+      "1M": 7556801,
+      "45D": 6043003,
+      "3M": 6402317,
+      "6M": 6765050
+    },
+    "price_changes": {
+      "1W": {
+        "change": 18.85,
+        "change_percent": 4.54
+      },
+      "1M": {
+        "change": -3.7,
+        "change_percent": -0.84
+      },
+      "3M": {
+        "change": -73.35,
+        "change_percent": -14.45
+      },
+      "6M": {
+        "change": 32.85,
+        "change_percent": 8.18
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RADICO-EQ": {
+    "symbol": "NSE:RADICO-EQ",
+    "ticker": "RADICO",
+    "avg_volume": 261421,
+    "avg_volumes": {
+      "1W": 327411,
+      "1M": 249378,
+      "45D": 261421,
+      "3M": 366393,
+      "6M": 402817
+    },
+    "price_changes": {
+      "1W": {
+        "change": 174.4,
+        "change_percent": 3.98
+      },
+      "1M": {
+        "change": -75.6,
+        "change_percent": -1.63
+      },
+      "3M": {
+        "change": 724.6,
+        "change_percent": 18.92
+      },
+      "6M": {
+        "change": 1893.9,
+        "change_percent": 71.19
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATASTEEL-EQ": {
+    "symbol": "NSE:TATASTEEL-EQ",
+    "ticker": "TATASTEEL",
+    "avg_volume": 27706220,
+    "avg_volumes": {
+      "1W": 25133875,
+      "1M": 30204749,
+      "45D": 27706220,
+      "3M": 25737662,
+      "6M": 28510283
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2.07,
+        "change_percent": 1.11
+      },
+      "1M": {
+        "change": 2.42,
+        "change_percent": 1.29
+      },
+      "3M": {
+        "change": 0.65,
+        "change_percent": 0.34
+      },
+      "6M": {
+        "change": -7.41,
+        "change_percent": -3.77
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:JSWSTEEL-EQ": {
+    "symbol": "NSE:JSWSTEEL-EQ",
+    "ticker": "JSWSTEEL",
+    "avg_volume": 1549306,
+    "avg_volumes": {
+      "1W": 1380516,
+      "1M": 1465295,
+      "45D": 1549306,
+      "3M": 1612925,
+      "6M": 1779665
+    },
+    "price_changes": {
+      "1W": {
+        "change": 23.9,
+        "change_percent": 1.91
+      },
+      "1M": {
+        "change": -43.0,
+        "change_percent": -3.26
+      },
+      "3M": {
+        "change": 46.3,
+        "change_percent": 3.76
+      },
+      "6M": {
+        "change": 107.7,
+        "change_percent": 9.21
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HINDALCO-EQ": {
+    "symbol": "NSE:HINDALCO-EQ",
+    "ticker": "HINDALCO",
+    "avg_volume": 3584594,
+    "avg_volumes": {
+      "1W": 4575402,
+      "1M": 3350731,
+      "45D": 3584594,
+      "3M": 4575148,
+      "6M": 5473798
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.4,
+        "change_percent": 0.04
+      },
+      "1M": {
+        "change": -70.15,
+        "change_percent": -6.67
+      },
+      "3M": {
+        "change": 27.7,
+        "change_percent": 2.91
+      },
+      "6M": {
+        "change": 106.65,
+        "change_percent": 12.2
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:VEDL-EQ": {
+    "symbol": "NSE:VEDL-EQ",
+    "ticker": "VEDL",
+    "avg_volume": 10142039,
+    "avg_volumes": {
+      "1W": 7107323,
+      "1M": 9264253,
+      "45D": 10142039,
+      "3M": 12675178,
+      "6M": 21330152
+    },
+    "price_changes": {
+      "1W": {
+        "change": 8.65,
+        "change_percent": 3.36
+      },
+      "1M": {
+        "change": -8.9,
+        "change_percent": -3.24
+      },
+      "3M": {
+        "change": -7.35,
+        "change_percent": -2.69
+      },
+      "6M": {
+        "change": 14.34,
+        "change_percent": 5.7
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:JINDALSTEL-EQ": {
+    "symbol": "NSE:JINDALSTEL-EQ",
+    "ticker": "JINDALSTEL",
+    "avg_volume": 753974,
+    "avg_volumes": {
+      "1W": 874167,
+      "1M": 768500,
+      "45D": 753974,
+      "3M": 1007399,
+      "6M": 1210458
+    },
+    "price_changes": {
+      "1W": {
+        "change": 30.3,
+        "change_percent": 2.69
+      },
+      "1M": {
+        "change": 4.6,
+        "change_percent": 0.4
+      },
+      "3M": {
+        "change": 99.2,
+        "change_percent": 9.36
+      },
+      "6M": {
+        "change": -27.8,
+        "change_percent": -2.34
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NMDC-EQ": {
+    "symbol": "NSE:NMDC-EQ",
+    "ticker": "NMDC",
+    "avg_volume": 15597010,
+    "avg_volumes": {
+      "1W": 10480513,
+      "1M": 13240397,
+      "45D": 15597010,
+      "3M": 17162937,
+      "6M": 22572317
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.55,
+        "change_percent": 0.68
+      },
+      "1M": {
+        "change": -4.59,
+        "change_percent": -5.34
+      },
+      "3M": {
+        "change": -3.59,
+        "change_percent": -4.23
+      },
+      "6M": {
+        "change": 1.57,
+        "change_percent": 1.97
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SAIL-EQ": {
+    "symbol": "NSE:SAIL-EQ",
+    "ticker": "SAIL",
+    "avg_volume": 21683732,
+    "avg_volumes": {
+      "1W": 15770777,
+      "1M": 23464536,
+      "45D": 21683732,
+      "3M": 18948921,
+      "6M": 22848760
+    },
+    "price_changes": {
+      "1W": {
+        "change": 11.34,
+        "change_percent": 6.48
+      },
+      "1M": {
+        "change": 1.76,
+        "change_percent": 0.95
+      },
+      "3M": {
+        "change": 15.56,
+        "change_percent": 9.11
+      },
+      "6M": {
+        "change": 30.83,
+        "change_percent": 19.82
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NATIONALUM-EQ": {
+    "symbol": "NSE:NATIONALUM-EQ",
+    "ticker": "NATIONALUM",
+    "avg_volume": 6522159,
+    "avg_volumes": {
+      "1W": 4148152,
+      "1M": 4734908,
+      "45D": 6522159,
+      "3M": 7797899,
+      "6M": 10266002
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.7,
+        "change_percent": 1.04
+      },
+      "1M": {
+        "change": -38.4,
+        "change_percent": -9.65
+      },
+      "3M": {
+        "change": 27.25,
+        "change_percent": 8.2
+      },
+      "6M": {
+        "change": -9.1,
+        "change_percent": -2.47
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HINDCOPPER-EQ": {
+    "symbol": "NSE:HINDCOPPER-EQ",
+    "ticker": "HINDCOPPER",
+    "avg_volume": 14062691,
+    "avg_volumes": {
+      "1W": 6676342,
+      "1M": 13546616,
+      "45D": 14062691,
+      "3M": 9336053,
+      "6M": 8276688
+    },
+    "price_changes": {
+      "1W": {
+        "change": 15.5,
+        "change_percent": 3.19
+      },
+      "1M": {
+        "change": -31.65,
+        "change_percent": -5.94
+      },
+      "3M": {
+        "change": 9.6,
+        "change_percent": 1.95
+      },
+      "6M": {
+        "change": 11.55,
+        "change_percent": 2.36
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:APLAPOLLO-EQ": {
+    "symbol": "NSE:APLAPOLLO-EQ",
+    "ticker": "APLAPOLLO",
+    "avg_volume": 653437,
+    "avg_volumes": {
+      "1W": 600417,
+      "1M": 728838,
+      "45D": 653437,
+      "3M": 656271,
+      "6M": 685904
+    },
+    "price_changes": {
+      "1W": {
+        "change": 51.2,
+        "change_percent": 2.38
+      },
+      "1M": {
+        "change": 60.4,
+        "change_percent": 2.82
+      },
+      "3M": {
+        "change": 406.2,
+        "change_percent": 22.65
+      },
+      "6M": {
+        "change": 226.6,
+        "change_percent": 11.48
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RATNAMANI-EQ": {
+    "symbol": "NSE:RATNAMANI-EQ",
+    "ticker": "RATNAMANI",
+    "avg_volume": 118262,
+    "avg_volumes": {
+      "1W": 39644,
+      "1M": 115841,
+      "45D": 118262,
+      "3M": 84067,
+      "6M": 65873
+    },
+    "price_changes": {
+      "1W": {
+        "change": 117.7,
+        "change_percent": 4.36
+      },
+      "1M": {
+        "change": 108.8,
+        "change_percent": 4.01
+      },
+      "3M": {
+        "change": 173.2,
+        "change_percent": 6.54
+      },
+      "6M": {
+        "change": 509.5,
+        "change_percent": 22.05
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BHARTIARTL-EQ": {
+    "symbol": "NSE:BHARTIARTL-EQ",
+    "ticker": "BHARTIARTL",
+    "avg_volume": 6459363,
+    "avg_volumes": {
+      "1W": 7221426,
+      "1M": 6146890,
+      "45D": 6459363,
+      "3M": 6308854,
+      "6M": 8032647
+    },
+    "price_changes": {
+      "1W": {
+        "change": -28.7,
+        "change_percent": -1.56
+      },
+      "1M": {
+        "change": -139.7,
+        "change_percent": -7.18
+      },
+      "3M": {
+        "change": -43.4,
+        "change_percent": -2.35
+      },
+      "6M": {
+        "change": -38.8,
+        "change_percent": -2.1
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IDEA-EQ": {
+    "symbol": "NSE:IDEA-EQ",
+    "ticker": "IDEA",
+    "avg_volume": 486236559,
+    "avg_volumes": {
+      "1W": 327081503,
+      "1M": 486121041,
+      "45D": 486236559,
+      "3M": 406566301,
+      "6M": 542033504
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.04,
+        "change_percent": 0.28
+      },
+      "1M": {
+        "change": -0.93,
+        "change_percent": -6.12
+      },
+      "3M": {
+        "change": 0.2,
+        "change_percent": 1.42
+      },
+      "6M": {
+        "change": 4.92,
+        "change_percent": 52.68
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:INDUSTOWER-EQ": {
+    "symbol": "NSE:INDUSTOWER-EQ",
+    "ticker": "INDUSTOWER",
+    "avg_volume": 4826134,
+    "avg_volumes": {
+      "1W": 3732967,
+      "1M": 4702455,
+      "45D": 4826134,
+      "3M": 5448953,
+      "6M": 6083687
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.15,
+        "change_percent": -0.3
+      },
+      "1M": {
+        "change": -7.05,
+        "change_percent": -1.82
+      },
+      "3M": {
+        "change": -13.35,
+        "change_percent": -3.39
+      },
+      "6M": {
+        "change": -54.35,
+        "change_percent": -12.51
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATACOMM-EQ": {
+    "symbol": "NSE:TATACOMM-EQ",
+    "ticker": "TATACOMM",
+    "avg_volume": 263219,
+    "avg_volumes": {
+      "1W": 285734,
+      "1M": 275848,
+      "45D": 263219,
+      "3M": 312646,
+      "6M": 518041
+    },
+    "price_changes": {
+      "1W": {
+        "change": -103.8,
+        "change_percent": -5.79
+      },
+      "1M": {
+        "change": -12.1,
+        "change_percent": -0.71
+      },
+      "3M": {
+        "change": -304.1,
+        "change_percent": -15.27
+      },
+      "6M": {
+        "change": 271.0,
+        "change_percent": 19.13
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PVRINOX-EQ": {
+    "symbol": "NSE:PVRINOX-EQ",
+    "ticker": "PVRINOX",
+    "avg_volume": 635163,
+    "avg_volumes": {
+      "1W": 561182,
+      "1M": 771224,
+      "45D": 635163,
+      "3M": 516728,
+      "6M": 422490
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.0,
+        "change_percent": 0.31
+      },
+      "1M": {
+        "change": 45.7,
+        "change_percent": 3.71
+      },
+      "3M": {
+        "change": 290.3,
+        "change_percent": 29.43
+      },
+      "6M": {
+        "change": 290.7,
+        "change_percent": 29.48
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:LT-EQ": {
+    "symbol": "NSE:LT-EQ",
+    "ticker": "LT",
+    "avg_volume": 1386036,
+    "avg_volumes": {
+      "1W": 1223045,
+      "1M": 1371819,
+      "45D": 1386036,
+      "3M": 1701282,
+      "6M": 2292922
+    },
+    "price_changes": {
+      "1W": {
+        "change": 39.0,
+        "change_percent": 1.02
+      },
+      "1M": {
+        "change": -243.8,
+        "change_percent": -5.92
+      },
+      "3M": {
+        "change": -341.2,
+        "change_percent": -8.09
+      },
+      "6M": {
+        "change": 440.4,
+        "change_percent": 12.82
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ADANIPORTS-EQ": {
+    "symbol": "NSE:ADANIPORTS-EQ",
+    "ticker": "ADANIPORTS",
+    "avg_volume": 2224769,
+    "avg_volumes": {
+      "1W": 1863079,
+      "1M": 2537752,
+      "45D": 2224769,
+      "3M": 2144224,
+      "6M": 2625390
+    },
+    "price_changes": {
+      "1W": {
+        "change": 52.8,
+        "change_percent": 3.04
+      },
+      "1M": {
+        "change": 88.4,
+        "change_percent": 5.19
+      },
+      "3M": {
+        "change": -4.9,
+        "change_percent": -0.27
+      },
+      "6M": {
+        "change": 425.7,
+        "change_percent": 31.18
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ADANIENT-EQ": {
+    "symbol": "NSE:ADANIENT-EQ",
+    "ticker": "ADANIENT",
+    "avg_volume": 1779170,
+    "avg_volumes": {
+      "1W": 929620,
+      "1M": 2126199,
+      "45D": 1779170,
+      "3M": 1658551,
+      "6M": 2206799
+    },
+    "price_changes": {
+      "1W": {
+        "change": 19.9,
+        "change_percent": 0.68
+      },
+      "1M": {
+        "change": -166.9,
+        "change_percent": -5.37
+      },
+      "3M": {
+        "change": -94.9,
+        "change_percent": -3.12
+      },
+      "6M": {
+        "change": 1016.0,
+        "change_percent": 52.72
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SIEMENS-EQ": {
+    "symbol": "NSE:SIEMENS-EQ",
+    "ticker": "SIEMENS",
+    "avg_volume": 367850,
+    "avg_volumes": {
+      "1W": 325612,
+      "1M": 311465,
+      "45D": 367850,
+      "3M": 370351,
+      "6M": 442858
+    },
+    "price_changes": {
+      "1W": {
+        "change": 98.3,
+        "change_percent": 2.61
+      },
+      "1M": {
+        "change": -228.7,
+        "change_percent": -5.59
+      },
+      "3M": {
+        "change": 233.9,
+        "change_percent": 6.45
+      },
+      "6M": {
+        "change": 732.2,
+        "change_percent": 23.4
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ABB-EQ": {
+    "symbol": "NSE:ABB-EQ",
+    "ticker": "ABB",
+    "avg_volume": 171369,
+    "avg_volumes": {
+      "1W": 207976,
+      "1M": 182789,
+      "45D": 171369,
+      "3M": 297810,
+      "6M": 364040
+    },
+    "price_changes": {
+      "1W": {
+        "change": -12.0,
+        "change_percent": -0.17
+      },
+      "1M": {
+        "change": -508.5,
+        "change_percent": -6.67
+      },
+      "3M": {
+        "change": 125.5,
+        "change_percent": 1.79
+      },
+      "6M": {
+        "change": 821.5,
+        "change_percent": 13.05
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CUMMINSIND-EQ": {
+    "symbol": "NSE:CUMMINSIND-EQ",
+    "ticker": "CUMMINSIND",
+    "avg_volume": 420428,
+    "avg_volumes": {
+      "1W": 317794,
+      "1M": 412490,
+      "45D": 420428,
+      "3M": 461287,
+      "6M": 545570
+    },
+    "price_changes": {
+      "1W": {
+        "change": -30.0,
+        "change_percent": -0.6
+      },
+      "1M": {
+        "change": -249.5,
+        "change_percent": -4.76
+      },
+      "3M": {
+        "change": -652.0,
+        "change_percent": -11.56
+      },
+      "6M": {
+        "change": 374.7,
+        "change_percent": 8.12
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:THERMAX-EQ": {
+    "symbol": "NSE:THERMAX-EQ",
+    "ticker": "THERMAX",
+    "avg_volume": 145508,
+    "avg_volumes": {
+      "1W": 159526,
+      "1M": 135702,
+      "45D": 145508,
+      "3M": 256131,
+      "6M": 287698
+    },
+    "price_changes": {
+      "1W": {
+        "change": -128.2,
+        "change_percent": -3.59
+      },
+      "1M": {
+        "change": -558.5,
+        "change_percent": -13.96
+      },
+      "3M": {
+        "change": -1387.5,
+        "change_percent": -28.73
+      },
+      "6M": {
+        "change": 213.9,
+        "change_percent": 6.63
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SCHAEFFLER-EQ": {
+    "symbol": "NSE:SCHAEFFLER-EQ",
+    "ticker": "SCHAEFFLER",
+    "avg_volume": 60941,
+    "avg_volumes": {
+      "1W": 75727,
+      "1M": 51801,
+      "45D": 60941,
+      "3M": 62162,
+      "6M": 79391
+    },
+    "price_changes": {
+      "1W": {
+        "change": 65.9,
+        "change_percent": 1.65
+      },
+      "1M": {
+        "change": 54.4,
+        "change_percent": 1.36
+      },
+      "3M": {
+        "change": -100.7,
+        "change_percent": -2.42
+      },
+      "6M": {
+        "change": -129.6,
+        "change_percent": -3.1
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:VOLTAS-EQ": {
+    "symbol": "NSE:VOLTAS-EQ",
+    "ticker": "VOLTAS",
+    "avg_volume": 926279,
+    "avg_volumes": {
+      "1W": 749272,
+      "1M": 735607,
+      "45D": 926279,
+      "3M": 805996,
+      "6M": 1069783
+    },
+    "price_changes": {
+      "1W": {
+        "change": -10.1,
+        "change_percent": -0.89
+      },
+      "1M": {
+        "change": -118.1,
+        "change_percent": -9.5
+      },
+      "3M": {
+        "change": -177.5,
+        "change_percent": -13.63
+      },
+      "6M": {
+        "change": -199.6,
+        "change_percent": -15.07
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:WHIRLPOOL-EQ": {
+    "symbol": "NSE:WHIRLPOOL-EQ",
+    "ticker": "WHIRLPOOL",
+    "avg_volume": 790281,
+    "avg_volumes": {
+      "1W": 2613402,
+      "1M": 1065799,
+      "45D": 790281,
+      "3M": 581699,
+      "6M": 460509
+    },
+    "price_changes": {
+      "1W": {
+        "change": 100.15,
+        "change_percent": 13.77
+      },
+      "1M": {
+        "change": 60.25,
+        "change_percent": 7.85
+      },
+      "3M": {
+        "change": 24.75,
+        "change_percent": 3.08
+      },
+      "6M": {
+        "change": -8.8,
+        "change_percent": -1.05
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HAVELLS-EQ": {
+    "symbol": "NSE:HAVELLS-EQ",
+    "ticker": "HAVELLS",
+    "avg_volume": 785126,
+    "avg_volumes": {
+      "1W": 543587,
+      "1M": 871269,
+      "45D": 785126,
+      "3M": 1052451,
+      "6M": 1098278
+    },
+    "price_changes": {
+      "1W": {
+        "change": 7.5,
+        "change_percent": 0.69
+      },
+      "1M": {
+        "change": -169.6,
+        "change_percent": -13.36
+      },
+      "3M": {
+        "change": -78.8,
+        "change_percent": -6.69
+      },
+      "6M": {
+        "change": -181.7,
+        "change_percent": -14.18
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HONAUT-EQ": {
+    "symbol": "NSE:HONAUT-EQ",
+    "ticker": "HONAUT",
+    "avg_volume": 3273,
+    "avg_volumes": {
+      "1W": 5079,
+      "1M": 3424,
+      "45D": 3273,
+      "3M": 4808,
+      "6M": 7938
+    },
+    "price_changes": {
+      "1W": {
+        "change": 20.0,
+        "change_percent": 0.06
+      },
+      "1M": {
+        "change": -2805.0,
+        "change_percent": -7.63
+      },
+      "3M": {
+        "change": -5470.0,
+        "change_percent": -13.88
+      },
+      "6M": {
+        "change": 5605.0,
+        "change_percent": 19.78
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:KEI-EQ": {
+    "symbol": "NSE:KEI-EQ",
+    "ticker": "KEI",
+    "avg_volume": 545235,
+    "avg_volumes": {
+      "1W": 400992,
+      "1M": 647445,
+      "45D": 545235,
+      "3M": 512496,
+      "6M": 456866
+    },
+    "price_changes": {
+      "1W": {
+        "change": 128.5,
+        "change_percent": 2.82
+      },
+      "1M": {
+        "change": -899.5,
+        "change_percent": -16.1
+      },
+      "3M": {
+        "change": -579.5,
+        "change_percent": -11.0
+      },
+      "6M": {
+        "change": 500.5,
+        "change_percent": 11.95
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BEL-EQ": {
+    "symbol": "NSE:BEL-EQ",
+    "ticker": "BEL",
+    "avg_volume": 9908320,
+    "avg_volumes": {
+      "1W": 8931644,
+      "1M": 9936938,
+      "45D": 9908320,
+      "3M": 11317280,
+      "6M": 12537623
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.55,
+        "change_percent": 0.39
+      },
+      "1M": {
+        "change": -16.25,
+        "change_percent": -3.93
+      },
+      "3M": {
+        "change": -10.2,
+        "change_percent": -2.5
+      },
+      "6M": {
+        "change": -29.1,
+        "change_percent": -6.83
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HAL-EQ": {
+    "symbol": "NSE:HAL-EQ",
+    "ticker": "HAL",
+    "avg_volume": 921849,
+    "avg_volumes": {
+      "1W": 653483,
+      "1M": 778644,
+      "45D": 921849,
+      "3M": 849528,
+      "6M": 1070811
+    },
+    "price_changes": {
+      "1W": {
+        "change": 52.0,
+        "change_percent": 1.09
+      },
+      "1M": {
+        "change": -60.0,
+        "change_percent": -1.22
+      },
+      "3M": {
+        "change": 471.3,
+        "change_percent": 10.79
+      },
+      "6M": {
+        "change": 1057.6,
+        "change_percent": 27.96
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:COCHINSHIP-EQ": {
+    "symbol": "NSE:COCHINSHIP-EQ",
+    "ticker": "COCHINSHIP",
+    "avg_volume": 1090049,
+    "avg_volumes": {
+      "1W": 850615,
+      "1M": 1161628,
+      "45D": 1090049,
+      "3M": 1282172,
+      "6M": 1631236
+    },
+    "price_changes": {
+      "1W": {
+        "change": 47.2,
+        "change_percent": 3.54
+      },
+      "1M": {
+        "change": -137.0,
+        "change_percent": -9.02
+      },
+      "3M": {
+        "change": -76.9,
+        "change_percent": -5.27
+      },
+      "6M": {
+        "change": 40.0,
+        "change_percent": 2.98
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:MAZDOCK-EQ": {
+    "symbol": "NSE:MAZDOCK-EQ",
+    "ticker": "MAZDOCK",
+    "avg_volume": 701191,
+    "avg_volumes": {
+      "1W": 807264,
+      "1M": 701548,
+      "45D": 701191,
+      "3M": 792506,
+      "6M": 1168334
+    },
+    "price_changes": {
+      "1W": {
+        "change": 6.7,
+        "change_percent": 0.3
+      },
+      "1M": {
+        "change": -393.3,
+        "change_percent": -15.07
+      },
+      "3M": {
+        "change": -255.8,
+        "change_percent": -10.35
+      },
+      "6M": {
+        "change": -107.4,
+        "change_percent": -4.62
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BEML-EQ": {
+    "symbol": "NSE:BEML-EQ",
+    "ticker": "BEML",
+    "avg_volume": 459895,
+    "avg_volumes": {
+      "1W": 482141,
+      "1M": 494292,
+      "45D": 459895,
+      "3M": 412653,
+      "6M": 370420
+    },
+    "price_changes": {
+      "1W": {
+        "change": 60.0,
+        "change_percent": 2.98
+      },
+      "1M": {
+        "change": 150.3,
+        "change_percent": 7.82
+      },
+      "3M": {
+        "change": 324.6,
+        "change_percent": 18.56
+      },
+      "6M": {
+        "change": 558.7,
+        "change_percent": 36.89
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GRSE-EQ": {
+    "symbol": "NSE:GRSE-EQ",
+    "ticker": "GRSE",
+    "avg_volume": 401354,
+    "avg_volumes": {
+      "1W": 351360,
+      "1M": 348576,
+      "45D": 401354,
+      "3M": 429723,
+      "6M": 1200162
+    },
+    "price_changes": {
+      "1W": {
+        "change": 18.1,
+        "change_percent": 0.77
+      },
+      "1M": {
+        "change": -249.6,
+        "change_percent": -9.57
+      },
+      "3M": {
+        "change": -366.9,
+        "change_percent": -13.47
+      },
+      "6M": {
+        "change": 77.1,
+        "change_percent": 3.38
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BHEL-EQ": {
+    "symbol": "NSE:BHEL-EQ",
+    "ticker": "BHEL",
+    "avg_volume": 7364608,
+    "avg_volumes": {
+      "1W": 6285601,
+      "1M": 6714216,
+      "45D": 7364608,
+      "3M": 10983378,
+      "6M": 14142460
+    },
+    "price_changes": {
+      "1W": {
+        "change": -9.1,
+        "change_percent": -2.12
+      },
+      "1M": {
+        "change": 3.1,
+        "change_percent": 0.74
+      },
+      "3M": {
+        "change": 17.4,
+        "change_percent": 4.32
+      },
+      "6M": {
+        "change": 158.05,
+        "change_percent": 60.31
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TIINDIA-EQ": {
+    "symbol": "NSE:TIINDIA-EQ",
+    "ticker": "TIINDIA",
+    "avg_volume": 361783,
+    "avg_volumes": {
+      "1W": 160941,
+      "1M": 187214,
+      "45D": 361783,
+      "3M": 319423,
+      "6M": 335488
+    },
+    "price_changes": {
+      "1W": {
+        "change": -25.4,
+        "change_percent": -0.98
+      },
+      "1M": {
+        "change": -314.6,
+        "change_percent": -10.89
+      },
+      "3M": {
+        "change": -480.6,
+        "change_percent": -15.74
+      },
+      "6M": {
+        "change": 36.1,
+        "change_percent": 1.42
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GRINDWELL-EQ": {
+    "symbol": "NSE:GRINDWELL-EQ",
+    "ticker": "GRINDWELL",
+    "avg_volume": 26715,
+    "avg_volumes": {
+      "1W": 43015,
+      "1M": 27946,
+      "45D": 26715,
+      "3M": 67652,
+      "6M": 81768
+    },
+    "price_changes": {
+      "1W": {
+        "change": 160.2,
+        "change_percent": 8.6
+      },
+      "1M": {
+        "change": 16.6,
+        "change_percent": 0.83
+      },
+      "3M": {
+        "change": -205.6,
+        "change_percent": -9.23
+      },
+      "6M": {
+        "change": 620.2,
+        "change_percent": 44.23
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ELGIEQUIP-EQ": {
+    "symbol": "NSE:ELGIEQUIP-EQ",
+    "ticker": "ELGIEQUIP",
+    "avg_volume": 711179,
+    "avg_volumes": {
+      "1W": 308534,
+      "1M": 470000,
+      "45D": 711179,
+      "3M": 511118,
+      "6M": 545606
+    },
+    "price_changes": {
+      "1W": {
+        "change": 19.05,
+        "change_percent": 3.21
+      },
+      "1M": {
+        "change": 2.1,
+        "change_percent": 0.34
+      },
+      "3M": {
+        "change": 8.3,
+        "change_percent": 1.37
+      },
+      "6M": {
+        "change": 132.3,
+        "change_percent": 27.56
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:KAYNES-EQ": {
+    "symbol": "NSE:KAYNES-EQ",
+    "ticker": "KAYNES",
+    "avg_volume": 1134995,
+    "avg_volumes": {
+      "1W": 1493498,
+      "1M": 1147125,
+      "45D": 1134995,
+      "3M": 1288132,
+      "6M": 1431191
+    },
+    "price_changes": {
+      "1W": {
+        "change": 31.8,
+        "change_percent": 0.9
+      },
+      "1M": {
+        "change": -384.2,
+        "change_percent": -9.76
+      },
+      "3M": {
+        "change": 287.1,
+        "change_percent": 8.79
+      },
+      "6M": {
+        "change": -68.8,
+        "change_percent": -1.9
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DIXON-EQ": {
+    "symbol": "NSE:DIXON-EQ",
+    "ticker": "DIXON",
+    "avg_volume": 358810,
+    "avg_volumes": {
+      "1W": 290136,
+      "1M": 334216,
+      "45D": 358810,
+      "3M": 460621,
+      "6M": 565694
+    },
+    "price_changes": {
+      "1W": {
+        "change": -6.0,
+        "change_percent": -0.05
+      },
+      "1M": {
+        "change": -1706.0,
+        "change_percent": -11.38
+      },
+      "3M": {
+        "change": 1271.0,
+        "change_percent": 10.58
+      },
+      "6M": {
+        "change": 2942.0,
+        "change_percent": 28.45
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:POLYCAB-EQ": {
+    "symbol": "NSE:POLYCAB-EQ",
+    "ticker": "POLYCAB",
+    "avg_volume": 355036,
+    "avg_volumes": {
+      "1W": 269539,
+      "1M": 402689,
+      "45D": 355036,
+      "3M": 361885,
+      "6M": 390797
+    },
+    "price_changes": {
+      "1W": {
+        "change": 199.0,
+        "change_percent": 2.42
+      },
+      "1M": {
+        "change": -690.5,
+        "change_percent": -7.59
+      },
+      "3M": {
+        "change": -1123.5,
+        "change_percent": -11.79
+      },
+      "6M": {
+        "change": 1236.5,
+        "change_percent": 17.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IRFC-EQ": {
+    "symbol": "NSE:IRFC-EQ",
+    "ticker": "IRFC",
+    "avg_volume": 7175998,
+    "avg_volumes": {
+      "1W": 7378227,
+      "1M": 7569515,
+      "45D": 7175998,
+      "3M": 8761260,
+      "6M": 11844456
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.69,
+        "change_percent": 0.87
+      },
+      "1M": {
+        "change": -5.45,
+        "change_percent": -6.38
+      },
+      "3M": {
+        "change": -11.77,
+        "change_percent": -12.83
+      },
+      "6M": {
+        "change": -14.69,
+        "change_percent": -15.51
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RVNL-EQ": {
+    "symbol": "NSE:RVNL-EQ",
+    "ticker": "RVNL",
+    "avg_volume": 4521658,
+    "avg_volumes": {
+      "1W": 5305921,
+      "1M": 4861814,
+      "45D": 4521658,
+      "3M": 4430272,
+      "6M": 6925099
+    },
+    "price_changes": {
+      "1W": {
+        "change": 6.46,
+        "change_percent": 3.2
+      },
+      "1M": {
+        "change": -10.24,
+        "change_percent": -4.69
+      },
+      "3M": {
+        "change": -32.69,
+        "change_percent": -13.57
+      },
+      "6M": {
+        "change": -56.39,
+        "change_percent": -21.32
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PFC-EQ": {
+    "symbol": "NSE:PFC-EQ",
+    "ticker": "PFC",
+    "avg_volume": 8784637,
+    "avg_volumes": {
+      "1W": 9111609,
+      "1M": 8712452,
+      "45D": 8784637,
+      "3M": 7612813,
+      "6M": 7703113
+    },
+    "price_changes": {
+      "1W": {
+        "change": -4.6,
+        "change_percent": -1.33
+      },
+      "1M": {
+        "change": -26.65,
+        "change_percent": -7.26
+      },
+      "3M": {
+        "change": -92.3,
+        "change_percent": -21.33
+      },
+      "6M": {
+        "change": -72.5,
+        "change_percent": -17.56
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RECLTD-EQ": {
+    "symbol": "NSE:RECLTD-EQ",
+    "ticker": "RECLTD",
+    "avg_volume": 5434190,
+    "avg_volumes": {
+      "1W": 4274442,
+      "1M": 4654930,
+      "45D": 5434190,
+      "3M": 5412174,
+      "6M": 6252187
+    },
+    "price_changes": {
+      "1W": {
+        "change": -0.5,
+        "change_percent": -0.16
+      },
+      "1M": {
+        "change": -16.0,
+        "change_percent": -4.91
+      },
+      "3M": {
+        "change": -54.65,
+        "change_percent": -14.99
+      },
+      "6M": {
+        "change": -20.5,
+        "change_percent": -6.2
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:IRCON-EQ": {
+    "symbol": "NSE:IRCON-EQ",
+    "ticker": "IRCON",
+    "avg_volume": 1475418,
+    "avg_volumes": {
+      "1W": 2107401,
+      "1M": 1534101,
+      "45D": 1475418,
+      "3M": 1412651,
+      "6M": 2719818
+    },
+    "price_changes": {
+      "1W": {
+        "change": -0.73,
+        "change_percent": -0.68
+      },
+      "1M": {
+        "change": -16.22,
+        "change_percent": -13.15
+      },
+      "3M": {
+        "change": -27.03,
+        "change_percent": -20.15
+      },
+      "6M": {
+        "change": -16.55,
+        "change_percent": -13.38
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NLCINDIA-EQ": {
+    "symbol": "NSE:NLCINDIA-EQ",
+    "ticker": "NLCINDIA",
+    "avg_volume": 1581443,
+    "avg_volumes": {
+      "1W": 1439255,
+      "1M": 1498412,
+      "45D": 1581443,
+      "3M": 2025296,
+      "6M": 4887094
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.85,
+        "change_percent": 0.71
+      },
+      "1M": {
+        "change": -7.15,
+        "change_percent": -2.64
+      },
+      "3M": {
+        "change": -55.95,
+        "change_percent": -17.48
+      },
+      "6M": {
+        "change": -2.2,
+        "change_percent": -0.83
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:HFCL-EQ": {
+    "symbol": "NSE:HFCL-EQ",
+    "ticker": "HFCL",
+    "avg_volume": 12000000,
+    "avg_volumes": {
+      "1W": 11520000,
+      "1M": 11760000,
+      "45D": 12000000,
+      "3M": 12360000,
+      "6M": 12720000
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "1M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "3M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "6M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RAILTEL-EQ": {
+    "symbol": "NSE:RAILTEL-EQ",
+    "ticker": "RAILTEL",
+    "avg_volume": 929466,
+    "avg_volumes": {
+      "1W": 719334,
+      "1M": 509146,
+      "45D": 929466,
+      "3M": 776909,
+      "6M": 1783162
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.25,
+        "change_percent": 1.25
+      },
+      "1M": {
+        "change": -18.3,
+        "change_percent": -6.52
+      },
+      "3M": {
+        "change": -51.55,
+        "change_percent": -16.41
+      },
+      "6M": {
+        "change": -9.0,
+        "change_percent": -3.31
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RITES-EQ": {
+    "symbol": "NSE:RITES-EQ",
+    "ticker": "RITES",
+    "avg_volume": 324543,
+    "avg_volumes": {
+      "1W": 448443,
+      "1M": 322280,
+      "45D": 324543,
+      "3M": 3994407,
+      "6M": 2420614
+    },
+    "price_changes": {
+      "1W": {
+        "change": -5.67,
+        "change_percent": -2.73
+      },
+      "1M": {
+        "change": -15.43,
+        "change_percent": -7.09
+      },
+      "3M": {
+        "change": -6.62,
+        "change_percent": -3.17
+      },
+      "6M": {
+        "change": 10.7,
+        "change_percent": 5.59
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NBCC-EQ": {
+    "symbol": "NSE:NBCC-EQ",
+    "ticker": "NBCC",
+    "avg_volume": 5290068,
+    "avg_volumes": {
+      "1W": 4575658,
+      "1M": 4669207,
+      "45D": 5290068,
+      "3M": 6819910,
+      "6M": 11126013
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.77,
+        "change_percent": 0.94
+      },
+      "1M": {
+        "change": -6.6,
+        "change_percent": -7.37
+      },
+      "3M": {
+        "change": -24.27,
+        "change_percent": -22.65
+      },
+      "6M": {
+        "change": -1.01,
+        "change_percent": -1.2
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GMRINFRA-EQ": {
+    "symbol": "NSE:GMRINFRA-EQ",
+    "ticker": "GMRINFRA",
+    "avg_volume": 14000000,
+    "avg_volumes": {
+      "1W": 13440000,
+      "1M": 13720000,
+      "45D": 14000000,
+      "3M": 14420000,
+      "6M": 14840000
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "1M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "3M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "6M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CONCOR-EQ": {
+    "symbol": "NSE:CONCOR-EQ",
+    "ticker": "CONCOR",
+    "avg_volume": 1378498,
+    "avg_volumes": {
+      "1W": 1623216,
+      "1M": 1301531,
+      "45D": 1378498,
+      "3M": 1984125,
+      "6M": 1802267
+    },
+    "price_changes": {
+      "1W": {
+        "change": -18.7,
+        "change_percent": -3.83
+      },
+      "1M": {
+        "change": -46.55,
+        "change_percent": -9.02
+      },
+      "3M": {
+        "change": -0.35,
+        "change_percent": -0.07
+      },
+      "6M": {
+        "change": 22.15,
+        "change_percent": 4.95
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PIDILITIND-EQ": {
+    "symbol": "NSE:PIDILITIND-EQ",
+    "ticker": "PIDILITIND",
+    "avg_volume": 694606,
+    "avg_volumes": {
+      "1W": 551181,
+      "1M": 635743,
+      "45D": 694606,
+      "3M": 900087,
+      "6M": 958822
+    },
+    "price_changes": {
+      "1W": {
+        "change": -22.7,
+        "change_percent": -1.46
+      },
+      "1M": {
+        "change": -122.3,
+        "change_percent": -7.41
+      },
+      "3M": {
+        "change": -68.2,
+        "change_percent": -4.27
+      },
+      "6M": {
+        "change": 187.5,
+        "change_percent": 13.98
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DEEPAKNTR-EQ": {
+    "symbol": "NSE:DEEPAKNTR-EQ",
+    "ticker": "DEEPAKNTR",
+    "avg_volume": 322122,
+    "avg_volumes": {
+      "1W": 197623,
+      "1M": 323506,
+      "45D": 322122,
+      "3M": 344984,
+      "6M": 279286
+    },
+    "price_changes": {
+      "1W": {
+        "change": 12.1,
+        "change_percent": 0.75
+      },
+      "1M": {
+        "change": -134.1,
+        "change_percent": -7.66
+      },
+      "3M": {
+        "change": -5.5,
+        "change_percent": -0.34
+      },
+      "6M": {
+        "change": 226.6,
+        "change_percent": 16.3
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NAVINFLUOR-EQ": {
+    "symbol": "NSE:NAVINFLUOR-EQ",
+    "ticker": "NAVINFLUOR",
+    "avg_volume": 137482,
+    "avg_volumes": {
+      "1W": 150232,
+      "1M": 137775,
+      "45D": 137482,
+      "3M": 198817,
+      "6M": 205589
+    },
+    "price_changes": {
+      "1W": {
+        "change": 250.5,
+        "change_percent": 3.05
+      },
+      "1M": {
+        "change": 261.5,
+        "change_percent": 3.19
+      },
+      "3M": {
+        "change": 861.5,
+        "change_percent": 11.32
+      },
+      "6M": {
+        "change": 2346.5,
+        "change_percent": 38.32
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SUDARSCHEM-EQ": {
+    "symbol": "NSE:SUDARSCHEM-EQ",
+    "ticker": "SUDARSCHEM",
+    "avg_volume": 537936,
+    "avg_volumes": {
+      "1W": 147302,
+      "1M": 344829,
+      "45D": 537936,
+      "3M": 402572,
+      "6M": 373221
+    },
+    "price_changes": {
+      "1W": {
+        "change": 32.6,
+        "change_percent": 2.7
+      },
+      "1M": {
+        "change": 6.7,
+        "change_percent": 0.54
+      },
+      "3M": {
+        "change": 346.75,
+        "change_percent": 38.91
+      },
+      "6M": {
+        "change": 425.45,
+        "change_percent": 52.36
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:FINPIPE-EQ": {
+    "symbol": "NSE:FINPIPE-EQ",
+    "ticker": "FINPIPE",
+    "avg_volume": 431419,
+    "avg_volumes": {
+      "1W": 367763,
+      "1M": 408020,
+      "45D": 431419,
+      "3M": 481224,
+      "6M": 902708
+    },
+    "price_changes": {
+      "1W": {
+        "change": -1.18,
+        "change_percent": -0.76
+      },
+      "1M": {
+        "change": -9.56,
+        "change_percent": -5.87
+      },
+      "3M": {
+        "change": -23.0,
+        "change_percent": -13.05
+      },
+      "6M": {
+        "change": -21.38,
+        "change_percent": -12.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ASTRAL-EQ": {
+    "symbol": "NSE:ASTRAL-EQ",
+    "ticker": "ASTRAL",
+    "avg_volume": 1297231,
+    "avg_volumes": {
+      "1W": 547479,
+      "1M": 1161550,
+      "45D": 1297231,
+      "3M": 991843,
+      "6M": 858906
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.6,
+        "change_percent": 0.04
+      },
+      "1M": {
+        "change": -140.5,
+        "change_percent": -9.12
+      },
+      "3M": {
+        "change": -87.4,
+        "change_percent": -5.88
+      },
+      "6M": {
+        "change": -232.3,
+        "change_percent": -14.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TATACHEM-EQ": {
+    "symbol": "NSE:TATACHEM-EQ",
+    "ticker": "TATACHEM",
+    "avg_volume": 2448238,
+    "avg_volumes": {
+      "1W": 6885378,
+      "1M": 3322962,
+      "45D": 2448238,
+      "3M": 1604432,
+      "6M": 1723809
+    },
+    "price_changes": {
+      "1W": {
+        "change": -117.4,
+        "change_percent": -15.06
+      },
+      "1M": {
+        "change": 35.55,
+        "change_percent": 5.68
+      },
+      "3M": {
+        "change": -84.3,
+        "change_percent": -11.3
+      },
+      "6M": {
+        "change": 28.6,
+        "change_percent": 4.52
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BALRAMCHIN-EQ": {
+    "symbol": "NSE:BALRAMCHIN-EQ",
+    "ticker": "BALRAMCHIN",
+    "avg_volume": 5328880,
+    "avg_volumes": {
+      "1W": 934772,
+      "1M": 4413607,
+      "45D": 5328880,
+      "3M": 3004068,
+      "6M": 1933705
+    },
+    "price_changes": {
+      "1W": {
+        "change": -8.85,
+        "change_percent": -1.31
+      },
+      "1M": {
+        "change": -1.25,
+        "change_percent": -0.19
+      },
+      "3M": {
+        "change": 132.65,
+        "change_percent": 24.83
+      },
+      "6M": {
+        "change": 180.95,
+        "change_percent": 37.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GSFC-EQ": {
+    "symbol": "NSE:GSFC-EQ",
+    "ticker": "GSFC",
+    "avg_volume": 1127234,
+    "avg_volumes": {
+      "1W": 946119,
+      "1M": 1168497,
+      "45D": 1127234,
+      "3M": 782804,
+      "6M": 837534
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.3,
+        "change_percent": 2.17
+      },
+      "1M": {
+        "change": -3.59,
+        "change_percent": -2.26
+      },
+      "3M": {
+        "change": -7.56,
+        "change_percent": -4.63
+      },
+      "6M": {
+        "change": 1.62,
+        "change_percent": 1.05
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:CHAMBLFERT-EQ": {
+    "symbol": "NSE:CHAMBLFERT-EQ",
+    "ticker": "CHAMBLFERT",
+    "avg_volume": 535023,
+    "avg_volumes": {
+      "1W": 454994,
+      "1M": 644917,
+      "45D": 535023,
+      "3M": 493815,
+      "6M": 753983
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.2,
+        "change_percent": 1.01
+      },
+      "1M": {
+        "change": -9.5,
+        "change_percent": -2.22
+      },
+      "3M": {
+        "change": -50.95,
+        "change_percent": -10.86
+      },
+      "6M": {
+        "change": -10.45,
+        "change_percent": -2.44
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:COROMANDEL-EQ": {
+    "symbol": "NSE:COROMANDEL-EQ",
+    "ticker": "COROMANDEL",
+    "avg_volume": 123486,
+    "avg_volumes": {
+      "1W": 146489,
+      "1M": 138135,
+      "45D": 123486,
+      "3M": 165448,
+      "6M": 296990
+    },
+    "price_changes": {
+      "1W": {
+        "change": 9.7,
+        "change_percent": 0.5
+      },
+      "1M": {
+        "change": 25.9,
+        "change_percent": 1.35
+      },
+      "3M": {
+        "change": -60.9,
+        "change_percent": -3.04
+      },
+      "6M": {
+        "change": 28.5,
+        "change_percent": 1.49
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PIIND-EQ": {
+    "symbol": "NSE:PIIND-EQ",
+    "ticker": "PIIND",
+    "avg_volume": 328530,
+    "avg_volumes": {
+      "1W": 340866,
+      "1M": 275402,
+      "45D": 328530,
+      "3M": 275114,
+      "6M": 324996
+    },
+    "price_changes": {
+      "1W": {
+        "change": 93.6,
+        "change_percent": 4.06
+      },
+      "1M": {
+        "change": -107.4,
+        "change_percent": -4.28
+      },
+      "3M": {
+        "change": -284.3,
+        "change_percent": -10.59
+      },
+      "6M": {
+        "change": -508.9,
+        "change_percent": -17.49
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SRF-EQ": {
+    "symbol": "NSE:SRF-EQ",
+    "ticker": "SRF",
+    "avg_volume": 232949,
+    "avg_volumes": {
+      "1W": 288834,
+      "1M": 232064,
+      "45D": 232949,
+      "3M": 403067,
+      "6M": 505369
+    },
+    "price_changes": {
+      "1W": {
+        "change": 7.0,
+        "change_percent": 0.28
+      },
+      "1M": {
+        "change": -32.0,
+        "change_percent": -1.24
+      },
+      "3M": {
+        "change": -189.9,
+        "change_percent": -6.95
+      },
+      "6M": {
+        "change": 88.5,
+        "change_percent": 3.61
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DLF-EQ": {
+    "symbol": "NSE:DLF-EQ",
+    "ticker": "DLF",
+    "avg_volume": 3351674,
+    "avg_volumes": {
+      "1W": 3225758,
+      "1M": 3442234,
+      "45D": 3351674,
+      "3M": 3989696,
+      "6M": 4222505
+    },
+    "price_changes": {
+      "1W": {
+        "change": 36.0,
+        "change_percent": 5.62
+      },
+      "1M": {
+        "change": -6.95,
+        "change_percent": -1.02
+      },
+      "3M": {
+        "change": 54.65,
+        "change_percent": 8.8
+      },
+      "6M": {
+        "change": 135.25,
+        "change_percent": 25.01
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:GODREJPROP-EQ": {
+    "symbol": "NSE:GODREJPROP-EQ",
+    "ticker": "GODREJPROP",
+    "avg_volume": 642760,
+    "avg_volumes": {
+      "1W": 481921,
+      "1M": 734760,
+      "45D": 642760,
+      "3M": 737510,
+      "6M": 826919
+    },
+    "price_changes": {
+      "1W": {
+        "change": 4.7,
+        "change_percent": 0.28
+      },
+      "1M": {
+        "change": -366.1,
+        "change_percent": -17.87
+      },
+      "3M": {
+        "change": -167.7,
+        "change_percent": -9.06
+      },
+      "6M": {
+        "change": 133.4,
+        "change_percent": 8.61
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:OBEROIRLTY-EQ": {
+    "symbol": "NSE:OBEROIRLTY-EQ",
+    "ticker": "OBEROIRLTY",
+    "avg_volume": 517706,
+    "avg_volumes": {
+      "1W": 599984,
+      "1M": 450700,
+      "45D": 517706,
+      "3M": 533323,
+      "6M": 537925
+    },
+    "price_changes": {
+      "1W": {
+        "change": 119.8,
+        "change_percent": 6.88
+      },
+      "1M": {
+        "change": -19.5,
+        "change_percent": -1.04
+      },
+      "3M": {
+        "change": 111.3,
+        "change_percent": 6.36
+      },
+      "6M": {
+        "change": 414.7,
+        "change_percent": 28.68
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PRESTIGE-EQ": {
+    "symbol": "NSE:PRESTIGE-EQ",
+    "ticker": "PRESTIGE",
+    "avg_volume": 499910,
+    "avg_volumes": {
+      "1W": 421983,
+      "1M": 474747,
+      "45D": 499910,
+      "3M": 640821,
+      "6M": 783679
+    },
+    "price_changes": {
+      "1W": {
+        "change": 46.5,
+        "change_percent": 3.23
+      },
+      "1M": {
+        "change": -136.4,
+        "change_percent": -8.4
+      },
+      "3M": {
+        "change": -69.7,
+        "change_percent": -4.48
+      },
+      "6M": {
+        "change": 238.4,
+        "change_percent": 19.1
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:LODHA-EQ": {
+    "symbol": "NSE:LODHA-EQ",
+    "ticker": "LODHA",
+    "avg_volume": 1506878,
+    "avg_volumes": {
+      "1W": 1862438,
+      "1M": 1675476,
+      "45D": 1506878,
+      "3M": 2565500,
+      "6M": 2838986
+    },
+    "price_changes": {
+      "1W": {
+        "change": 67.3,
+        "change_percent": 6.1
+      },
+      "1M": {
+        "change": -110.7,
+        "change_percent": -8.64
+      },
+      "3M": {
+        "change": 222.95,
+        "change_percent": 23.53
+      },
+      "6M": {
+        "change": 373.5,
+        "change_percent": 46.87
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SOBHA-EQ": {
+    "symbol": "NSE:SOBHA-EQ",
+    "ticker": "SOBHA",
+    "avg_volume": 86131,
+    "avg_volumes": {
+      "1W": 78973,
+      "1M": 82189,
+      "45D": 86131,
+      "3M": 170295,
+      "6M": 167981
+    },
+    "price_changes": {
+      "1W": {
+        "change": 47.4,
+        "change_percent": 3.99
+      },
+      "1M": {
+        "change": -42.9,
+        "change_percent": -3.35
+      },
+      "3M": {
+        "change": -171.2,
+        "change_percent": -12.16
+      },
+      "6M": {
+        "change": -30.4,
+        "change_percent": -2.4
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BRIGADE-EQ": {
+    "symbol": "NSE:BRIGADE-EQ",
+    "ticker": "BRIGADE",
+    "avg_volume": 668850,
+    "avg_volumes": {
+      "1W": 316640,
+      "1M": 674211,
+      "45D": 668850,
+      "3M": 707469,
+      "6M": 935270
+    },
+    "price_changes": {
+      "1W": {
+        "change": -14.55,
+        "change_percent": -2.34
+      },
+      "1M": {
+        "change": -54.55,
+        "change_percent": -8.25
+      },
+      "3M": {
+        "change": 81.15,
+        "change_percent": 15.45
+      },
+      "6M": {
+        "change": 122.21,
+        "change_percent": 25.24
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PHOENIXLTD-EQ": {
+    "symbol": "NSE:PHOENIXLTD-EQ",
+    "ticker": "PHOENIXLTD",
+    "avg_volume": 390785,
+    "avg_volumes": {
+      "1W": 396789,
+      "1M": 410870,
+      "45D": 390785,
+      "3M": 615487,
+      "6M": 575830
+    },
+    "price_changes": {
+      "1W": {
+        "change": 122.2,
+        "change_percent": 6.53
+      },
+      "1M": {
+        "change": 64.4,
+        "change_percent": 3.34
+      },
+      "3M": {
+        "change": 89.8,
+        "change_percent": 4.71
+      },
+      "6M": {
+        "change": 451.3,
+        "change_percent": 29.25
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SIGNATURE-EQ": {
+    "symbol": "NSE:SIGNATURE-EQ",
+    "ticker": "SIGNATURE",
+    "avg_volume": 219190,
+    "avg_volumes": {
+      "1W": 317783,
+      "1M": 235992,
+      "45D": 219190,
+      "3M": 403047,
+      "6M": 360049
+    },
+    "price_changes": {
+      "1W": {
+        "change": 27.35,
+        "change_percent": 3.62
+      },
+      "1M": {
+        "change": -7.95,
+        "change_percent": -1.01
+      },
+      "3M": {
+        "change": 26.15,
+        "change_percent": 3.46
+      },
+      "6M": {
+        "change": 19.0,
+        "change_percent": 2.49
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SUNTECK-EQ": {
+    "symbol": "NSE:SUNTECK-EQ",
+    "ticker": "SUNTECK",
+    "avg_volume": 141557,
+    "avg_volumes": {
+      "1W": 84511,
+      "1M": 131035,
+      "45D": 141557,
+      "3M": 276376,
+      "6M": 521038
+    },
+    "price_changes": {
+      "1W": {
+        "change": 5.25,
+        "change_percent": 1.87
+      },
+      "1M": {
+        "change": -27.5,
+        "change_percent": -8.76
+      },
+      "3M": {
+        "change": -32.5,
+        "change_percent": -10.19
+      },
+      "6M": {
+        "change": -21.2,
+        "change_percent": -6.89
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TITAN-EQ": {
+    "symbol": "NSE:TITAN-EQ",
+    "ticker": "TITAN",
+    "avg_volume": 608985,
+    "avg_volumes": {
+      "1W": 845683,
+      "1M": 591961,
+      "45D": 608985,
+      "3M": 805974,
+      "6M": 1017585
+    },
+    "price_changes": {
+      "1W": {
+        "change": 29.0,
+        "change_percent": 0.6
+      },
+      "1M": {
+        "change": -254.8,
+        "change_percent": -4.97
+      },
+      "3M": {
+        "change": 578.7,
+        "change_percent": 13.49
+      },
+      "6M": {
+        "change": 763.4,
+        "change_percent": 18.59
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:TRENT-EQ": {
+    "symbol": "NSE:TRENT-EQ",
+    "ticker": "TRENT",
+    "avg_volume": 671162,
+    "avg_volumes": {
+      "1W": 716368,
+      "1M": 659053,
+      "45D": 671162,
+      "3M": 1085270,
+      "6M": 1447732
+    },
+    "price_changes": {
+      "1W": {
+        "change": -46.9,
+        "change_percent": -1.68
+      },
+      "1M": {
+        "change": -187.9,
+        "change_percent": -6.41
+      },
+      "3M": {
+        "change": -474.1,
+        "change_percent": -14.74
+      },
+      "6M": {
+        "change": 369.03,
+        "change_percent": 15.55
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ASIANPAINT-EQ": {
+    "symbol": "NSE:ASIANPAINT-EQ",
+    "ticker": "ASIANPAINT",
+    "avg_volume": 573231,
+    "avg_volumes": {
+      "1W": 513684,
+      "1M": 556628,
+      "45D": 573231,
+      "3M": 882079,
+      "6M": 1105918
+    },
+    "price_changes": {
+      "1W": {
+        "change": -32.4,
+        "change_percent": -1.32
+      },
+      "1M": {
+        "change": -218.2,
+        "change_percent": -8.27
+      },
+      "3M": {
+        "change": -223.6,
+        "change_percent": -8.45
+      },
+      "6M": {
+        "change": 226.2,
+        "change_percent": 10.3
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:BERGEPAINT-EQ": {
+    "symbol": "NSE:BERGEPAINT-EQ",
+    "ticker": "BERGEPAINT",
+    "avg_volume": 410258,
+    "avg_volumes": {
+      "1W": 659755,
+      "1M": 357915,
+      "45D": 410258,
+      "3M": 407103,
+      "6M": 547747
+    },
+    "price_changes": {
+      "1W": {
+        "change": 1.8,
+        "change_percent": 0.4
+      },
+      "1M": {
+        "change": -59.45,
+        "change_percent": -11.66
+      },
+      "3M": {
+        "change": -88.25,
+        "change_percent": -16.38
+      },
+      "6M": {
+        "change": 33.7,
+        "change_percent": 8.09
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:DMART-EQ": {
+    "symbol": "NSE:DMART-EQ",
+    "ticker": "DMART",
+    "avg_volume": 451016,
+    "avg_volumes": {
+      "1W": 562181,
+      "1M": 506068,
+      "45D": 451016,
+      "3M": 567054,
+      "6M": 597036
+    },
+    "price_changes": {
+      "1W": {
+        "change": 107.0,
+        "change_percent": 2.88
+      },
+      "1M": {
+        "change": -91.4,
+        "change_percent": -2.34
+      },
+      "3M": {
+        "change": -476.4,
+        "change_percent": -11.09
+      },
+      "6M": {
+        "change": 47.4,
+        "change_percent": 1.26
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:ZOMATO-EQ": {
+    "symbol": "NSE:ZOMATO-EQ",
+    "ticker": "ZOMATO",
+    "avg_volume": 42000000,
+    "avg_volumes": {
+      "1W": 40320000,
+      "1M": 41160000,
+      "45D": 42000000,
+      "3M": 43260000,
+      "6M": 44520000
+    },
+    "price_changes": {
+      "1W": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "1M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "3M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      },
+      "6M": {
+        "change": 0.0,
+        "change_percent": 0.0
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NYKAA-EQ": {
+    "symbol": "NSE:NYKAA-EQ",
+    "ticker": "NYKAA",
+    "avg_volume": 4251400,
+    "avg_volumes": {
+      "1W": 3571071,
+      "1M": 4048812,
+      "45D": 4251400,
+      "3M": 6047463,
+      "6M": 6193573
+    },
+    "price_changes": {
+      "1W": {
+        "change": 14.95,
+        "change_percent": 4.62
+      },
+      "1M": {
+        "change": 4.7,
+        "change_percent": 1.41
+      },
+      "3M": {
+        "change": 37.35,
+        "change_percent": 12.39
+      },
+      "6M": {
+        "change": 98.1,
+        "change_percent": 40.77
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:NAUKRI-EQ": {
+    "symbol": "NSE:NAUKRI-EQ",
+    "ticker": "NAUKRI",
+    "avg_volume": 1575915,
+    "avg_volumes": {
+      "1W": 1405300,
+      "1M": 1260144,
+      "45D": 1575915,
+      "3M": 2169151,
+      "6M": 2222007
+    },
+    "price_changes": {
+      "1W": {
+        "change": -29.4,
+        "change_percent": -2.32
+      },
+      "1M": {
+        "change": -114.4,
+        "change_percent": -8.47
+      },
+      "3M": {
+        "change": 256.75,
+        "change_percent": 26.23
+      },
+      "6M": {
+        "change": 257.4,
+        "change_percent": 26.31
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:POLICYBZR-EQ": {
+    "symbol": "NSE:POLICYBZR-EQ",
+    "ticker": "POLICYBZR",
+    "avg_volume": 1366459,
+    "avg_volumes": {
+      "1W": 2419260,
+      "1M": 1418476,
+      "45D": 1366459,
+      "3M": 1837623,
+      "6M": 1801725
+    },
+    "price_changes": {
+      "1W": {
+        "change": -444.9,
+        "change_percent": -25.21
+      },
+      "1M": {
+        "change": -478.2,
+        "change_percent": -26.59
+      },
+      "3M": {
+        "change": -295.1,
+        "change_percent": -18.27
+      },
+      "6M": {
+        "change": -177.0,
+        "change_percent": -11.82
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PAYTM-EQ": {
+    "symbol": "NSE:PAYTM-EQ",
+    "ticker": "PAYTM",
+    "avg_volume": 4407025,
+    "avg_volumes": {
+      "1W": 3479562,
+      "1M": 4517275,
+      "45D": 4407025,
+      "3M": 4365954,
+      "6M": 3493992
+    },
+    "price_changes": {
+      "1W": {
+        "change": 3.7,
+        "change_percent": 0.21
+      },
+      "1M": {
+        "change": 48.7,
+        "change_percent": 2.83
+      },
+      "3M": {
+        "change": 641.9,
+        "change_percent": 57.07
+      },
+      "6M": {
+        "change": 712.4,
+        "change_percent": 67.57
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:INDIAMART-EQ": {
+    "symbol": "NSE:INDIAMART-EQ",
+    "ticker": "INDIAMART",
+    "avg_volume": 109363,
+    "avg_volumes": {
+      "1W": 190443,
+      "1M": 112664,
+      "45D": 109363,
+      "3M": 122580,
+      "6M": 118074
+    },
+    "price_changes": {
+      "1W": {
+        "change": -35.4,
+        "change_percent": -2.13
+      },
+      "1M": {
+        "change": -123.0,
+        "change_percent": -7.03
+      },
+      "3M": {
+        "change": -328.1,
+        "change_percent": -16.78
+      },
+      "6M": {
+        "change": -367.1,
+        "change_percent": -18.41
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:KALYANKJIL-EQ": {
+    "symbol": "NSE:KALYANKJIL-EQ",
+    "ticker": "KALYANKJIL",
+    "avg_volume": 8055131,
+    "avg_volumes": {
+      "1W": 4278994,
+      "1M": 7932385,
+      "45D": 8055131,
+      "3M": 22413067,
+      "6M": 15275846
+    },
+    "price_changes": {
+      "1W": {
+        "change": -2.75,
+        "change_percent": -0.47
+      },
+      "1M": {
+        "change": -33.9,
+        "change_percent": -5.53
+      },
+      "3M": {
+        "change": 200.9,
+        "change_percent": 53.18
+      },
+      "6M": {
+        "change": 196.0,
+        "change_percent": 51.22
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:PAGEIND-EQ": {
+    "symbol": "NSE:PAGEIND-EQ",
+    "ticker": "PAGEIND",
+    "avg_volume": 30112,
+    "avg_volumes": {
+      "1W": 23507,
+      "1M": 21230,
+      "45D": 30112,
+      "3M": 31225,
+      "6M": 30559
+    },
+    "price_changes": {
+      "1W": {
+        "change": 2570.0,
+        "change_percent": 7.34
+      },
+      "1M": {
+        "change": 2090.0,
+        "change_percent": 5.89
+      },
+      "3M": {
+        "change": -3360.0,
+        "change_percent": -8.21
+      },
+      "6M": {
+        "change": 5585.0,
+        "change_percent": 17.45
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:RAYMOND-EQ": {
+    "symbol": "NSE:RAYMOND-EQ",
+    "ticker": "RAYMOND",
+    "avg_volume": 4116585,
+    "avg_volumes": {
+      "1W": 4365492,
+      "1M": 5802625,
+      "45D": 4116585,
+      "3M": 2294964,
+      "6M": 1610025
+    },
+    "price_changes": {
+      "1W": {
+        "change": 213.4,
+        "change_percent": 21.82
+      },
+      "1M": {
+        "change": 564.4,
+        "change_percent": 89.99
+      },
+      "3M": {
+        "change": 599.3,
+        "change_percent": 101.18
+      },
+      "6M": {
+        "change": 818.65,
+        "change_percent": 219.51
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  },
+  "NSE:SENCO-EQ": {
+    "symbol": "NSE:SENCO-EQ",
+    "ticker": "SENCO",
+    "avg_volume": 1165295,
+    "avg_volumes": {
+      "1W": 591348,
+      "1M": 692242,
+      "45D": 1165295,
+      "3M": 1821029,
+      "6M": 1695031
+    },
+    "price_changes": {
+      "1W": {
+        "change": -5.2,
+        "change_percent": -1.52
+      },
+      "1M": {
+        "change": -31.5,
+        "change_percent": -8.54
+      },
+      "3M": {
+        "change": 13.6,
+        "change_percent": 4.2
+      },
+      "6M": {
+        "change": 41.2,
+        "change_percent": 13.92
+      }
+    },
+    "updated_at": "2026-09-24T13:20:21.936256"
+  }
+}
