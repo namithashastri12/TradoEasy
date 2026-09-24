@@ -4,7 +4,7 @@ echo ===================================================
 echo Starting TradoEasy Real-Time Market Intelligence Terminal
 echo ===================================================
 
-set "PATH=C:\Program Files\nodejs;C:\Users\HP\AppData\Local\Programs\Python\Python311;C:\Users\HP\AppData\Local\Programs\Python\Python311\Scripts;%PATH%"
+set "PATH=%LOCALAPPDATA%\Programs\Python\Python312;%LOCALAPPDATA%\Programs\Python\Python312\Scripts;%LOCALAPPDATA%\Programs\Python\Python311;%LOCALAPPDATA%\Programs\Python\Python311\Scripts;%ProgramFiles%\nodejs;%PATH%"
 
 start "TradoEasy Backend (FastAPI)" cmd /k "cd /d "%~dp0backend" && python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
@@ -14,7 +14,7 @@ start "TradoEasy Frontend (Vite)" cmd /k "cd /d "%~dp0frontend" && npm run dev"
 
 timeout /t 2 /nobreak >nul
 
-start "TradoEasy Live Cloud Tunnel (For Your Brother)" cmd /k "ngrok http 8000"
+where ngrok >nul 2>nul && (start "TradoEasy Live Cloud Tunnel (For External Sharing)" cmd /k "ngrok http 8000")
 
 echo.
 echo ===================================================
