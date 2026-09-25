@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { ArrowUpDown, AlertCircle, TrendingUp } from 'lucide-react';
+import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
+import { ArrowUpDown, AlertCircle, TrendingUp, RotateCcw } from 'lucide-react';
 import { MarketTick, SRObservation, AvgVolumePeriod, PriceChangePeriod } from '../types/market';
 import { getEffectiveAvgVolume, getEffectiveRVOL, getEffectivePriceChange } from '../utils/periodMetrics';
 import { ScannerRow } from './ScannerRow';
@@ -28,40 +28,118 @@ export const ScannerTable: React.FC<ScannerTableProps> = ({
 }) => {
   const [sortField, setSortField] = useState<SortField>('relative_volume');
   const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
+  const [symbolOrder, setSymbolOrder] = useState<string[]>([]);
+
+  // Lookup map of latest ticks by symbol for live in-place value updates
+  const ticksMap = useMemo(() => {
+    const map = new Map<string, MarketTick>();
+    ticks.forEach((t) => map.set(t.symbol, t));
+    return map;
+  }, [ticks]);
+
+  // Pure sort function returning array of symbol identifiers
+  const sortSymbols = useCallback(
+    (
+      items: MarketTick[],
+      field: SortField,
+      order: SortOrder,
+      avgPeriod: AvgVolumePeriod,
+      pricePeriod: PriceChangePeriod
+    ): string[] => {
+      const list = [...items];
+      list.sort((a, b) => {
+        let valA: any = a[field];
+        let valB: any = b[field];
+
+        if (field === 'avg_volume') {
+          valA = getEffectiveAvgVolume(a, avgPeriod);
+          valB = getEffectiveAvgVolume(b, avgPeriod);
+        } else if (field === 'relative_volume') {
+          valA = getEffectiveRVOL(a, avgPeriod);
+          valB = getEffectiveRVOL(b, avgPeriod);
+        } else if (field === 'change_percent') {
+          valA = getEffectivePriceChange(a, pricePeriod).change_percent;
+          valB = getEffectivePriceChange(b, pricePeriod).change_percent;
+        }
+
+        if (typeof valA === 'string') {
+          return order === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        }
+        return order === 'asc' ? valA - valB : valB - valA;
+      });
+      return list.map((t) => t.symbol);
+    },
+    []
+  );
+
+  // Manual or periodic re-sort action
+  const reSort = useCallback(() => {
+    setSymbolOrder(sortSymbols(ticks, sortField, sortOrder, avgVolumePeriod, priceChangePeriod));
+  }, [ticks, sortField, sortOrder, avgVolumePeriod, priceChangePeriod, sortSymbols]);
 
   const handleSort = (field: SortField) => {
+    let newOrder: SortOrder = 'desc';
     if (sortField === field) {
-      setSortOrder((prev) => (prev === 'asc' ? 'desc' : 'asc'));
+      newOrder = sortOrder === 'asc' ? 'desc' : 'asc';
     } else {
-      setSortField(field);
-      setSortOrder('desc'); // Default to descending for numbers
+      newOrder = field === 'ticker' ? 'asc' : 'desc';
     }
+    setSortField(field);
+    setSortOrder(newOrder);
+    setSymbolOrder(sortSymbols(ticks, field, newOrder, avgVolumePeriod, priceChangePeriod));
   };
 
+  // Re-sort when active symbols set, period dropdowns, or sort criteria change
+  const currentSymbolsKey = useMemo(() => {
+    return ticks.map((t) => t.symbol).sort().join(',');
+  }, [ticks]);
+
+  const isInitialMount = useRef(true);
+  useEffect(() => {
+    if (isInitialMount.current || symbolOrder.length === 0) {
+      isInitialMount.current = false;
+      reSort();
+      return;
+    }
+    // Only re-rank if symbol set changed (e.g. user selected different sector/universe/search)
+    const existingSet = new Set(symbolOrder);
+    const newSymbols = ticks.map((t) => t.symbol);
+    const hasDifferentSymbols = newSymbols.length !== symbolOrder.length || newSymbols.some((s) => !existingSet.has(s));
+    if (hasDifferentSymbols) {
+      reSort();
+    }
+  }, [currentSymbolsKey, reSort, symbolOrder]);
+
+  // Periodic 20-second re-ranking so top movers reflect latest data without jarring micro-shuffles
+  useEffect(() => {
+    const timer = setInterval(() => {
+      reSort();
+    }, 20000);
+    return () => clearInterval(timer);
+  }, [reSort]);
+
+  // Build stable list of rows: row slots are pinned, live prices/volumes update in-place!
   const sortedTicks = useMemo(() => {
-    const list = [...ticks];
-    list.sort((a, b) => {
-      let valA: any = a[sortField];
-      let valB: any = b[sortField];
+    const ordered: MarketTick[] = [];
+    const seen = new Set<string>();
 
-      if (sortField === 'avg_volume') {
-        valA = getEffectiveAvgVolume(a, avgVolumePeriod);
-        valB = getEffectiveAvgVolume(b, avgVolumePeriod);
-      } else if (sortField === 'relative_volume') {
-        valA = getEffectiveRVOL(a, avgVolumePeriod);
-        valB = getEffectiveRVOL(b, avgVolumePeriod);
-      } else if (sortField === 'change_percent') {
-        valA = getEffectivePriceChange(a, priceChangePeriod).change_percent;
-        valB = getEffectivePriceChange(b, priceChangePeriod).change_percent;
+    for (const sym of symbolOrder) {
+      const tick = ticksMap.get(sym);
+      if (tick) {
+        ordered.push(tick);
+        seen.add(sym);
       }
+    }
 
-      if (typeof valA === 'string') {
-        return sortOrder === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+    // Append any ticks not yet in symbolOrder (fallback)
+    for (const tick of ticks) {
+      if (!seen.has(tick.symbol)) {
+        ordered.push(tick);
       }
-      return sortOrder === 'asc' ? valA - valB : valB - valA;
-    });
-    return list;
-  }, [ticks, sortField, sortOrder, avgVolumePeriod, priceChangePeriod]);
+    }
+
+    return ordered;
+  }, [symbolOrder, ticksMap, ticks]);
 
   return (
     <div className="bg-[#101522] border border-[#232C42] rounded-xl overflow-hidden shadow-xl mb-6 flex flex-col">
@@ -81,6 +159,16 @@ export const ScannerTable: React.FC<ScannerTableProps> = ({
         </div>
 
         <div className="flex items-center gap-3 self-end sm:self-auto">
+          {/* Re-sort Button */}
+          <button
+            onClick={reSort}
+            title="Re-sort rows by latest ranking (row positions remain stable between cycles so stocks don't jump)"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#161C2D] hover:bg-[#1E263C] border border-[#232C42] hover:border-slate-500 text-slate-300 hover:text-white text-xs font-mono transition-colors"
+          >
+            <RotateCcw className="w-3 h-3 text-blue-400" />
+            <span>Re-sort Order</span>
+          </button>
+
           <span className="text-xs font-mono text-slate-400">
             Showing <strong className="text-white">{sortedTicks.length}</strong> instruments
           </span>

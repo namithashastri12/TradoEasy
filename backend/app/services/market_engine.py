@@ -143,7 +143,7 @@ class MarketEngine:
         self.demo_data_service.stop()
 
     def set_active_universe(self, universe_id: str) -> bool:
-        """Changes active universe and subscribes to corresponding instruments."""
+        """Changes active universe and filters snapshot to corresponding instruments."""
         if universe_id not in UNIVERSES:
             return False
 
@@ -151,12 +151,6 @@ class MarketEngine:
             self._active_universe_id = universe_id
             self._initialize_universe_state(universe_id)
             symbols = UNIVERSES[universe_id].symbols
-
-            if self.is_live_mode and self.fyers_data_service.is_connected:
-                self.fyers_data_service.update_subscriptions(symbols)
-            elif self.demo_data_service.is_connected:
-                # Demo service naturally samples from active symbols
-                pass
 
         logger.info(f"Switched active universe to: {universe_id} ({len(symbols)} symbols)")
         return True
@@ -214,7 +208,8 @@ class MarketEngine:
             high_p = max(high_p, ltp)
             low_p = min(low_p, ltp) if low_p > 0 else ltp
 
-            ts = int(raw.get("timestamp", now))
+            raw_ts = raw.get("exch_feed_time") or raw.get("last_traded_time") or raw.get("timestamp") or now
+            ts = int(raw_ts)
 
             normalized = NormalizedTick(
                 symbol=symbol,

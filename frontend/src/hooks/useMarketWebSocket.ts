@@ -37,6 +37,8 @@ const DEFAULT_MARKET_STATUS: MarketStatusInfo = {
   ist_time: new Date().toLocaleTimeString('en-IN'),
 };
 
+const DEFAULT_BACKEND_URL = 'https://unstopped-anthem-bullfrog.ngrok-free.dev';
+
 export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocketReturn {
   const [ticks, setTicks] = useState<Record<string, MarketTick>>(INITIAL_TICKS);
   const [summary, setSummary] = useState<MarketSummary>(INITIAL_SUMMARY);
@@ -48,11 +50,7 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
   const [lastUpdateTimestamp, setLastUpdateTimestamp] = useState<number | null>(Math.floor(Date.now() / 1000));
   const [recentAlerts, setRecentAlerts] = useState<AlertNotification[]>([]);
   const [lastAutoRefreshTime, setLastAutoRefreshTime] = useState<number>(Date.now());
-  const [isUsingClientSimulation, setIsUsingClientSimulation] = useState<boolean>(() => {
-    const isVercel = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
-    const hasCustomBackend = typeof window !== 'undefined' && Boolean(localStorage.getItem('tradoeasy_backend_url'));
-    return isVercel && !hasCustomBackend;
-  });
+  const [isUsingClientSimulation, setIsUsingClientSimulation] = useState<boolean>(false);
 
   const wsRef = useRef<WebSocket | null>(null);
   const reconnectTimeoutRef = useRef<number | null>(null);
@@ -62,14 +60,19 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
   const getBackendBaseUrl = useCallback(() => {
     const saved = localStorage.getItem('tradoeasy_backend_url');
     if (saved) return saved.trim().replace(/\/+$/, '');
+    if (typeof window !== 'undefined' && window.location.hostname.includes('vercel.app')) {
+      return DEFAULT_BACKEND_URL;
+    }
     return '';
   }, []);
 
-  // Determine WebSocket URL dynamically based on configured backend or window.location
+  // Determine WebSocket URL dynamically based on configured backend, default tunnel, or window.location
   const getWebSocketUrl = useCallback(() => {
     const saved = localStorage.getItem('tradoeasy_backend_url');
-    if (saved) {
-      const clean = saved.trim().replace(/\/+$/, '');
+    const isVercel = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
+    const targetUrl = saved || (isVercel ? DEFAULT_BACKEND_URL : '');
+    if (targetUrl) {
+      const clean = targetUrl.trim().replace(/\/+$/, '');
       const wsProtocol = clean.startsWith('https:') ? 'wss:' : 'ws:';
       const hostPart = clean.replace(/^https?:\/\//, '');
       return `${wsProtocol}//${hostPart}/ws/market`;
@@ -140,16 +143,6 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
       return;
     }
 
-    const isVercel = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
-    const hasCustomBackend = typeof window !== 'undefined' && Boolean(localStorage.getItem('tradoeasy_backend_url'));
-
-    if (isVercel && !hasCustomBackend) {
-      setIsUsingClientSimulation(true);
-      setConnectionState('CONNECTED');
-      setMode('DEMO');
-      return;
-    }
-
     setConnectionState((prev) => (prev === 'CONNECTED' ? 'RECONNECTING' : 'CONNECTING'));
 
     try {
@@ -159,6 +152,7 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
 
       ws.onopen = () => {
         setConnectionState('CONNECTED');
+        setIsUsingClientSimulation(false);
         reconnectAttemptsRef.current = 0;
         setIsStale(false);
         lastTickTimeRef.current = Date.now();
@@ -215,14 +209,6 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
       ws.onclose = () => {
         wsRef.current = null;
         setIsUsingClientSimulation(true);
-
-        const isVercelNow = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
-        const hasCustomBackendNow = typeof window !== 'undefined' && Boolean(localStorage.getItem('tradoeasy_backend_url'));
-        if (isVercelNow && !hasCustomBackendNow) {
-          setConnectionState('CONNECTED');
-          setMode('DEMO');
-          return;
-        }
 
         // Exponential backoff reconnect: 1s, 2s, 4s, 8s, max 10s
         const backoff = Math.min(10000, 1000 * Math.pow(1.8, reconnectAttemptsRef.current));
@@ -291,7 +277,7 @@ export function useMarketWebSocket(activeUniverseId: string): UseMarketWebSocket
         setLastUpdateTimestamp(Math.floor(Date.now() / 1000));
         return updated;
       });
-    }, 450);
+    }, 3000);
 
     return () => clearInterval(simInterval);
   }, [isUsingClientSimulation]);

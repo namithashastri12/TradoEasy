@@ -150,8 +150,19 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {/* Last Update Time */}
-          <div className="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#161C2D] border border-[#232C42] text-slate-300 text-xs font-mono">
-            <Clock className="w-3 h-3 text-slate-400" />
+          <div
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded border text-xs font-mono transition-colors ${
+              isStale
+                ? 'bg-amber-950/40 border-amber-800/60 text-amber-300'
+                : 'bg-[#161C2D] border-[#232C42] text-slate-300'
+            }`}
+            title={`Last market tick: ${formatTime(lastUpdateTimestamp)} (${secondsSinceLastUpdate}s ago)`}
+          >
+            {mode === 'LIVE' && !isStale ? (
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            ) : (
+              <Clock className="w-3.5 h-3.5 text-slate-400" />
+            )}
             <span>Updated {formatTime(lastUpdateTimestamp)}</span>
           </div>
 

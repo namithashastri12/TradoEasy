@@ -83,7 +83,6 @@ class FyersMarketDataService:
             try:
                 if self.fyers_socket and self._subscribed_symbols:
                     self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
-                    self.fyers_socket.keep_running()
             except Exception as e:
                 logger.error(f"Error subscribing to symbols on open: {e}")
 
@@ -113,11 +112,17 @@ class FyersMarketDataService:
             self._connection_state = "RECONNECTING"
 
         def _on_message(message):
-            self._last_tick_time = time.time()
             if not isinstance(message, dict):
                 return
             # Verify tick payload has necessary information
             if "ltp" in message and "symbol" in message:
+                self._last_tick_time = time.time()
+                self._tick_count = getattr(self, "_tick_count", 0) + 1
+                if self._tick_count == 1:
+                    logger.info(f"First FYERS tick received: {message.get('symbol')} @ {message.get('ltp')}")
+                elif self._tick_count % 500 == 0:
+                    logger.info(f"Received {self._tick_count} FYERS live ticks (latest: {message.get('symbol')} @ {message.get('ltp')})")
+
                 if self.on_tick_callback:
                     try:
                         self.on_tick_callback(message)
@@ -125,23 +130,61 @@ class FyersMarketDataService:
                         logger.error(f"Error processing FYERS tick in callback: {e}")
 
         def _run_socket():
-            try:
-                self.fyers_socket = data_ws.FyersDataSocket(
-                    access_token=composite_token,
-                    log_path="",
-                    litemode=False,
-                    write_to_file=False,
-                    reconnect=True,
-                    on_connect=_on_open,
-                    on_close=_on_close,
-                    on_error=_on_error,
-                    on_message=_on_message
-                )
-                self.fyers_socket.connect()
-            except Exception as e:
-                self._connected = False
-                self._connection_state = "DISCONNECTED"
-                logger.error(f"FYERS Data WebSocket exception: {e}")
+            while self._is_running:
+                try:
+                    logger.info(f"Initializing FYERS Data WebSocket for {len(self._subscribed_symbols)} symbols...")
+                    self._connection_state = "CONNECTING"
+                    self.fyers_socket = data_ws.FyersDataSocket(
+                        access_token=composite_token,
+                        log_path="",
+                        litemode=False,
+                        write_to_file=False,
+                        reconnect=False,
+                        on_connect=_on_open,
+                        on_close=_on_close,
+                        on_error=_on_error,
+                        on_message=_on_message
+                    )
+                    self.fyers_socket.connect()
+
+                    # Persistent watchdog loop: monitors health and keeps thread alive
+                    while self._is_running:
+                        time.sleep(2)
+                        if not self._is_running:
+                            break
+
+                        if not self._connected:
+                            logger.warning("FYERS Data WebSocket disconnected. Re-establishing connection...")
+                            break
+
+                        now = time.time()
+                        # If stall reaches 25 seconds, force fresh socket reconnection
+                        if self._last_tick_time and (now - self._last_tick_time > 25):
+                            logger.warning("FYERS tick stall exceeded 25s. Forcing fresh socket connection...")
+                            break
+
+                except Exception as e:
+                    self._connected = False
+                    self._connection_state = "DISCONNECTED"
+                    logger.error(f"FYERS Data WebSocket exception: {e}")
+
+                if self.fyers_socket:
+                    old_sock = self.fyers_socket
+                    self.fyers_socket = None
+                    def _async_close(sock):
+                        try:
+                            if hasattr(sock, "_FyersDataSocket__ws_object") and sock._FyersDataSocket__ws_object:
+                                sock._FyersDataSocket__ws_object.close()
+                        except Exception:
+                            pass
+                        try:
+                            sock.close_connection()
+                        except Exception:
+                            pass
+                    threading.Thread(target=_async_close, args=(old_sock,), daemon=True).start()
+
+                if self._is_running:
+                    time.sleep(3)
 
         self._thread = threading.Thread(target=_run_socket, daemon=True, name="FyersWebSocketWorker")
         self._thread.start()
@@ -177,4 +220,5 @@ class FyersMarketDataService:
                 self.fyers_socket.close_connection()
             except Exception:
                 pass
+            self.fyers_socket = None
         logger.info("FYERS Data WebSocket stopped.")

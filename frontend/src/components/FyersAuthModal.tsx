@@ -41,7 +41,7 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
   const [redirectUri, setRedirectUri] = useState('https://trade.fyers.in/api-login/redirect-uri/index.html');
   const [authCode, setAuthCode] = useState('');
   const [serverUrl, setServerUrl] = useState(() => {
-    return localStorage.getItem('tradoeasy_backend_url') || '';
+    return localStorage.getItem('tradoeasy_backend_url') || (typeof window !== 'undefined' && window.location.hostname.includes('vercel.app') ? 'https://unstopped-anthem-bullfrog.ngrok-free.dev' : '');
   });
 
   const [authStatus, setAuthStatus] = useState<AuthStatusData | null>(null);
