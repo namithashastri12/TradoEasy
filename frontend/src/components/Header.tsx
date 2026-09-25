@@ -8,6 +8,7 @@ import {
   Trash2,
   Clock,
   Zap,
+  Database,
 } from 'lucide-react';
 import { MarketStatusInfo, ConnectionState, AppMode } from '../types/market';
 import { formatTime } from '../utils/formatters';
@@ -23,6 +24,7 @@ interface HeaderProps {
   onOpenClearNotes: () => void;
   onOpenAlertModal: () => void;
   onOpenFyersModal: () => void;
+  onOpenDailyHistory: () => void;
   savedNotesCount: number;
 }
 
@@ -37,6 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenClearNotes,
   onOpenAlertModal,
   onOpenFyersModal,
+  onOpenDailyHistory,
   savedNotesCount,
 }) => {
   const [currentIstTime, setCurrentIstTime] = useState<string>(() => {
@@ -96,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({
     return (
       <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-950/40 border border-blue-600/60 text-blue-300 text-xs font-mono font-medium">
         <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
-        DEMO · 200 STOCKS ACTIVE
+        DEMO · 208 STOCKS ACTIVE
       </span>
     );
   };
@@ -214,6 +217,16 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Bell className="w-3.5 h-3.5 text-blue-400" />
             <span className="hidden sm:inline">Alerts</span>
+          </button>
+
+          {/* 15D History Archive Button */}
+          <button
+            onClick={onOpenDailyHistory}
+            title="View 15-Day Rolling Daily History Archive (208 Stocks)"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded bg-[#161C2D] hover:bg-[#1E263C] border border-[#232C42] hover:border-blue-500/60 text-slate-300 hover:text-blue-300 text-xs font-mono transition-colors"
+          >
+            <Database className="w-3.5 h-3.5 text-cyan-400" />
+            <span className="hidden sm:inline">15D History</span>
           </button>
 
           {/* Clear Saved Notes Button */}

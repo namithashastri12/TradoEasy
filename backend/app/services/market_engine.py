@@ -16,6 +16,7 @@ from app.services.historical_data import HistoricalDataProvider
 from app.services.fyers_auth import fyers_auth_manager
 from app.services.fyers_market_data import FyersMarketDataService
 from app.services.demo_data import DemoMarketDataService
+from app.services.daily_history import daily_history_manager
 from app.utils.market_timing import evaluate_market_status
 from app.utils.logger import logger
 
@@ -38,6 +39,8 @@ class MarketEngine:
         self._last_tick_time: Optional[float] = None
         self._is_stale: bool = False
         self._forced_mode: Optional[str] = None
+        self._stop_event = threading.Event()
+        self._history_thread: Optional[threading.Thread] = None
 
         # Data providers
         self.fyers_data_service = FyersMarketDataService(
@@ -49,6 +52,7 @@ class MarketEngine:
         )
 
         self._initialize_universe_state(self._active_universe_id)
+        self._start_history_auto_save()
 
     @property
     def active_universe_id(self) -> str:
@@ -137,10 +141,47 @@ class MarketEngine:
             logger.info("Starting in DEMO MODE with simulated market data.")
             self.demo_data_service.start(symbols)
 
+        # Seed 15-day daily history from FYERS in a background thread if authenticated
+        client = fyers_auth_manager.get_fyers_client()
+        if client:
+            threading.Thread(
+                target=daily_history_manager.seed_from_fyers,
+                args=(client, INSTRUMENTS_DATA),
+                daemon=True
+            ).start()
+
     def stop(self) -> None:
-        """Stops all active data feeds."""
+        """Stops all active data feeds and saves session snapshot to daily history."""
+        self._stop_event.set()
+        try:
+            self.save_daily_history()
+        except Exception as e:
+            logger.warning(f"Error saving daily history on stop: {e}")
         self.fyers_data_service.stop()
         self.demo_data_service.stop()
+
+    def save_daily_history(self) -> int:
+        """Saves current state of all active stocks to 15-day rolling daily history."""
+        with self._lock:
+            active_ticks = [t for t in self._state.values() if t.ltp > 0]
+        if active_ticks:
+            return daily_history_manager.record_daily_snapshot(active_ticks)
+        return 0
+
+    def _start_history_auto_save(self) -> None:
+        """Runs a background timer every 10 minutes to save daily history."""
+        def _loop():
+            while not self._stop_event.is_set():
+                self._stop_event.wait(600)  # Wait 10 minutes or until stopped
+                if self._stop_event.is_set():
+                    break
+                try:
+                    self.save_daily_history()
+                except Exception as e:
+                    logger.warning(f"Error during periodic daily history save: {e}")
+
+        self._history_thread = threading.Thread(target=_loop, daemon=True)
+        self._history_thread.start()
 
     def set_active_universe(self, universe_id: str) -> bool:
         """Changes active universe and filters snapshot to corresponding instruments."""

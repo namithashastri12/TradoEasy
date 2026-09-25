@@ -71,7 +71,7 @@ class FyersMarketDataService:
 
         # Format required by FYERS v3: "client_id:access_token"
         composite_token = f"{client_id}:{token}"
-        self._subscribed_symbols = symbols[:200]  # Respect FYERS 200 symbol socket limit
+        self._subscribed_symbols = symbols
         self._is_running = True
         self._connection_state = "CONNECTING"
         logger.info(f"Initiating FYERS Data WebSocket for {len(self._subscribed_symbols)} symbols...")

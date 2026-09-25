@@ -9,11 +9,13 @@ import { ClearNotesModal } from './components/ClearNotesModal';
 import { AlertModal } from './components/AlertModal';
 import { AlertToast } from './components/AlertToast';
 import { FyersAuthModal } from './components/FyersAuthModal';
+import { DailyHistoryModal } from './components/DailyHistoryModal';
 import { useMarketWebSocket } from './hooks/useMarketWebSocket';
 import { useSRObservations, useFilterPersistence } from './hooks/useLocalStorage';
 import { Universe, FilterState } from './types/market';
 import { FALLBACK_UNIVERSES, FALLBACK_SECTORS } from './utils/demoDataFallback';
 import { getEffectiveAvgVolume, getEffectiveRVOL, getEffectivePriceChange } from './utils/periodMetrics';
+import { apiFetch } from './utils/api';
 
 const DEFAULT_FILTER: FilterState = {
   universeId: 'nifty_500',
@@ -38,13 +40,14 @@ export function App() {
   const [isClearNotesModalOpen, setIsClearNotesModalOpen] = useState(false);
   const [isAlertModalOpen, setIsAlertModalOpen] = useState(false);
   const [isFyersModalOpen, setIsFyersModalOpen] = useState(false);
+  const [isDailyHistoryModalOpen, setIsDailyHistoryModalOpen] = useState(false);
 
   // Support / Resistance observations (persisted in localStorage)
   const { observations, updateSR, clearAllNotes } = useSRObservations();
 
   // Load universes & sectors catalog on initial mount
   useEffect(() => {
-    fetch('/api/universes')
+    apiFetch('/api/universes')
       .then((res) => res.json())
       .then((data) => {
         if (data.universes) setUniverses(data.universes);
@@ -163,6 +166,7 @@ export function App() {
         onOpenClearNotes={() => setIsClearNotesModalOpen(true)}
         onOpenAlertModal={() => setIsAlertModalOpen(true)}
         onOpenFyersModal={() => setIsFyersModalOpen(true)}
+        onOpenDailyHistory={() => setIsDailyHistoryModalOpen(true)}
         savedNotesCount={savedNotesCount}
       />
 
@@ -198,7 +202,7 @@ export function App() {
 
       {/* Footer Info */}
       <footer className="border-t border-[#1E263C] bg-[#0E131F] py-2.5 px-4 text-center text-slate-500 text-[11px] font-mono">
-        tradoeasy · Real-Time Market Intelligence Terminal · Indian Equities (NSE 200) · Auto-refreshes state every 20s without resetting filters.
+        tradoeasy · Real-Time Market Intelligence Terminal · Indian Equities (208 Stocks Active) · Auto-refreshes state every 20s without resetting filters.
       </footer>
 
       {/* Modals & Toasts */}
@@ -228,6 +232,11 @@ export function App() {
         onClose={() => setIsFyersModalOpen(false)}
         currentMode={mode}
         onModeChange={setMode}
+      />
+
+      <DailyHistoryModal
+        isOpen={isDailyHistoryModalOpen}
+        onClose={() => setIsDailyHistoryModalOpen(false)}
       />
 
       <AlertToast alerts={recentAlerts} onDismiss={dismissAlert} />

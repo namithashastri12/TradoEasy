@@ -253,3 +253,59 @@ def get_expired_fno_historical_data(
     return market_engine_instance.historical_data.get_expired_fno_historical_data(
         symbol, resolution, range_from, range_to, greeks
     )
+
+
+# =============================================================================
+# 15-Day Rolling Daily History Endpoints
+# =============================================================================
+
+@router.get("/api/history/summary")
+def get_daily_history_summary():
+    """Returns status and date coverage of the 15-day rolling daily history."""
+    from app.services.daily_history import daily_history_manager
+    return daily_history_manager.get_summary()
+
+
+@router.get("/api/history/dates")
+def get_daily_history_dates():
+    """Returns all available dates in the 15-day rolling history window."""
+    from app.services.daily_history import daily_history_manager
+    return {"dates": daily_history_manager.get_available_dates()}
+
+
+@router.get("/api/history/day/{date_str}")
+def get_daily_history_day(date_str: str):
+    """Returns the full 208-stock records for a specific saved date."""
+    from app.services.daily_history import daily_history_manager
+    records = daily_history_manager.get_day_snapshot(date_str)
+    return {
+        "date": date_str,
+        "count": len(records),
+        "records": records,
+        "stocks": records
+    }
+
+
+@router.get("/api/history/symbol/{symbol}")
+def get_daily_history_symbol(symbol: str, limit: int = Query(default=15, ge=1, le=30)):
+    """Returns daily history performance for a single stock up to the 15-day limit."""
+    from app.services.daily_history import daily_history_manager
+    records = daily_history_manager.get_symbol_history(symbol, limit=limit)
+    return {
+        "symbol": symbol,
+        "count": len(records),
+        "history": records
+    }
+
+
+@router.post("/api/history/save-now")
+def save_daily_history_now():
+    """Forces an immediate save of the current 208 stocks to daily history."""
+    if not market_engine_instance:
+        raise HTTPException(status_code=503, detail="Market engine not ready")
+    saved_count = market_engine_instance.save_daily_history()
+    return {
+        "success": True,
+        "saved_count": saved_count,
+        "message": f"Successfully archived {saved_count} stocks to 15-day rolling daily history."
+    }
