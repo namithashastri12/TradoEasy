@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Activity,
   WifiOff,
@@ -39,6 +39,31 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenFyersModal,
   savedNotesCount,
 }) => {
+  const [currentIstTime, setCurrentIstTime] = useState<string>(() => {
+    return new Date().toLocaleTimeString('en-IN', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+      timeZone: 'Asia/Kolkata'
+    });
+  });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIstTime(
+        new Date().toLocaleTimeString('en-IN', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true,
+          timeZone: 'Asia/Kolkata'
+        })
+      );
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   // Connection badge color & text
   const getConnectionBadge = () => {
     if (connectionState === 'DISCONNECTED') {
@@ -69,8 +94,8 @@ export const Header: React.FC<HeaderProps> = ({
       );
     }
     return (
-      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-950/40 border border-emerald-600/60 text-emerald-300 text-xs font-mono font-medium">
-        <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-blue-950/40 border border-blue-600/60 text-blue-300 text-xs font-mono font-medium">
+        <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
         DEMO · 200 STOCKS ACTIVE
       </span>
     );
@@ -108,10 +133,12 @@ export const Header: React.FC<HeaderProps> = ({
 
           <div className="h-6 w-[1px] bg-[#232C42] hidden sm:block" />
 
-          {/* Market Status */}
-          <div className={`hidden sm:inline-flex items-center gap-2 px-2.5 py-1 rounded text-xs font-mono font-medium border ${getMarketStatusColor()}`}>
+          {/* Market Status & Live Clock */}
+          <div className={`hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-mono font-medium border ${getMarketStatusColor()}`}>
             <span className={`h-2 w-2 rounded-full ${marketStatus.status === 'OPEN' ? 'bg-emerald-400 animate-pulse' : marketStatus.status === 'PRE_MARKET' ? 'bg-amber-400' : 'bg-slate-500'}`} />
-            {marketStatus.display || 'NSE MARKET'}
+            <span>{marketStatus.display || 'NSE MARKET'}</span>
+            <span className="text-slate-600">|</span>
+            <span className="font-semibold text-white tracking-wider">{currentIstTime}</span>
           </div>
         </div>
 
@@ -122,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
           {isStale && (
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-red-950/70 border border-red-700 text-red-300 text-xs font-mono animate-pulse">
               <AlertTriangle className="w-3.5 h-3.5 text-red-400" />
-              <span>DATA STALE · Last update {secondsSinceLastUpdate}s ago</span>
+              <span>FEED PAUSED · {secondsSinceLastUpdate}s ago</span>
             </div>
           )}
 
@@ -149,21 +176,25 @@ export const Header: React.FC<HeaderProps> = ({
             <span>{mode === 'LIVE' ? 'FYERS LIVE' : 'Connect FYERS'}</span>
           </button>
 
-          {/* Last Update Time */}
+          {/* Feed Update Time */}
           <div
             className={`flex items-center gap-1.5 px-2.5 py-1 rounded border text-xs font-mono transition-colors ${
               isStale
                 ? 'bg-amber-950/40 border-amber-800/60 text-amber-300'
                 : 'bg-[#161C2D] border-[#232C42] text-slate-300'
             }`}
-            title={`Last market tick: ${formatTime(lastUpdateTimestamp)} (${secondsSinceLastUpdate}s ago)`}
+            title={`Last market tick received: ${formatTime(lastUpdateTimestamp)} (${secondsSinceLastUpdate}s ago)`}
           >
             {mode === 'LIVE' && !isStale ? (
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             ) : (
               <Clock className="w-3.5 h-3.5 text-slate-400" />
             )}
-            <span>Updated {formatTime(lastUpdateTimestamp)}</span>
+            <span>
+              {isStale
+                ? `Paused (${secondsSinceLastUpdate}s)`
+                : `Feed: ${formatTime(lastUpdateTimestamp)}`}
+            </span>
           </div>
 
           {/* Refresh snapshot button */}

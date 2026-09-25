@@ -1,6 +1,10 @@
+import base64
+import hashlib
 import json
 import os
+import time
 from typing import Optional, Dict, Any
+import requests
 from app.config import settings
 from app.utils.logger import logger
 
@@ -18,32 +22,65 @@ class FyersAuthManager:
 
     def __init__(self):
         self._access_token: Optional[str] = settings.FYERS_ACCESS_TOKEN
+        self._refresh_token: Optional[str] = None
         self._token_file = settings.TOKEN_CACHE_FILE
         self._load_cached_token()
+
+    def is_token_expired(self, token: Optional[str] = None) -> bool:
+        """Returns True if the JWT token has expired or is invalid."""
+        t = token or self._access_token
+        if not t:
+            return True
+        try:
+            parts = t.split(".")
+            if len(parts) >= 2:
+                padding = "=" * (4 - (len(parts[1]) % 4))
+                payload = json.loads(base64.urlsafe_b64decode(parts[1] + padding))
+                exp = payload.get("exp")
+                if exp:
+                    return time.time() >= exp
+        except Exception as e:
+            logger.warning(f"Error checking token expiration: {e}")
+        return False
 
     def _load_cached_token(self) -> None:
         """Attempts to load a previously saved valid access token from cache."""
         if self._access_token:
-            logger.info("Using FYERS access token provided in settings/environment.")
-            return
+            if not self.is_token_expired(self._access_token):
+                logger.info("Using valid FYERS access token provided in settings/environment.")
+                return
+            else:
+                logger.warning("FYERS access token in settings/environment has expired.")
+                self._access_token = None
 
         if os.path.exists(self._token_file):
             try:
                 with open(self._token_file, "r") as f:
                     data = json.load(f)
                     token = data.get("access_token")
+                    refresh_token = data.get("refresh_token")
+                    self._refresh_token = refresh_token
                     if token:
-                        self._access_token = token
-                        logger.info("Loaded cached FYERS access token from disk.")
+                        if not self.is_token_expired(token):
+                            self._access_token = token
+                            logger.info("Loaded valid cached FYERS access token from disk.")
+                        else:
+                            logger.warning("Cached FYERS access token on disk has expired (SEBI 6:00 AM daily reset).")
+                            self._access_token = None
             except Exception as e:
                 logger.warning(f"Failed to read cached token file: {e}")
 
-    def _save_cached_token(self, token: str) -> None:
+    def _save_cached_token(self, token: str, refresh_token: Optional[str] = None) -> None:
         """Caches access token to local file (gitignored)."""
         self._access_token = token
+        if refresh_token:
+            self._refresh_token = refresh_token
         try:
+            payload = {"access_token": token}
+            if self._refresh_token:
+                payload["refresh_token"] = self._refresh_token
             with open(self._token_file, "w") as f:
-                json.dump({"access_token": token}, f)
+                json.dump(payload, f)
             logger.info("Successfully cached new FYERS access token to disk.")
         except Exception as e:
             logger.warning(f"Failed to save cached token file: {e}")
@@ -53,8 +90,10 @@ class FyersAuthManager:
         return bool(self._access_token or (settings.FYERS_CLIENT_ID and settings.FYERS_SECRET_KEY))
 
     def is_authenticated(self) -> bool:
-        """Returns True if a valid access token is currently available."""
-        return bool(self._access_token)
+        """Returns True only if a valid, unexpired access token is currently available."""
+        if not self._access_token:
+            return False
+        return not self.is_token_expired(self._access_token)
 
     def get_access_token(self) -> Optional[str]:
         return self._access_token
@@ -104,8 +143,9 @@ class FyersAuthManager:
 
         if isinstance(response, dict) and response.get("s") == "ok":
             token = response.get("access_token")
+            refresh_token = response.get("refresh_token")
             if token:
-                self._save_cached_token(token)
+                self._save_cached_token(token, refresh_token)
                 return {
                     "success": True,
                     "message": "FYERS authentication successful. Access token generated.",
@@ -157,6 +197,10 @@ class FyersAuthManager:
 
     def validate_connection(self) -> Dict[str, Any]:
         """Validates current token with FYERS by invoking profile endpoint."""
+        if not self._access_token:
+            return {"valid": False, "message": "No active access token"}
+        if self.is_token_expired(self._access_token):
+            return {"valid": False, "message": "FYERS access token expired at 06:00 AM IST today. Please generate a new token."}
         client = self.get_fyers_client()
         if not client:
             return {"valid": False, "message": "No active access token"}
