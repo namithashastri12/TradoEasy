@@ -130,10 +130,9 @@ def exchange_token(payload: AuthCodeRequest):
     if not result.get("success"):
         raise HTTPException(status_code=400, detail=result.get("message"))
 
-    # Restart market engine in LIVE mode if configured
+    # Automatically activate LIVE mode with FYERS streaming
     if market_engine_instance:
-        market_engine_instance.stop()
-        market_engine_instance.start()
+        market_engine_instance.set_mode("live")
 
     return result
 
@@ -145,9 +144,9 @@ def set_direct_token(payload: DirectTokenRequest):
     if not result.get("success"):
         raise HTTPException(status_code=400, detail=result.get("message"))
 
+    # Automatically activate LIVE mode with FYERS streaming
     if market_engine_instance:
-        market_engine_instance.stop()
-        market_engine_instance.start()
+        market_engine_instance.set_mode("live")
 
     return result
 

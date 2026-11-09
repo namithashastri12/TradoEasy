@@ -48,6 +48,15 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
   const [loading, setLoading] = useState(false);
   const [feedback, setFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
+  const safeParseResponse = async (res: Response) => {
+    const text = await res.text();
+    try {
+      return text ? JSON.parse(text) : {};
+    } catch {
+      return { raw: text };
+    }
+  };
+
   // Fetch status on modal open
   const checkStatus = async () => {
     try {
@@ -57,7 +66,7 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
         headers: { 'ngrok-skip-browser-warning': 'true' }
       });
       if (res.ok) {
-        const data = await res.json();
+        const data = await safeParseResponse(res);
         setAuthStatus(data);
       } else {
         setAuthStatus({
@@ -98,15 +107,21 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
       setLoading(true);
       setFeedback(null);
       const baseUrl = serverUrl.trim() || '';
-      const res = await fetch(`${baseUrl}/api/auth/direct-token`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'ngrok-skip-browser-warning': 'true'
-        },
-        body: JSON.stringify({ token: tokenInput.trim() }),
-      });
-      const data = await res.json();
+      let res: Response;
+      try {
+        res = await fetch(`${baseUrl}/api/auth/direct-token`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': 'true'
+          },
+          body: JSON.stringify({ token: tokenInput.trim() }),
+        });
+      } catch {
+        throw new Error(`Cannot connect to backend at ${baseUrl || 'http://localhost:8000'}. Make sure your Python backend terminal is running.`);
+      }
+
+      const data = await safeParseResponse(res);
       if (res.ok && data.success) {
         setFeedback({ type: 'success', message: 'FYERS Token saved successfully! Live mode activated.' });
         setTokenInput('');
@@ -134,15 +149,21 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
       setLoading(true);
       setFeedback(null);
       const baseUrl = serverUrl.trim() || '';
-      const res = await fetch(`${baseUrl}/api/auth/token`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'ngrok-skip-browser-warning': 'true'
-        },
-        body: JSON.stringify({ auth_code: authCode.trim() }),
-      });
-      const data = await res.json();
+      let res: Response;
+      try {
+        res = await fetch(`${baseUrl}/api/auth/token`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': 'true'
+          },
+          body: JSON.stringify({ auth_code: authCode.trim() }),
+        });
+      } catch {
+        throw new Error(`Cannot connect to backend at ${baseUrl || 'http://localhost:8000'}. Make sure your Python backend terminal is running.`);
+      }
+
+      const data = await safeParseResponse(res);
       if (res.ok && data.success) {
         setFeedback({ type: 'success', message: 'FYERS authenticated successfully!' });
         setAuthCode('');
@@ -167,25 +188,43 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
 
       // Save credentials first if provided
       if (clientId.trim() || secretKey.trim()) {
-        await fetch(`${baseUrl}/api/auth/credentials`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'ngrok-skip-browser-warning': 'true'
-          },
-          body: JSON.stringify({
-            client_id: clientId.trim(),
-            secret_key: secretKey.trim(),
-            redirect_uri: redirectUri.trim() || 'https://trade.fyers.in/api-login/redirect-uri/index.html'
-          }),
-        });
+        try {
+          const credRes = await fetch(`${baseUrl}/api/auth/credentials`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'ngrok-skip-browser-warning': 'true'
+            },
+            body: JSON.stringify({
+              client_id: clientId.trim(),
+              secret_key: secretKey.trim(),
+              redirect_uri: redirectUri.trim() || 'https://trade.fyers.in/api-login/redirect-uri/index.html'
+            }),
+          });
+          if (!credRes.ok) {
+            const errData = await safeParseResponse(credRes);
+            throw new Error(errData.detail || `Server returned ${credRes.status}`);
+          }
+        } catch (credErr: any) {
+          throw new Error(
+            credErr.message.includes('Failed to fetch') || credErr.message.includes('Network')
+              ? `Cannot connect to backend at ${baseUrl || 'http://localhost:8000'}. Make sure your Python backend terminal is running.`
+              : `Error saving credentials: ${credErr.message}`
+          );
+        }
       }
 
-      const res = await fetch(`${baseUrl}/api/auth/url`, {
-        method: 'POST',
-        headers: { 'ngrok-skip-browser-warning': 'true' }
-      });
-      const data = await res.json();
+      let res: Response;
+      try {
+        res = await fetch(`${baseUrl}/api/auth/url`, {
+          method: 'POST',
+          headers: { 'ngrok-skip-browser-warning': 'true' }
+        });
+      } catch {
+        throw new Error(`Cannot reach backend at ${baseUrl || 'http://localhost:8000'}. Make sure your Python backend terminal is running.`);
+      }
+
+      const data = await safeParseResponse(res);
       if (res.ok && data.auth_url) {
         window.open(data.auth_url, '_blank');
         setFeedback({
@@ -195,7 +234,7 @@ export const FyersAuthModal: React.FC<FyersAuthModalProps> = ({
       } else {
         setFeedback({
           type: 'error',
-          message: data.detail || 'Make sure Client ID and Secret Key are configured.',
+          message: data.detail || (data.raw ? 'Backend returned an empty or invalid response. Check backend terminal.' : 'Make sure Client ID and Secret Key are configured.'),
         });
       }
     } catch (err: any) {

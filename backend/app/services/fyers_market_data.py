@@ -71,7 +71,14 @@ class FyersMarketDataService:
 
         # Format required by FYERS v3: "client_id:access_token"
         composite_token = f"{client_id}:{token}"
-        self._subscribed_symbols = symbols
+        # Standard FYERS Free Account limit is 100 symbols on Data WebSocket.
+        # Cap to 100 to avoid FYERS error 11011 'subscription failed'
+        MAX_WS_SYMBOLS = 100
+        if len(symbols) > MAX_WS_SYMBOLS:
+            logger.info(f"FYERS free account limits WebSocket to {MAX_WS_SYMBOLS} symbols. Subscribing top {MAX_WS_SYMBOLS} on WebSocket (all {len(symbols)} will be polled via live REST quotes).")
+            self._subscribed_symbols = symbols[:MAX_WS_SYMBOLS]
+        else:
+            self._subscribed_symbols = symbols
         self._is_running = True
         self._connection_state = "CONNECTING"
         logger.info(f"Initiating FYERS Data WebSocket for {len(self._subscribed_symbols)} symbols...")
@@ -93,20 +100,37 @@ class FyersMarketDataService:
 
         def _on_error(message):
             logger.error(f"FYERS Data WebSocket error: {message}")
-            if isinstance(message, dict) and message.get("type") == "sub" and "invalid_symbols" in message:
-                bad_syms = set(message.get("invalid_symbols", []))
-                cleaned = [s for s in self._subscribed_symbols if s not in bad_syms]
-                if cleaned and len(cleaned) < len(self._subscribed_symbols):
-                    logger.info(f"Retrying FYERS subscription with {len(cleaned)} valid symbols (stripped {len(bad_syms)} invalid: {bad_syms})...")
-                    self._subscribed_symbols = cleaned
-                    self._connected = True
-                    self._connection_state = "CONNECTED"
-                    try:
-                        if self.fyers_socket:
-                            self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
-                    except Exception as err:
-                        logger.error(f"Retry subscribe error: {err}")
-                    return
+            if isinstance(message, dict):
+                # Handle error 11011 (subscription limit / subscription failed)
+                if message.get("code") == 11011:
+                    cur_len = len(self._subscribed_symbols)
+                    if cur_len > 50:
+                        new_len = 50 if cur_len > 100 else 25
+                        logger.warning(f"FYERS error 11011 (subscription limit). Reducing symbols from {cur_len} to {new_len} and retrying...")
+                        self._subscribed_symbols = self._subscribed_symbols[:new_len]
+                        self._connected = True
+                        self._connection_state = "CONNECTED"
+                        try:
+                            if self.fyers_socket:
+                                self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
+                        except Exception as err:
+                            logger.error(f"Retry subscribe error: {err}")
+                        return
+
+                if message.get("type") == "sub" and "invalid_symbols" in message:
+                    bad_syms = set(message.get("invalid_symbols", []))
+                    cleaned = [s for s in self._subscribed_symbols if s not in bad_syms]
+                    if cleaned and len(cleaned) < len(self._subscribed_symbols):
+                        logger.info(f"Retrying FYERS subscription with {len(cleaned)} valid symbols (stripped {len(bad_syms)} invalid: {bad_syms})...")
+                        self._subscribed_symbols = cleaned
+                        self._connected = True
+                        self._connection_state = "CONNECTED"
+                        try:
+                            if self.fyers_socket:
+                                self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
+                        except Exception as err:
+                            logger.error(f"Retry subscribe error: {err}")
+                        return
 
             self._connected = False
             self._connection_state = "RECONNECTING"
@@ -192,7 +216,8 @@ class FyersMarketDataService:
 
     def update_subscriptions(self, new_symbols: List[str]) -> None:
         """Dynamically updates the subscribed symbols on the active socket."""
-        capped_symbols = new_symbols[:200]
+        MAX_WS_SYMBOLS = 100
+        capped_symbols = new_symbols[:MAX_WS_SYMBOLS]
         if not self._connected or not self.fyers_socket:
             self._subscribed_symbols = capped_symbols
             return
