@@ -71,14 +71,16 @@ class FyersMarketDataService:
 
         # Format required by FYERS v3: "client_id:access_token"
         composite_token = f"{client_id}:{token}"
-        # Standard FYERS Free Account limit is 100 symbols on Data WebSocket.
-        # Cap to 100 to avoid FYERS error 11011 'subscription failed'
-        MAX_WS_SYMBOLS = 100
-        if len(symbols) > MAX_WS_SYMBOLS:
-            logger.info(f"FYERS free account limits WebSocket to {MAX_WS_SYMBOLS} symbols. Subscribing top {MAX_WS_SYMBOLS} on WebSocket (all {len(symbols)} will be polled via live REST quotes).")
-            self._subscribed_symbols = symbols[:MAX_WS_SYMBOLS]
+        plan = getattr(settings, "FYERS_PLAN", "auto").lower()
+        if plan == "free":
+            max_ws = 100
+            self._subscribed_symbols = symbols[:max_ws]
+            logger.info(f"FYERS free account configured: Capping WebSocket to {max_ws} symbols.")
         else:
+            # "auto" or "prime": attempt all symbols (if prime, all 208 will subscribe; if free, auto-catches 11011 and scales to 100)
             self._subscribed_symbols = symbols
+            logger.info(f"Subscribing to {len(self._subscribed_symbols)} symbols on FYERS Data WebSocket (Plan: {plan.upper()})...")
+
         self._is_running = True
         self._connection_state = "CONNECTING"
         logger.info(f"Initiating FYERS Data WebSocket for {len(self._subscribed_symbols)} symbols...")
@@ -104,18 +106,30 @@ class FyersMarketDataService:
                 # Handle error 11011 (subscription limit / subscription failed)
                 if message.get("code") == 11011:
                     cur_len = len(self._subscribed_symbols)
-                    if cur_len > 50:
-                        new_len = 50 if cur_len > 100 else 25
-                        logger.warning(f"FYERS error 11011 (subscription limit). Reducing symbols from {cur_len} to {new_len} and retrying...")
-                        self._subscribed_symbols = self._subscribed_symbols[:new_len]
-                        self._connected = True
-                        self._connection_state = "CONNECTED"
-                        try:
-                            if self.fyers_socket:
-                                self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
-                        except Exception as err:
-                            logger.error(f"Retry subscribe error: {err}")
+                    if cur_len > 100:
+                        logger.warning(
+                            f"FYERS error 11011: Standard/Free account detected (capped at 100 symbols). "
+                            f"Automatically reducing WebSocket subscription from {cur_len} to top 100 symbols. "
+                            f"(Remaining stocks are continuously updated via live REST quotes; upgrade to FYERS Prime to stream all {cur_len} directly over WebSocket)."
+                        )
+                        self._subscribed_symbols = self._subscribed_symbols[:100]
+                    elif cur_len > 50:
+                        logger.warning(f"FYERS error 11011: Reducing symbols from {cur_len} to 50 and retrying...")
+                        self._subscribed_symbols = self._subscribed_symbols[:50]
+                    else:
+                        logger.error(f"FYERS subscription error: {message}")
+                        self._connected = False
+                        self._connection_state = "RECONNECTING"
                         return
+
+                    self._connected = True
+                    self._connection_state = "CONNECTED"
+                    try:
+                        if self.fyers_socket:
+                            self.fyers_socket.subscribe(symbols=self._subscribed_symbols, data_type="SymbolUpdate")
+                    except Exception as err:
+                        logger.error(f"Retry subscribe error: {err}")
+                    return
 
                 if message.get("type") == "sub" and "invalid_symbols" in message:
                     bad_syms = set(message.get("invalid_symbols", []))
@@ -216,8 +230,8 @@ class FyersMarketDataService:
 
     def update_subscriptions(self, new_symbols: List[str]) -> None:
         """Dynamically updates the subscribed symbols on the active socket."""
-        MAX_WS_SYMBOLS = 100
-        capped_symbols = new_symbols[:MAX_WS_SYMBOLS]
+        plan = getattr(settings, "FYERS_PLAN", "auto").lower()
+        capped_symbols = new_symbols if plan == "prime" else new_symbols[:100]
         if not self._connected or not self.fyers_socket:
             self._subscribed_symbols = capped_symbols
             return

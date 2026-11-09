@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     FYERS_SECRET_KEY: str = ""
     FYERS_REDIRECT_URI: str = "https://trade.fyers.in/api-login/redirect-uri/index.html"
     FYERS_ACCESS_TOKEN: Optional[str] = None
+    FYERS_PLAN: str = "auto"  # "auto", "prime" (up to 5000 symbols), or "free" (100 symbols)
 
     HOST: str = "0.0.0.0"
     PORT: int = 8000
